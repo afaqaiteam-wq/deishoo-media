@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_utc": "2026-10-18T12:18Z",
+ "updated_utc": "2026-10-18T12:36Z",
  "how_to": "Read every 30 min until 2026-10-26. For each item with status 'todo': if 'src' is set, upload that PC file to this repo at 'dest' first. Schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at time_cairo (+03:00) with the caption exactly as written. Only when a slot is free under the 10-post cap per channel; otherwise wait for the next round. Process by priority, then by time. If time_cairo is less than 10 minutes away, skip it and log 'skipped-late'; never move a time. Never delete or edit any other Buffer post, never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. Items are never removed from here; done-ness is tracked in your log by id. Priority: lower number first; reels always before carousels (priority 9 only uses slots left over). type 'images' = Facebook multi-image post and TikTok photo post, images in the given order, no upload needed. Do nothing before not_before_cairo. If an item has 'captions' (per platform) use those instead of 'caption'. Use 'cover' as the video cover where Buffer allows it.",
  "items": [
   {
@@ -158,6 +158,118 @@
    "time_cairo": "2026-10-21T10:00",
    "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/genghis/g7-A.mp4",
    "caption": "المغول اللي دمروا بغداد.. أسلموا بعدها بسنين وأسسوا دول إسلامية عظمى. #المغول #غازانخان #ديشو\n\nليه المغول أسلموا؟ اكتب رأيك"
+  },
+  {
+   "id": "remix-gulf5",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-21T13:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/gulf/gulf5-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/gulf/gulf5-cover.jpg",
+   "caption": "مارس 2025: «إيران مش بتصنع سلاح نووي».. يونيو 2025: «ممكن تصنعه خلال أسابيع». نفس قصة العراق 2003؟ #إيران #العراق #تولسيجابارد #ديشو\n\nفي رأيك: إيران كانت قريبة من القنبلة ولا دي حجة زي العراق؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI ; TikTok cover from phone"
+  },
+  {
+   "id": "remix-tt1",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-22T10:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/timetravel/tt1-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/timetravel/tt1-cover.jpg",
+   "caption": "راجل قال إنه جاي من سنة 2256 وكسب 350 مليون دولار من البورصة.. القصة كلها طلعت نكتة والناس صدقتها. انت كنت هتصدق؟ #السفرعبرالزمن #أخبارمضروبة #ديشو\n\nكنت هتصدق قصة المسافر من المستقبل؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E ; TikTok cover from phone"
+  },
+  {
+   "id": "remix-sub1",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-22T18:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/submarine/sub1-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/submarine/sub1-cover.jpg",
+   "caption": "صاروخ نووي بيطلع من تحت البحر.. رأس واحد قوته 475 كيلو طن، يعني أكتر من 30 مرة قنبلة هيروشيما. #ترايدنت #الغواصات #ديشو\n\nالصواريخ دي بتحمي العالم ولا بتقربنا من الحرب؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U ; TikTok cover from phone"
+  },
+  {
+   "id": "remix-gulf7",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-22T22:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/gulf/gulf7-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/gulf/gulf7-cover.jpg",
+   "caption": "العراق وليبيا جربوا سقوط الديكتاتور بإيد أجنبية.. والنتيجة؟ وإيران؟ #إيران #العراق #ليبيا #ديشو\n\nسقوط الديكتاتور بإيد أجنبية بيفيد الشعب ولا بيضرّه؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI ; TikTok cover from phone"
+  },
+  {
+   "id": "remix-tt3",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-23T10:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/timetravel/tt3-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/timetravel/tt3-cover.jpg",
+   "caption": "الساعة اللي فوق في الفضاء بتسبق ساعتك 38 ميكروثانية كل يوم.. ولو محدش صلّحها، الجي بي اس كله يبوظ. #تمددالزمن #السفرعبرالزمن #ديشو\n\nكنت تعرف إن الزمن في الفضاء بيجري أسرع؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E ; TikTok cover from phone"
+  },
+  {
+   "id": "remix-sub2",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-23T15:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/submarine/sub2-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/submarine/sub2-cover.jpg",
+   "caption": "الهروب من غواصة غارقة بيبقى من أنبوب الطوربيد.. عرضه 53 سم بس، وبدلة الهروب وزنها 23 كيلو. #الغواصات #القواتالبحريةالمصرية #ديشو\n\nتقدر تهرب من أنبوب عرضه 53 سم تحت المية؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U ; TikTok cover from phone"
+  },
+  {
+   "id": "remix-tt4",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-23T22:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/timetravel/tt4-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/timetravel/tt4-cover.jpg",
+   "caption": "رائد فضاء روسي سافر للمستقبل فعلا.. بس 0.02 ثانية. ولو قربت من سرعة الضوء 10 سنين؟ ترجع بعد 9000 سنة. #الفضاء #السفرعبرالزمن #ديشو\n\nهتركب الصاروخ وترجع بعد 9000 سنة؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E ; TikTok cover from phone"
+  },
+  {
+   "id": "remix-sub4",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-24T10:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/submarine/sub4-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/submarine/sub4-cover.jpg",
+   "caption": "صاروخ واحد يشيل 14 رأس نووي.. والغواصة تشيل 24 صاروخ. وبعدين جت معاهدة ستارت. #ستارت #غواصةأوهايو #ديشو\n\nالمعاهدات بتحمي العالم ولا حبر على ورق؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U ; TikTok cover from phone"
   },
   {
    "id": "carousel-ramses",

@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updated_utc": "2026-10-18T14:19Z",
- "how_to": "Read every 30 min until 2026-10-26. For each item with status 'todo': if 'src' is set, upload that PC file to this repo at 'dest' first. Schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at time_cairo (+03:00) with the caption exactly as written. Only when a slot is free under the 10-post cap per channel; otherwise wait for the next round. Process by priority, then by time. If time_cairo is less than 10 minutes away, skip it and log 'skipped-late'; never move a time. Never delete or edit any other Buffer post, never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. Items are never removed from here; done-ness is tracked in your log by id. Priority: lower number first; reels always before carousels (priority 9 only uses slots left over). type 'images' = Facebook multi-image post and TikTok photo post, images in the given order, no upload needed. Do nothing before not_before_cairo. If an item has 'captions' (per platform) use those instead of 'caption'. Use 'cover' as the video cover where Buffer allows it.",
+ "updated_utc": "2026-10-18T15:16Z",
+ "how_to": "Read every 30 min until 2026-10-26. For each item with status 'todo': if 'src' is set, upload that PC file to this repo at 'dest' first. Schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at time_cairo (Africa/Cairo zone: +03:00 up to Oct 29, +02:00 from Oct 30 after DST ends; if an item has 'utc_offset', use it) with the caption exactly as written. Only when a slot is free under the 10-post cap per channel; otherwise wait for the next round. Process by priority, then by time. If time_cairo is less than 10 minutes away, skip it and log 'skipped-late'; never move a time. Never delete or edit any other Buffer post, never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. Items are never removed from here; done-ness is tracked in your log by id. Priority: lower number first; reels always before carousels (priority 9 only uses slots left over). type 'images' = Facebook multi-image post and TikTok photo post, images in the given order, no upload needed. Do nothing before not_before_cairo. If an item has 'captions' (per platform) use those instead of 'caption'. Use 'cover' as the video cover where Buffer allows it.",
  "items": [
   {
    "id": "ramses-short-6",
@@ -491,6 +491,48 @@
    "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/timetravel/tt5-A.mp4",
    "caption": "ساعة واحدة جنب ثقب أسود = 7 سنين على الأرض.. وفي 2019 شفنا أول صورة حقيقية لثقب أسود. #ثقبأسود #السفرعبرالزمن #ديشو\n\nتقضي ساعة جنب ثقب أسود وترجع بعد 7 سنين؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E"
+  },
+  {
+   "id": "remix-men4",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-30T10:00",
+   "utc_offset": "+02:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/mencho/men4-A.mp4",
+   "caption": "أمريكا بنفسها دخّلت أكتر من 2000 قطعة سلاح للمكسيك في عملية اسمها Fast and Furious.. واتنين منهم اتلقوا في مكان مقتل عميل حدود أمريكي. #المنشو #المكسيك #ديشو\n\nأمريكا كانت عارفة ولا دي غلطة؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg"
+  },
+  {
+   "id": "remix-men5",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-30T15:00",
+   "utc_offset": "+02:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/mencho/men5-A.mp4",
+   "caption": "2 ملي جرام بس تقتل إنسان.. والحباية بتتكلف 10 سنت. ده الفنتانيل اللي قتل حوالي 73 ألف شخص في أمريكا في سنة واحدة. #المنشو #الفنتانيل #ديشو\n\nمين المسؤول الأول عن الأزمة دي؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg"
+  },
+  {
+   "id": "remix-men6",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-30T22:00",
+   "utc_offset": "+02:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/mencho/men6-A.mp4",
+   "caption": "مكافأة 20 ألف بيزو على راس كل عسكري.. و20 ولاية ولعت في نفس الوقت. ده اللي عمله كارتل خاليسكو بعد موت إل منشو. #المنشو #المكسيك #ديشو\n\nالدولة تقدر تكسب الحرب دي إزاي؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg"
   },
   {
    "id": "carousel-ramses",

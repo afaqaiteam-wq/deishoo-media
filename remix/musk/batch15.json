@@ -1,0 +1,174 @@
+{
+ "batch": 15,
+ "episode": "إيلون ماسك",
+ "reels": [
+  {
+   "reel": "إيلون ماسك - شورت 1",
+   "version": "1",
+   "media": {
+    "A": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/musk/msk1-A.mp4",
+    "B": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/musk/msk1-B.mp4",
+    "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/musk/msk1-cover.jpg"
+   },
+   "youtube": {
+    "file": "B",
+    "title": "هل صدقت وعود إيلون ماسك؟ #Shorts #ماسك",
+    "description": "في أكتوبر 2015 إيلون ماسك قال إن تسلا هتوصل للقيادة الذاتية الكاملة في خلال 3 سنين، وعربية بتمشي لوحدها من لوس أنجلوس لنيويورك، وفضل يوعد: 18 شهر، آخر السنة، السنة الجاية. وبعد 11 سنة تسلا لسه ما وصلتش للقيادة الذاتية الكاملة. ونفس الفيلم اتكرر سنة 2017 مع شركة الأنفاق The Boring Company ونفق لاس فيجاس اللي اتعمل عشان يحل الزحمة، والزحمة اتنقلت لجوه النفق نفسه.\n\nالحلقة كاملة: https://youtu.be/pgnplR0V0hI\n\nالمصادر: تصريحات إيلون ماسك (2015، 2017)، ويكيبيديا (Tesla Autopilot، Las Vegas Convention Center Loop).\nالصور: إيلون ماسك (Steve Jurvetson، وزارة الاتصالات البرازيلية، Tesla Owners Club Belgium، رخص CC BY 2.0)، القيادة الآلية في تسلا وموديل S (Ian Maddox، Natecation، Granada)، ماكينة الحفر ونفق لاس فيجاس (Steve Jurvetson، Joseph Zadeh)، شارع لاس فيجاس (Ron Reiring، Daniel Lobo)، زحمة لوس أنجلوس (Mariordo)، التاكسي الذاتي (Mliu92، Dllu)، ولقطات من الحلقة.\nالموسيقى: «Volatile Reaction» لـ Kevin MacLeod (incompetech.com)، رخصة CC BY 4.0.",
+    "tags": [
+     "القيادة الذاتية",
+     "نفق لاس فيجاس",
+     "إيلون ماسك",
+     "ماسك",
+     "تسلا",
+     "سبيس إكس",
+     "مصطفى ديشو",
+     "ديشو"
+    ],
+    "pinned_comment": "في رأيك: هل ماسك عبقري ولا بيبيع وعود؟",
+    "related_video": "https://youtu.be/pgnplR0V0hI",
+    "settings": {
+     "made_for_kids": "لا",
+     "altered_or_synthetic_content": "لا",
+     "category": "News & Politics"
+    }
+   },
+   "instagram": {
+    "file": "A",
+    "caption": "ماسك وعد بالقيادة الذاتية الكاملة في 3 سنين سنة 2015.. وبعد 11 سنة لسه. وعمل نفق في فيجاس عشان الزحمة، والزحمة نزلت تحت الأرض. #إيلونماسك #تسلا #ديشو\n\nهل ماسك عبقري ولا بيبيع وعود؟ اكتب رأيك",
+    "trial": true,
+    "zernio": {
+     "platformSpecificData": {
+      "trialParams": {
+       "graduationStrategy": "SS_PERFORMANCE"
+      },
+      "instagramThumbnail": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/musk/msk1-cover.jpg"
+     }
+    },
+    "verify": "isTrialReel must be true after scheduling",
+    "rule": "his rule 2026-10-18: every Instagram reel goes out as a trial reel, never a normal post"
+   },
+   "facebook": {
+    "file": "A",
+    "caption": "ماسك وعد بالقيادة الذاتية الكاملة في 3 سنين سنة 2015.. وبعد 11 سنة لسه. وعمل نفق في فيجاس عشان الزحمة، والزحمة نزلت تحت الأرض. #إيلونماسك #تسلا #ديشو\n\nهل ماسك عبقري ولا بيبيع وعود؟ اكتب رأيك",
+    "first_comment": "الحلقة كاملة على يوتيوب: https://youtu.be/pgnplR0V0hI"
+   },
+   "tiktok": {
+    "file": "A",
+    "caption": "ماسك وعد بالقيادة الذاتية الكاملة في 3 سنين سنة 2015.. وبعد 11 سنة لسه. وعمل نفق في فيجاس عشان الزحمة، والزحمة نزلت تحت الأرض. #إيلونماسك #تسلا #ديشو\n\nهل ماسك عبقري ولا بيبيع وعود؟ اكتب رأيك"
+   },
+   "music_credit": "Volatile Reaction - Kevin MacLeod (incompetech.com), CC BY 4.0"
+  },
+  {
+   "reel": "إيلون ماسك - شورت 2",
+   "version": "1",
+   "media": {
+    "A": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/musk/msk2-A.mp4",
+    "B": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/musk/msk2-B.mp4",
+    "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/musk/msk2-cover.jpg"
+   },
+   "youtube": {
+    "file": "B",
+    "title": "لماذا يرى مستثمر شهير سبيس إكس خيالاً علمياً؟ #Shorts #ماسك",
+    "description": "سنة 2019 ماسك قال إن هيكون فيه مليون تاكسي ذاتي القيادة السنة اللي بعدها، وإحنا في 2026 ومفيش حاجة من دي حصلت. وسنة 2014 وعد بإرسال بشر للمريخ خلال 10 لـ12 سنة، ولسه مفيش خطة واقعية. وعشان كده المستثمر الشهير ستيف آيزمان، اللي اتنبأ بأزمة 2008، قال إن تقييم سبيس إكس مبالغ فيه بشكل جنوني، ووصف طرحها في البورصة بإنه طرح لشركة خيال علمي.\n\nالحلقة كاملة: https://youtu.be/pgnplR0V0hI\n\nالمصادر: تصريحات إيلون ماسك (2014، 2019)، تصريحات ستيف آيزمان عن طرح سبيس إكس (2026).\nالصور: إيلون ماسك (Steve Jurvetson، وزارة الاتصالات البرازيلية، Tesla Owners Club Belgium، رخص CC BY 2.0)، التاكسي الذاتي (Mliu92، Dllu)، موديل S (Granada)، مقر سبيس إكس وفالكون 9 (سبيس إكس، CC0)، ستارشيب (Steve Jurvetson، Forest Katsch)، ستاربيس (Alexander Hatley)، المريخ وكيوريوسيتي (ناسا، ملكية عامة)، ناسداك ووول ستريت (ajay_suresh، Carlos Delgado؛ بورصة نيويورك 1963، ملكية عامة)، ولقطات من الحلقة.\nالموسيقى: «Five Armies» لـ Kevin MacLeod (incompetech.com)، رخصة CC BY 4.0.",
+    "tags": [
+     "سبيس إكس",
+     "ستيف آيزمان",
+     "إيلون ماسك",
+     "ماسك",
+     "تسلا",
+     "سبيس إكس",
+     "مصطفى ديشو",
+     "ديشو"
+    ],
+    "pinned_comment": "في رأيك: هتستثمر في سبيس إكس ولا لأ؟",
+    "related_video": "https://youtu.be/pgnplR0V0hI",
+    "settings": {
+     "made_for_kids": "لا",
+     "altered_or_synthetic_content": "لا",
+     "category": "News & Politics"
+    }
+   },
+   "instagram": {
+    "file": "A",
+    "caption": "مليون تاكسي ذاتي القيادة سنة 2020.. وبشر على المريخ قبل 2026.. ولا حاجة حصلت. ومستثمر أزمة 2008 بيقول تقييم سبيس إكس خيال علمي. #إيلونماسك #سبيسإكس #ديشو\n\nهتستثمر في سبيس إكس ولا لأ؟ اكتب رأيك",
+    "trial": true,
+    "zernio": {
+     "platformSpecificData": {
+      "trialParams": {
+       "graduationStrategy": "SS_PERFORMANCE"
+      },
+      "instagramThumbnail": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/musk/msk2-cover.jpg"
+     }
+    },
+    "verify": "isTrialReel must be true after scheduling",
+    "rule": "his rule 2026-10-18: every Instagram reel goes out as a trial reel, never a normal post"
+   },
+   "facebook": {
+    "file": "A",
+    "caption": "مليون تاكسي ذاتي القيادة سنة 2020.. وبشر على المريخ قبل 2026.. ولا حاجة حصلت. ومستثمر أزمة 2008 بيقول تقييم سبيس إكس خيال علمي. #إيلونماسك #سبيسإكس #ديشو\n\nهتستثمر في سبيس إكس ولا لأ؟ اكتب رأيك",
+    "first_comment": "الحلقة كاملة على يوتيوب: https://youtu.be/pgnplR0V0hI"
+   },
+   "tiktok": {
+    "file": "A",
+    "caption": "مليون تاكسي ذاتي القيادة سنة 2020.. وبشر على المريخ قبل 2026.. ولا حاجة حصلت. ومستثمر أزمة 2008 بيقول تقييم سبيس إكس خيال علمي. #إيلونماسك #سبيسإكس #ديشو\n\nهتستثمر في سبيس إكس ولا لأ؟ اكتب رأيك"
+   },
+   "music_credit": "Five Armies - Kevin MacLeod (incompetech.com), CC BY 4.0"
+  },
+  {
+   "reel": "إيلون ماسك - شورت 3",
+   "version": "1",
+   "media": {
+    "A": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/musk/msk3-A.mp4",
+    "B": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/musk/msk3-B.mp4",
+    "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/musk/msk3-cover.jpg"
+   },
+   "youtube": {
+    "file": "B",
+    "title": "كيف دخلت أموال المعاشات الأمريكية في سبيس إكس؟ #Shorts #ماسك",
+    "description": "زمان أي شركة تدخل البورصة ماكانتش تقدر تدخل المؤشرات الكبيرة زي ناسداك 100 على طول، كانت بتستنى شهور وساعات سنين، لأن المؤشرات دي مربوطة بمدخرات ومعاشات ملايين الأمريكيين. لكن ناسداك عملت قاعدة اسمها الدخول السريع بفترة انتظار 15 يوم بس، والنتيجة إن فلوس معاشات ملايين الأمريكيين دخلت تلقائي في شركة إيلون ماسك، سواء وافقوا أو لأ.\n\nالحلقة كاملة: https://youtu.be/pgnplR0V0hI\n\nالمصادر: The Guardian (Robert Reich، «The SpaceX IPO made Musk a trillionaire»)، ناسداك، تقارير عن طرح سبيس إكس (2026).\nالصور: إيلون ماسك (Steve Jurvetson، وزارة الاتصالات البرازيلية، Tesla Owners Club Belgium، رخص CC BY 2.0)، ناسداك (ajay_suresh، Vanja Savic)، وول ستريت وبورصة نيويورك (Carlos Delgado، Acediscovery؛ 1963 ملكية عامة)، كارت الضمان الاجتماعي (N Giovannucci)، سبيس إكس (CC0)، ستارشيب (Steve Jurvetson، Forest Katsch)، وصفحة الجارديان ولقطات من الحلقة.\nالموسيقى: «Hitman» لـ Kevin MacLeod (incompetech.com)، رخصة CC BY 4.0.",
+    "tags": [
+     "ناسداك",
+     "طرح سبيس إكس",
+     "إيلون ماسك",
+     "ماسك",
+     "تسلا",
+     "سبيس إكس",
+     "مصطفى ديشو",
+     "ديشو"
+    ],
+    "pinned_comment": "في رأيك: القوانين بتتغير عشان الأغنيا بس؟",
+    "related_video": "https://youtu.be/pgnplR0V0hI",
+    "settings": {
+     "made_for_kids": "لا",
+     "altered_or_synthetic_content": "لا",
+     "category": "News & Politics"
+    }
+   },
+   "instagram": {
+    "file": "A",
+    "caption": "ناسداك عملت قاعدة «الدخول السريع» بـ15 يوم بس.. والنتيجة إن فلوس معاشات ملايين الأمريكيين دخلت تلقائي في شركة ماسك. #إيلونماسك #سبيسإكس #ديشو\n\nالقوانين بتتغير عشان الأغنيا بس؟ اكتب رأيك",
+    "trial": true,
+    "zernio": {
+     "platformSpecificData": {
+      "trialParams": {
+       "graduationStrategy": "SS_PERFORMANCE"
+      },
+      "instagramThumbnail": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/musk/msk3-cover.jpg"
+     }
+    },
+    "verify": "isTrialReel must be true after scheduling",
+    "rule": "his rule 2026-10-18: every Instagram reel goes out as a trial reel, never a normal post"
+   },
+   "facebook": {
+    "file": "A",
+    "caption": "ناسداك عملت قاعدة «الدخول السريع» بـ15 يوم بس.. والنتيجة إن فلوس معاشات ملايين الأمريكيين دخلت تلقائي في شركة ماسك. #إيلونماسك #سبيسإكس #ديشو\n\nالقوانين بتتغير عشان الأغنيا بس؟ اكتب رأيك",
+    "first_comment": "الحلقة كاملة على يوتيوب: https://youtu.be/pgnplR0V0hI"
+   },
+   "tiktok": {
+    "file": "A",
+    "caption": "ناسداك عملت قاعدة «الدخول السريع» بـ15 يوم بس.. والنتيجة إن فلوس معاشات ملايين الأمريكيين دخلت تلقائي في شركة ماسك. #إيلونماسك #سبيسإكس #ديشو\n\nالقوانين بتتغير عشان الأغنيا بس؟ اكتب رأيك"
+   },
+   "music_credit": "Hitman - Kevin MacLeod (incompetech.com), CC BY 4.0"
+  }
+ ]
+}

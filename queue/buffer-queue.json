@@ -1,6 +1,7 @@
 {
  "version": 1,
- "updated_utc": "2026-10-18T15:16Z",
+ "updated_utc": "2026-10-18T19:00Z",
+ "PAUSED": "Schedule NOTHING from this file until this PAUSED field is removed. The times below are about to change to his new 2-posts-a-day grid; old times must not be used.",
  "how_to": "Read every 30 min until 2026-10-26. For each item with status 'todo': if 'src' is set, upload that PC file to this repo at 'dest' first. Schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at time_cairo (Africa/Cairo zone: +03:00 up to Oct 29, +02:00 from Oct 30 after DST ends; if an item has 'utc_offset', use it) with the caption exactly as written. Only when a slot is free under the 10-post cap per channel; otherwise wait for the next round. Process by priority, then by time. If time_cairo is less than 10 minutes away, skip it and log 'skipped-late'; never move a time. Never delete or edit any other Buffer post, never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. Items are never removed from here; done-ness is tracked in your log by id. Priority: lower number first; reels always before carousels (priority 9 only uses slots left over). type 'images' = Facebook multi-image post and TikTok photo post, images in the given order, no upload needed. Do nothing before not_before_cairo. If an item has 'captions' (per platform) use those instead of 'caption'. Use 'cover' as the video cover where Buffer allows it.",
  "items": [
   {

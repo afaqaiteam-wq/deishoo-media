@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_utc": "2026-10-18T13:47Z",
+ "updated_utc": "2026-10-18T13:49Z",
  "how_to": "Read every 30 min until 2026-10-26. For each item with status 'todo': if 'src' is set, upload that PC file to this repo at 'dest' first. Schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at time_cairo (+03:00) with the caption exactly as written. Only when a slot is free under the 10-post cap per channel; otherwise wait for the next round. Process by priority, then by time. If time_cairo is less than 10 minutes away, skip it and log 'skipped-late'; never move a time. Never delete or edit any other Buffer post, never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. Items are never removed from here; done-ness is tracked in your log by id. Priority: lower number first; reels always before carousels (priority 9 only uses slots left over). type 'images' = Facebook multi-image post and TikTok photo post, images in the given order, no upload needed. Do nothing before not_before_cairo. If an item has 'captions' (per platform) use those instead of 'caption'. Use 'cover' as the video cover where Buffer allows it.",
  "items": [
   {
@@ -374,6 +374,32 @@
    "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/submarine/sub7-A.mp4",
    "caption": "الطبقة السودة على الغواصة مطاط.. والسبب إنه بيبلع الصوت. #الغواصات #ديشو\n\nتختار هيكل أحادي ولا مزدوج؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U"
+  },
+  {
+   "id": "remix-gulf3",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-26T22:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/gulf/gulf3-A.mp4",
+   "caption": "بعد إعلان الهدنة بساعات (24 يونيو 2025) الطرفين رجعوا يضربوا.. وترامب: «مش مبسوط من إسرائيل ولا من إيران». مين خرقها الأول؟ #ترامب #إيران #إسرائيل #ديشو\n\nفي رأيك: مين اللي خرق الهدنة الأول؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI"
+  },
+  {
+   "id": "remix-gulf6",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-27T10:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/gulf/gulf6-A.mp4",
+   "caption": "أوباما عمل الاتفاق النووي 2015.. ترامب لغاه 2018 وقال «معيب».. وبرقية مسرّبة قالت السبب شخصي. انت مصدّق مين؟ #ترامب #أوباما #إيران #ديشو\n\nترامب لغى الاتفاق عشان أوباما ولا عشان الاتفاق وحش؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI"
   },
   {
    "id": "carousel-ramses",

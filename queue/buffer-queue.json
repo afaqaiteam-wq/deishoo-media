@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_utc": "2026-10-18T13:49Z",
+ "updated_utc": "2026-10-18T14:19Z",
  "how_to": "Read every 30 min until 2026-10-26. For each item with status 'todo': if 'src' is set, upload that PC file to this repo at 'dest' first. Schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at time_cairo (+03:00) with the caption exactly as written. Only when a slot is free under the 10-post cap per channel; otherwise wait for the next round. Process by priority, then by time. If time_cairo is less than 10 minutes away, skip it and log 'skipped-late'; never move a time. Never delete or edit any other Buffer post, never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. Items are never removed from here; done-ness is tracked in your log by id. Priority: lower number first; reels always before carousels (priority 9 only uses slots left over). type 'images' = Facebook multi-image post and TikTok photo post, images in the given order, no upload needed. Do nothing before not_before_cairo. If an item has 'captions' (per platform) use those instead of 'caption'. Use 'cover' as the video cover where Buffer allows it.",
  "items": [
   {
@@ -400,6 +400,97 @@
    "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/gulf/gulf6-A.mp4",
    "caption": "أوباما عمل الاتفاق النووي 2015.. ترامب لغاه 2018 وقال «معيب».. وبرقية مسرّبة قالت السبب شخصي. انت مصدّق مين؟ #ترامب #أوباما #إيران #ديشو\n\nترامب لغى الاتفاق عشان أوباما ولا عشان الاتفاق وحش؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI"
+  },
+  {
+   "id": "remix-men3",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-27T22:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/mencho/men3-A.mp4",
+   "caption": "«بلاتا أو بلومو».. يا تاخد الفلوس يا تاخد الرصاص. ده اللي بيتقال لعُمد مدن المكسيك. #المنشو #المكسيك #ديشو\n\nلو انت مكان العمدة.. هتعمل إيه؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg"
+  },
+  {
+   "id": "remix-gulf1",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-28T10:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/gulf/gulf1-A.mp4",
+   "caption": "نتنياهو قال «مش فاكر» 1778 مرة.. والاستجواب بدأ قبل ضرب إيران بعشر أيام بس (3 يونيو 2025). ذكاء ولا هروب؟ #نتنياهو #إسرائيل #إيران #ديشو\n\n«مش فاكر» دي ذكاء ولا هروب من الحقيقة؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI"
+  },
+  {
+   "id": "remix-tt2",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-28T13:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/timetravel/tt2-A.mp4",
+   "caption": "ستيفن هوكينغ عمل حفلة للمسافرين عبر الزمن وبعت الدعوات بعد ما خلصت.. ومحدش جه. يبقى السفر للماضي مستحيل؟ #ستيفنهوكينغ #السفرعبرالزمن #ديشو\n\nليه محدش جه حفلة هوكينغ؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E"
+  },
+  {
+   "id": "remix-men1",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-28T22:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/mencho/men1-A.mp4",
+   "caption": "إل منشو بعد ما اترحّل من أمريكا بقى ظابط شرطة في المكسيك.. واتعلم إزاي يشتري الظباط. #المنشو #المكسيك #ديشو\n\nليه الفساد في الشرطة بيخلي العصابات أقوى؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg"
+  },
+  {
+   "id": "remix-gulf4",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-29T10:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/gulf/gulf4-A.mp4",
+   "caption": "ترامب قال «دمار شامل».. وتقييم المخابرات الأمريكية (24 يونيو 2025) قال إن اليورانيوم ما اتدمرش وجزء منه اتنقل قبل الضربة. مين صح؟ #إيران #ترامب #فوردو #ديشو\n\nفي رأيك: الضربة دمرت البرنامج النووي ولا أخرته بس؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI"
+  },
+  {
+   "id": "remix-sub3",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-29T13:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/submarine/sub3-A.mp4",
+   "caption": "البحرية المصرية عندها 4 غواصات تايب 209 ألمانية و4 روميو.. والتدريب في رأس التين وكيل. #القواتالبحريةالمصرية #غواصاتمصر #ديشو\n\nمصر محتاجة غواصات نووية؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U"
+  },
+  {
+   "id": "remix-tt5",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-29T22:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/timetravel/tt5-A.mp4",
+   "caption": "ساعة واحدة جنب ثقب أسود = 7 سنين على الأرض.. وفي 2019 شفنا أول صورة حقيقية لثقب أسود. #ثقبأسود #السفرعبرالزمن #ديشو\n\nتقضي ساعة جنب ثقب أسود وترجع بعد 7 سنين؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E"
   },
   {
    "id": "carousel-ramses",

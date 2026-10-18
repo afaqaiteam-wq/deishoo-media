@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_utc": "2026-10-18T12:53Z",
+ "updated_utc": "2026-10-18T13:47Z",
  "how_to": "Read every 30 min until 2026-10-26. For each item with status 'todo': if 'src' is set, upload that PC file to this repo at 'dest' first. Schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at time_cairo (+03:00) with the caption exactly as written. Only when a slot is free under the 10-post cap per channel; otherwise wait for the next round. Process by priority, then by time. If time_cairo is less than 10 minutes away, skip it and log 'skipped-late'; never move a time. Never delete or edit any other Buffer post, never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. Items are never removed from here; done-ness is tracked in your log by id. Priority: lower number first; reels always before carousels (priority 9 only uses slots left over). type 'images' = Facebook multi-image post and TikTok photo post, images in the given order, no upload needed. Do nothing before not_before_cairo. If an item has 'captions' (per platform) use those instead of 'caption'. Use 'cover' as the video cover where Buffer allows it.",
  "items": [
   {
@@ -309,6 +309,71 @@
    "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/genghis/g6-A.mp4",
    "caption": "صلاح الدين وجنكيز خان عاشوا في نفس الزمن.. واحد بيرجع القدس والتاني بيجهز لدمار شامل. #صلاحالدين #جنكيزخان #ديشو\n\nصلاح الدين ولا جنكيز خان؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4"
+  },
+  {
+   "id": "remix-gulf2",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-25T15:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/gulf/gulf2-A.mp4",
+   "caption": "ترامب كتب «مش هاخد نوبل» 6 مرات في بوست واحد (21 يونيو 2025).. يستاهلها ولا لأ؟ #ترامب #نوبل #إيران #ديشو\n\nفي رأيك: ترامب يستاهل نوبل للسلام؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI"
+  },
+  {
+   "id": "remix-sub5",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-25T22:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/submarine/sub5-A.mp4",
+   "caption": "على عمق 500 متر الضغط 50 ضعف اللي على السطح.. وده اللي حصل مع تيتان. #تيتان #الغواصات #ديشو\n\nتنزل لحطام تيتانيك في غواصة؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U"
+  },
+  {
+   "id": "remix-men2",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-26T10:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/mencho/men2-A.mp4",
+   "caption": "الجيش المكسيكي طلع بالطيارات عشان يقبض على إل منشو.. والكارتل كان مستنيه بقاذفات آر بي جي ووقّع طيارة عسكرية. #المنشو #المكسيك #ديشو\n\nإزاي كارتل يبقى أقوى من جيش دولة؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg"
+  },
+  {
+   "id": "remix-sub6",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-26T13:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/submarine/sub6-A.mp4",
+   "caption": "الغواصة النووية مش محتاجة تطلع على السطح.. الحاجة الوحيدة اللي بتطلعها هي الأكل. #الغواصات #ديشو\n\nتقدر تعيش شهور تحت المية؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U"
+  },
+  {
+   "id": "remix-sub7",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-27T13:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/submarine/sub7-A.mp4",
+   "caption": "الطبقة السودة على الغواصة مطاط.. والسبب إنه بيبلع الصوت. #الغواصات #ديشو\n\nتختار هيكل أحادي ولا مزدوج؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U"
   },
   {
    "id": "carousel-ramses",

@@ -1,0 +1,55 @@
+{
+ "version": 1,
+ "updated_utc": "2026-10-18T12:00Z",
+ "how_to": "Read every 30 min until 2026-10-26. For each item with status 'todo': if 'src' is set, upload that PC file to this repo at 'dest' first. Schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at time_cairo (+03:00) with the caption exactly as written. Only when a slot is free under the 10-post cap per channel; otherwise wait for the next round. Process by priority, then by time. If time_cairo is less than 10 minutes away, skip it and log 'skipped-late'; never move a time. Never delete or edit any other Buffer post, never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. Items are never removed from here; done-ness is tracked in your log by id.",
+ "items": [
+  {
+   "id": "remix-genghis-g2",
+   "priority": 2,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-19T10:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/genghis/g2-A.mp4",
+   "caption": "يوم ما هولاكو دخل بغداد.. دجلة اتلوّن بالأحمر وبعدين بقى أسود من حبر الكتب. #بغداد #هولاكو #ديشو\n\nلو بيت الحكمة فضل.. العالم كان هيبقى إزاي؟ اكتب رأيك"
+  },
+  {
+   "id": "remix-genghis-g3",
+   "priority": 2,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-20T10:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/genghis/g3-A.mp4",
+   "caption": "جنكيز خان طلع على منبر بخارى وقال: أنا عقاب من ربكم.. والسبب سفير اتقتل. #جنكيزخان #ديشو\n\nلو السفير ما اتقتلش.. المغول كانوا هيدخلوا؟ اكتب رأيك"
+  },
+  {
+   "id": "remix-genghis-g4",
+   "priority": 2,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-20T22:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/genghis/g4-A.mp4",
+   "caption": "في بيت الحكمة ببغداد العربية بقت لغة العلم، ومن هناك طلع الجبر للعالم. #بيتالحكمة #الخوارزمي #ديشو\n\nإيه أعظم حاجة طلعت من بيت الحكمة؟ اكتب رأيك"
+  },
+  {
+   "id": "remix-genghis-g7",
+   "priority": 2,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-21T10:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/genghis/g7-A.mp4",
+   "caption": "المغول اللي دمروا بغداد.. أسلموا بعدها بسنين وأسسوا دول إسلامية عظمى. #المغول #غازانخان #ديشو\n\nليه المغول أسلموا؟ اكتب رأيك"
+  }
+ ]
+}

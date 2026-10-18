@@ -1,8 +1,116 @@
 {
  "version": 1,
- "updated_utc": "2026-10-18T12:15Z",
- "how_to": "Read every 30 min until 2026-10-26. For each item with status 'todo': if 'src' is set, upload that PC file to this repo at 'dest' first. Schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at time_cairo (+03:00) with the caption exactly as written. Only when a slot is free under the 10-post cap per channel; otherwise wait for the next round. Process by priority, then by time. If time_cairo is less than 10 minutes away, skip it and log 'skipped-late'; never move a time. Never delete or edit any other Buffer post, never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. Items are never removed from here; done-ness is tracked in your log by id. Priority: lower number first; reels always before carousels (priority 9 only uses slots left over). type 'images' = Facebook multi-image post and TikTok photo post, images in the given order, no upload needed. Do nothing before not_before_cairo.",
+ "updated_utc": "2026-10-18T12:18Z",
+ "how_to": "Read every 30 min until 2026-10-26. For each item with status 'todo': if 'src' is set, upload that PC file to this repo at 'dest' first. Schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at time_cairo (+03:00) with the caption exactly as written. Only when a slot is free under the 10-post cap per channel; otherwise wait for the next round. Process by priority, then by time. If time_cairo is less than 10 minutes away, skip it and log 'skipped-late'; never move a time. Never delete or edit any other Buffer post, never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. Items are never removed from here; done-ness is tracked in your log by id. Priority: lower number first; reels always before carousels (priority 9 only uses slots left over). type 'images' = Facebook multi-image post and TikTok photo post, images in the given order, no upload needed. Do nothing before not_before_cairo. If an item has 'captions' (per platform) use those instead of 'caption'. Use 'cover' as the video cover where Buffer allows it.",
  "items": [
+  {
+   "id": "ramses-short-6",
+   "priority": 1,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-20T13:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/ramses-iii/ram-short-6-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/ramses-iii/ram-short-6-cover.jpg",
+   "captions": {
+    "facebook": "ملكة قررت إن ابنها يقعد على العرش.. حتى لو التمن دم جوزها الفرعون. تي كانت بتدافع عن حق ابنها ولا طمعانة؟\n\nالحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA\n\nالموسيقى: «Aggressor» - Kevin MacLeod (incompetech.com)، رخصة CC BY 4.0\n\n#رمسيسالثالث #مصرالقديمة #الفراعنة #ديشو",
+    "tiktok": "ملكة قررت إن ابنها يقعد على العرش.. حتى لو التمن دم جوزها الفرعون. تي كانت بتدافع عن حق ابنها ولا طمعانة؟\n\nالحلقة كاملة على قناة مصطفى ديشو على يوتيوب، اللينك في البايو\n\nالموسيقى: «Aggressor» - Kevin MacLeod (incompetech.com)، رخصة CC BY 4.0\n\n#رمسيسالثالث #مصرالقديمة #الفراعنة #ديشو"
+   },
+   "tiktok_ai_label": false,
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA"
+  },
+  {
+   "id": "ramses-short-7",
+   "priority": 1,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-20T17:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/ramses-iii/ram-short-7-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/ramses-iii/ram-short-7-cover.jpg",
+   "captions": {
+    "facebook": "كتاب سحر من مكتبة الفرعون نفسه وتماثيل شمع عشان يشلّوا الحراس.. بس السكاكين هي اللي عملت.\n\nالحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA\n\nالموسيقى: «Darkest Child» - Kevin MacLeod (incompetech.com)، رخصة CC BY 4.0\n\n#مصرالقديمة #رمسيسالثالث #الفراعنة #ديشو",
+    "tiktok": "كتاب سحر من مكتبة الفرعون نفسه وتماثيل شمع عشان يشلّوا الحراس.. بس السكاكين هي اللي عملت.\n\nالحلقة كاملة على قناة مصطفى ديشو على يوتيوب، اللينك في البايو\n\nالموسيقى: «Darkest Child» - Kevin MacLeod (incompetech.com)، رخصة CC BY 4.0\n\n#مصرالقديمة #رمسيسالثالث #الفراعنة #ديشو"
+   },
+   "tiktok_ai_label": false,
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA"
+  },
+  {
+   "id": "ramses-short-8",
+   "priority": 1,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-22T13:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/ramses-iii/ram-short-8-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/ramses-iii/ram-short-8-cover.jpg",
+   "captions": {
+    "facebook": "31 راجل و6 ستات.. 16 إعدام و10 اتحكم عليهم ينهوا حياتهم بإيديهم، ومنهم ابن الفرعون نفسه.\n\nالحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA\n\nالموسيقى: «Industrial Cinematic» - Kevin MacLeod (incompetech.com)، رخصة CC BY 4.0\n\n#رمسيسالثالث #مصرالقديمة #الفراعنة #ديشو",
+    "tiktok": "31 راجل و6 ستات.. 16 إعدام و10 اتحكم عليهم ينهوا حياتهم بإيديهم، ومنهم ابن الفرعون نفسه.\n\nالحلقة كاملة على قناة مصطفى ديشو على يوتيوب، اللينك في البايو\n\nالموسيقى: «Industrial Cinematic» - Kevin MacLeod (incompetech.com)، رخصة CC BY 4.0\n\n#رمسيسالثالث #مصرالقديمة #الفراعنة #ديشو"
+   },
+   "tiktok_ai_label": false,
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA"
+  },
+  {
+   "id": "ramses-short-9",
+   "priority": 1,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-23T17:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/ramses-iii/ram-short-9-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/ramses-iii/ram-short-9-cover.jpg",
+   "captions": {
+    "facebook": "البرديات سكتت عن الليلة دي.. والبردية مكتوبة بصوت رمسيس الثالث كإنه لسه عايش. تفتكر مات مقتول؟\n\nالحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA\n\nالموسيقى: «Exciting Trailer» - Kevin MacLeod (incompetech.com)، رخصة CC BY 4.0\n\n#رمسيسالثالث #مصرالقديمة #الفراعنة #ديشو",
+    "tiktok": "البرديات سكتت عن الليلة دي.. والبردية مكتوبة بصوت رمسيس الثالث كإنه لسه عايش. تفتكر مات مقتول؟\n\nالحلقة كاملة على قناة مصطفى ديشو على يوتيوب، اللينك في البايو\n\nالموسيقى: «Exciting Trailer» - Kevin MacLeod (incompetech.com)، رخصة CC BY 4.0\n\n#رمسيسالثالث #مصرالقديمة #الفراعنة #ديشو"
+   },
+   "tiktok_ai_label": false,
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA"
+  },
+  {
+   "id": "ramses-short-10",
+   "priority": 1,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-24T17:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/ramses-iii/ram-short-10-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/ramses-iii/ram-short-10-cover.jpg",
+   "captions": {
+    "facebook": "عيلة من القرنة لقت مقبرة فيها ملوك مصر وفضلت تبيع منها في السر 10 سنين.. وده اللي اتعمل منه فيلم المومياء.\n\nالحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA\n\nالموسيقى: «Achilles» - Kevin MacLeod (incompetech.com)، رخصة CC BY 4.0\n\n#خبيئةالديرالبحري #مصرالقديمة #الأقصر #ديشو",
+    "tiktok": "عيلة من القرنة لقت مقبرة فيها ملوك مصر وفضلت تبيع منها في السر 10 سنين.. وده اللي اتعمل منه فيلم المومياء.\n\nالحلقة كاملة على قناة مصطفى ديشو على يوتيوب، اللينك في البايو\n\nالموسيقى: «Achilles» - Kevin MacLeod (incompetech.com)، رخصة CC BY 4.0\n\n#خبيئةالديرالبحري #مصرالقديمة #الأقصر #ديشو"
+   },
+   "tiktok_ai_label": false,
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA"
+  },
+  {
+   "id": "ramses-short-11",
+   "priority": 1,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-25T13:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/ramses-iii/ram-short-11-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/ramses-iii/ram-short-11-cover.jpg",
+   "captions": {
+    "facebook": "شعوب البحر وقّعوا ممالك كبيرة.. بس رمسيس الثالث كسرهم في البر والبحر، والنقوش لسه موجودة في الأقصر.\n\nالحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA\n\nالموسيقى: «Undaunted» - Kevin MacLeod (incompetech.com)، رخصة CC BY 4.0\n\n#شعوبالبحر #رمسيسالثالث #مصرالقديمة #ديشو",
+    "tiktok": "شعوب البحر وقّعوا ممالك كبيرة.. بس رمسيس الثالث كسرهم في البر والبحر، والنقوش لسه موجودة في الأقصر.\n\nالحلقة كاملة على قناة مصطفى ديشو على يوتيوب، اللينك في البايو\n\nالموسيقى: «Undaunted» - Kevin MacLeod (incompetech.com)، رخصة CC BY 4.0\n\n#شعوبالبحر #رمسيسالثالث #مصرالقديمة #ديشو"
+   },
+   "tiktok_ai_label": false,
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA"
+  },
   {
    "id": "remix-genghis-g2",
    "priority": 2,

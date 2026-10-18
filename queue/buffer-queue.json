@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_utc": "2026-10-18T12:36Z",
+ "updated_utc": "2026-10-18T12:53Z",
  "how_to": "Read every 30 min until 2026-10-26. For each item with status 'todo': if 'src' is set, upload that PC file to this repo at 'dest' first. Schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at time_cairo (+03:00) with the caption exactly as written. Only when a slot is free under the 10-post cap per channel; otherwise wait for the next round. Process by priority, then by time. If time_cairo is less than 10 minutes away, skip it and log 'skipped-late'; never move a time. Never delete or edit any other Buffer post, never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. Items are never removed from here; done-ness is tracked in your log by id. Priority: lower number first; reels always before carousels (priority 9 only uses slots left over). type 'images' = Facebook multi-image post and TikTok photo post, images in the given order, no upload needed. Do nothing before not_before_cairo. If an item has 'captions' (per platform) use those instead of 'caption'. Use 'cover' as the video cover where Buffer allows it.",
  "items": [
   {
@@ -270,6 +270,45 @@
    "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/submarine/sub4-cover.jpg",
    "caption": "صاروخ واحد يشيل 14 رأس نووي.. والغواصة تشيل 24 صاروخ. وبعدين جت معاهدة ستارت. #ستارت #غواصةأوهايو #ديشو\n\nالمعاهدات بتحمي العالم ولا حبر على ورق؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U ; TikTok cover from phone"
+  },
+  {
+   "id": "remix-genghis-g1",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-24T14:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/genghis/g1-A.mp4",
+   "caption": "المغول اللي ما حدش قدر يوقفهم.. اتكسروا في عين جالوت قدام قطز وبيبرس. #عينجالوت #المماليك #ديشو\n\nلو ما كانتش عين جالوت.. كان إيه اللي هيحصل؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4"
+  },
+  {
+   "id": "remix-genghis-g5",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-24T22:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/genghis/g5-A.mp4",
+   "caption": "جندي هرب؟ التسعة اللي معاه يتعدموا.. ده كان نظام جنكيز خان. #جنكيزخان #المغول #ديشو\n\nالقسوة هي سر جيش المغول؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4"
+  },
+  {
+   "id": "remix-genghis-g6",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "time_cairo": "2026-10-25T10:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/genghis/g6-A.mp4",
+   "caption": "صلاح الدين وجنكيز خان عاشوا في نفس الزمن.. واحد بيرجع القدس والتاني بيجهز لدمار شامل. #صلاحالدين #جنكيزخان #ديشو\n\nصلاح الدين ولا جنكيز خان؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4"
   },
   {
    "id": "carousel-ramses",

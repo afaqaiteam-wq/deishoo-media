@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updated_utc": "2026-10-18T12:00Z",
- "how_to": "Read every 30 min until 2026-10-26. For each item with status 'todo': if 'src' is set, upload that PC file to this repo at 'dest' first. Schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at time_cairo (+03:00) with the caption exactly as written. Only when a slot is free under the 10-post cap per channel; otherwise wait for the next round. Process by priority, then by time. If time_cairo is less than 10 minutes away, skip it and log 'skipped-late'; never move a time. Never delete or edit any other Buffer post, never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. Items are never removed from here; done-ness is tracked in your log by id.",
+ "updated_utc": "2026-10-18T12:15Z",
+ "how_to": "Read every 30 min until 2026-10-26. For each item with status 'todo': if 'src' is set, upload that PC file to this repo at 'dest' first. Schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at time_cairo (+03:00) with the caption exactly as written. Only when a slot is free under the 10-post cap per channel; otherwise wait for the next round. Process by priority, then by time. If time_cairo is less than 10 minutes away, skip it and log 'skipped-late'; never move a time. Never delete or edit any other Buffer post, never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. Items are never removed from here; done-ness is tracked in your log by id. Priority: lower number first; reels always before carousels (priority 9 only uses slots left over). type 'images' = Facebook multi-image post and TikTok photo post, images in the given order, no upload needed. Do nothing before not_before_cairo.",
  "items": [
   {
    "id": "remix-genghis-g2",
@@ -50,6 +50,122 @@
    "time_cairo": "2026-10-21T10:00",
    "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/genghis/g7-A.mp4",
    "caption": "المغول اللي دمروا بغداد.. أسلموا بعدها بسنين وأسسوا دول إسلامية عظمى. #المغول #غازانخان #ديشو\n\nليه المغول أسلموا؟ اكتب رأيك"
+  },
+  {
+   "id": "carousel-ramses",
+   "priority": 9,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "images",
+   "time_cairo": "2026-10-19T11:30",
+   "images": [
+    "https://media.zernio.com/media/1792324797387_7nh1vc5z_car01-s01.png",
+    "https://media.zernio.com/media/1792324816785_9uq8aets_car01-s02.png",
+    "https://media.zernio.com/media/1792324819686_3bwmxeo5_car01-s03.png",
+    "https://media.zernio.com/media/1792324822699_4fyrxsnw_car01-s04.png",
+    "https://media.zernio.com/media/1792324826099_mvzno5rm_car01-s05.png",
+    "https://media.zernio.com/media/1792324828721_x0qt730a_car01-s06.png",
+    "https://media.zernio.com/media/1792324831495_0t6fbvco_car01-s07.png",
+    "https://media.zernio.com/media/1792324834118_4moo67wn_car01-s08.png"
+   ],
+   "caption": "ملك مصر اتقتل جوه قصره.. والأشعة كشفت الجريمة بعد 3000 سنة.\nجرح في الرقبة، وصباع مقطوع، وقضاة اتحاكموا هما كمان.\nتفتكر الملكة تيي كانت تستاهل نفس العقاب اللي اتحكم بيه على الباقيين؟\nالحلقة كاملة على يوتيوب، اللينك في البايو\n#رمسيس #الفراعنة #مصرالقديمة #تاريخ #ديشو",
+   "if_past": "use the next free day at 11:30 and log the new time",
+   "manual_after": "FB first comment (free plan has no first comment): لو انت كنت قاضي في المحاكمة دي: بنتاور كان يستاهل العقاب ده، ولا أمه هي اللي كان المفروض تتحاسب الأول؟ الحلقة كاملة على يوتيوب، اللينك في البايو"
+  },
+  {
+   "id": "carousel-egypt-sudan",
+   "priority": 9,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "images",
+   "time_cairo": "2026-10-20T11:30",
+   "images": [
+    "https://media.zernio.com/media/1792324889657_8djx70e2_car02-s01.png",
+    "https://media.zernio.com/media/1792324892076_ti3qxy9k_car02-s02.png",
+    "https://media.zernio.com/media/1792324894699_ibvpmd5b_car02-s03.png",
+    "https://media.zernio.com/media/1792324897296_606if2n1_car02-s04.png",
+    "https://media.zernio.com/media/1792324900016_1ywkwznj_car02-s05.png",
+    "https://media.zernio.com/media/1792324902639_5a4v1j46_car02-s06.png",
+    "https://media.zernio.com/media/1792324905415_w2jksrb9_car02-s07.png",
+    "https://media.zernio.com/media/1792324909299_f2w9xykc_car02-s08.png"
+   ],
+   "caption": "غارة على منجم دهب في جبل العقيدات، وأرقام ضحايا مختلفة حسب كل مصدر، وفيديوهات قالت CNN بالعربية ومصراوي إنها قديمة أو مش مصرية.\nجمعنالك كل رواية ومين قالها، من غير ما نحكم قبل التحقيق.\nتفتكر الإعلام بيكبّر الموضوع؟\nالحلقة كاملة على يوتيوب، اللينك في البايو\n#مصر #السودان #حلايب #أخبار #ديشو",
+   "if_past": "use the next free day at 11:30 and log the new time",
+   "manual_after": "FB first comment (free plan has no first comment): في رأيك: أنهي رقم تصدقه؟ وليه؟ الحلقة كاملة وكل وجهات النظر على يوتيوب، اللينك في البايو"
+  },
+  {
+   "id": "carousel-christa",
+   "priority": 9,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "images",
+   "time_cairo": "2026-10-21T11:30",
+   "images": [
+    "https://media.zernio.com/media/1792324948959_41l05k0z_car03-s01.png",
+    "https://media.zernio.com/media/1792324951837_n5tppf51_car03-s02.png",
+    "https://media.zernio.com/media/1792324955637_asyk0oq1_car03-s03.png",
+    "https://media.zernio.com/media/1792324958041_wj9us4sc_car03-s04.png",
+    "https://media.zernio.com/media/1792324960393_oy1ktdlp_car03-s05.png",
+    "https://media.zernio.com/media/1792324964170_u5s8kxmr_car03-s06.png",
+    "https://media.zernio.com/media/1792324966624_9vi9iftq_car03-s07.png",
+    "https://media.zernio.com/media/1792324968917_njbfgimt_car03-s08.png"
+   ],
+   "caption": "جرعتين من مادة الإعدام… وخرجت عايشة.\nليلة 30 سبتمبر دقيقة بدقيقة، ومكالمات الطوارئ، وليه الإعدام فشل.\nلو انت القاضي: يعدموها تاني ولا كفاية كده؟\nالحلقة كاملة على يوتيوب، اللينك في البايو\n#كريستابايك #الإعدام #قضاياحقيقية #أمريكا #ديشو",
+   "if_past": "use the next free day at 11:30 and log the new time",
+   "manual_after": "FB first comment (free plan has no first comment): لو انت القاضي: يعدموها تاني ولا كفاية كده؟ الحلقة كاملة على يوتيوب، اللينك في البايو"
+  },
+  {
+   "id": "carousel-flydubai",
+   "priority": 9,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "images",
+   "time_cairo": "2026-10-22T11:30",
+   "images": [
+    "https://media.zernio.com/media/1792325013951_ebq8hijl_car04-s01.png",
+    "https://media.zernio.com/media/1792325016604_sjhchbjt_car04-s02.png",
+    "https://media.zernio.com/media/1792325019168_qbzgbv1e_car04-s03.png",
+    "https://media.zernio.com/media/1792325021929_pnnf6cqe_car04-s04.png",
+    "https://media.zernio.com/media/1792325024426_2nj4qppj_car04-s05.png",
+    "https://media.zernio.com/media/1792325026835_qv7xj285_car04-s06.png",
+    "https://media.zernio.com/media/1792325029220_3yfpuiuh_car04-s07.png",
+    "https://media.zernio.com/media/1792325031553_qu3vu4r6_car04-s08.png"
+   ],
+   "caption": "في كل كابينة طيارة فاس طوارئ معمولة عشان تنقذ… بس يوم 30 سبتمبر اتعمل بيها العكس بالضبط.\nمين نزّل طيارة فلاي دبي بجد؟ مش سبّاك.\nلو كنت راكب على الرحلة دي، كنت هتعمل إيه؟\nالحلقة كاملة على يوتيوب، اللينك في البايو\n#فلايدبي #طيران #قصصحقيقية #ديشو",
+   "if_past": "use the next free day at 11:30 and log the new time",
+   "manual_after": "FB first comment (free plan has no first comment): باب كابينة الطيارة: يفضل مقفول من جوه وبس، ولا لازم يكون فيه طريقة تفتحه من برّه؟ اكتب «جوه» أو «برّه». الحلقة كاملة على يوتيوب، اللينك في البايو"
+  },
+  {
+   "id": "carousel-wadi-jinn",
+   "priority": 9,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "images",
+   "time_cairo": "2026-10-23T11:30",
+   "images": [
+    "https://media.zernio.com/media/1792325072186_o897gnrd_car05-s01.png",
+    "https://media.zernio.com/media/1792325077108_v4s5y8z2_car05-s02.png",
+    "https://media.zernio.com/media/1792325079720_rxyzy8ay_car05-s03.png",
+    "https://media.zernio.com/media/1792325082081_mlk8d098_car05-s04.png",
+    "https://media.zernio.com/media/1792325084519_7r9nwahm_car05-s05.png",
+    "https://media.zernio.com/media/1792325086902_1nnh5re0_car05-s06.png",
+    "https://media.zernio.com/media/1792325089385_k9q8wn7k_car05-s07.png",
+    "https://media.zernio.com/media/1792325092247_usi0matw_car05-s08.png"
+   ],
+   "caption": "عربية على المور بتطلع المطلع لوحدها، وإزازة مية بتطلع لفوق.\nناس بتقول جن، وناس بتقول مغناطيس… والاتنين غلط.\nتفتكر ليه نفس الحكاية موجودة في الهند وكوريا وأمريكا واسكتلندا؟\nالحلقة كاملة على يوتيوب، اللينك في البايو\n#واديالجن #المدينةالمنورة #ظواهرغريبة #خداعبصري #ديشو",
+   "if_past": "use the next free day at 11:30 and log the new time",
+   "manual_after": "FB first comment (free plan has no first comment): زرت وادي الجن قبل كده؟ ولو رحت، هتحط العربية على المور تجرب؟ الحلقة كاملة على يوتيوب، اللينك في البايو"
   }
- ]
+ ],
+ "not_before_cairo": "2026-10-18T23:05"
 }

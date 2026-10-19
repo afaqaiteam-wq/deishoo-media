@@ -1,6 +1,6 @@
 {
  "version": 2,
- "updated_utc": "2026-10-19T09:23:18Z",
+ "updated_utc": "2026-10-19T11:05:26Z",
  "how_to": "His words (21:28 UTC Oct 18, this thread): FB/TikTok 2 posts a day (Facebook Page 07:00 and 17:00, TikTok 07:00 and 18:00 Cairo); the device session may change ONLY the time (never delete) of any FB/TikTok post already scheduled on Buffer from Oct 19 on, to fit the grid; queue OK runs until 2026-11-21. STEP 1 (once): RETIME. For each entry in 'retime' (the 5 posts already in Buffer from Oct 19 on), change ONLY its time on both channels to new_times_cairo with its utc_offset; never delete or recreate it, keep caption and media. Read each one back and log old time, new time and post id. Any other Buffer post from Oct 19 on that is not in 'retime': do not touch it, log it as 'not-in-plan'. STEP 2 (every 30 min while the session runs, and on every «افحص الكيو»): for each item in 'items', in list order, schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at times_cairo[platform] with the item's utc_offset and the caption exactly as written, only while a slot is free under the 10-post cap per channel. Skip anything already done (by id in your log). If a time is less than 10 minutes away, skip it and log 'skipped-late'; never pick a new time yourself (Claude re-plans). If an item has 'only_if_url_exists', skip it until its url returns HTTP 200 and log 'waiting-file'. Items with a 'hold' field: never schedule them, log 'held'. Never delete any Buffer post; never edit any post other than the STEP 1 time changes; never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. type 'images' = Facebook multi-image post and TikTok photo post, images in the given order, no upload needed. If an item has 'captions' (per platform) use those instead of 'caption'. Use 'cover' as the video cover where Buffer allows it.",
  "retime": [
   {
@@ -1332,6 +1332,78 @@
    "times_cairo": {
     "facebook": "2026-11-29T17:00",
     "tiktok": "2026-11-29T18:00"
+   },
+   "utc_offset": "+02:00"
+  },
+  {
+   "id": "remix-moj1",
+   "priority": 4,
+   "hold": "past his queue OK (ends Nov 21): do NOT schedule until he extends it in the thread and Claude removes this field",
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/mojtaba/moj1-A.mp4",
+   "caption": "ابن رئيس الجمهورية.. وبيتقال إنه حارب على خطوط النار الأولى كجندي عادي في الحرب مع العراق. #مجتبىخامنئي #إيران #ديشو\n\nابن الرئيس في الجبهة.. صح ولا لأ؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/1aewIctyFF8",
+   "times_cairo": {
+    "facebook": "2026-11-30T07:00",
+    "tiktok": "2026-11-30T07:00"
+   },
+   "utc_offset": "+02:00"
+  },
+  {
+   "id": "remix-moj2",
+   "priority": 4,
+   "hold": "past his queue OK (ends Nov 21): do NOT schedule until he extends it in the thread and Claude removes this field",
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/mojtaba/moj2-A.mp4",
+   "caption": "خامنئي حرّم القنبلة الذرية.. وبيتقال إن ابنه مجتبى كان من العلماء اللي عايزينها. #مجتبىخامنئي #إيران #ديشو\n\nإيران محتاجة القنبلة ولا الفتوى صح؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/1aewIctyFF8",
+   "times_cairo": {
+    "facebook": "2026-11-30T17:00",
+    "tiktok": "2026-11-30T18:00"
+   },
+   "utc_offset": "+02:00"
+  },
+  {
+   "id": "remix-moj3",
+   "priority": 4,
+   "hold": "past his queue OK (ends Nov 21): do NOT schedule until he extends it in the thread and Claude removes this field",
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/mojtaba/moj3-A.mp4",
+   "caption": "ما كانش بيظهر غير في صور نادرة.. وويكيليكس كشفت إنه من أقوى رجال إيران وممكن يبقى المرشد. #مجتبىخامنئي #ويكيليكس #ديشو\n\nإزاي ابن المرشد يبقى المرشد؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/1aewIctyFF8",
+   "times_cairo": {
+    "facebook": "2026-12-01T07:00",
+    "tiktok": "2026-12-01T07:00"
+   },
+   "utc_offset": "+02:00"
+  },
+  {
+   "id": "remix-trn1",
+   "priority": 4,
+   "hold": "past his queue OK (ends Nov 21): do NOT schedule until he extends it in the thread and Claude removes this field",
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/trump-iran/trn1-A.mp4",
+   "caption": "«حضارة كاملة هتنتهي».. والعالم كله مستني الضربة. وقبل المهلة بتسعين دقيقة بس، اتعلن وقف إطلاق النار، والوسيط باكستان. #إيران #ترامب #ديشو\n\nالهدنة دي هتكمل ولا لأ؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/bf7dbvBy6h4",
+   "times_cairo": {
+    "facebook": "2026-12-01T17:00",
+    "tiktok": "2026-12-01T18:00"
    },
    "utc_offset": "+02:00"
   }

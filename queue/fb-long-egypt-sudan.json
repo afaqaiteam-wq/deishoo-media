@@ -1,0 +1,14 @@
+{
+ "job": "fbl1: first long episode on the Facebook Page, native video",
+ "approval": "Only run this after Mostafa's own yes in the Buffer thread naming this job (Claude asked him at 09:34 UTC Oct 20). Without it, do nothing.",
+ "steps": [
+  "1. In your own Chrome window/tab, open Meta Business Suite for the Page «مصطفى ديشو». Check that no Egypt-Sudan long video is already posted or scheduled (on Oct 18 the only long episode there was Elon Musk). If it is already there, stop and report.",
+  "2. Find the Egypt-Sudan master under D:\\1deishoo channel (see FILES\\social\\fb-long-episodes-check.md). READ/COPY ONLY: copy it to D:\\rtmp; never move, rename or edit anything in D:\\1deishoo channel. It must match the YouTube version https://youtu.be/T84u1ievIsw (17:47). If the local file is a different length, stop and report before uploading.",
+  "3. Upload it as a native video (not a reel, not a link post) on the Page and schedule it for Wed 2026-10-21 21:00 Cairo (UTC+3).",
+  "4. Never type passwords. If Meta asks for login or 2FA, stop and tell him. Chrome must be closed 18:55-19:15 Cairo.",
+  "5. When Meta shows the upload finished and the post is scheduled, delete only the D:\\rtmp copy. Report the scheduled time and the post/video id or URL."
+ ],
+ "title": "هل بدأت الحرب بين مصر والسودان؟ الحقيقة كاملة",
+ "description": "غارة على منجم دهب في جبل العقيدات على الحدود، وأرقام ضحايا مختلفة، ومقالات وفيديوهات بتقول إن الحرب بدأت. في الحلقة دي بنفصل الحقيقة عن الشائعات خطوة بخطوة.\nفي رأيك: الحرب بين مصر والسودان ممكن تحصل فعلا؟ اكتب رأيك.\n#مصر #السودان #ديشو",
+ "no_link_in_description": true
+}

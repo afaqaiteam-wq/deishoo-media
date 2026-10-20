@@ -1,14 +1,15 @@
 {
  "job": "fbl1: first long episode on the Facebook Page, native video",
- "approval": "Only run this after Mostafa's own yes in the Buffer thread naming this job (Claude asked him at 09:34 UTC Oct 20). Without it, do nothing.",
+ "approval": "Only run this after Mostafa's own yes in the Buffer thread to uploading the Egypt-Sudan long episode through Buffer (Claude asked him at 10:5x UTC Oct 20). Without it, do nothing.",
  "steps": [
-  "1. In your own Chrome window/tab, open Meta Business Suite for the Page «مصطفى ديشو». Check that no Egypt-Sudan long video is already posted or scheduled (on Oct 18 the only long episode there was Elon Musk). If it is already there, stop and report.",
+  "1. Via the Buffer API (and the Page if readable), check that no Egypt-Sudan long video is already posted or scheduled on the FB Page. If it is, stop and report.",
   "2. Find the Egypt-Sudan master under D:\\1deishoo channel (see FILES\\social\\fb-long-episodes-check.md). READ/COPY ONLY: copy it to D:\\rtmp; never move, rename or edit anything in D:\\1deishoo channel. It must match the YouTube version https://youtu.be/T84u1ievIsw (17:47). If the local file is a different length, stop and report before uploading.",
-  "3. Upload it as a native video (not a reel, not a link post) on the Page and schedule it for Wed 2026-10-21 21:00 Cairo (UTC+3).",
-  "4. Never type passwords. If Meta asks for login or 2FA, stop and tell him. Chrome must be closed 18:55-19:15 Cairo.",
-  "5. When Meta shows the upload finished and the post is scheduled, delete only the D:\\rtmp copy. Report the scheduled time and the post/video id or URL."
+  "3. Upload the D:\\rtmp copy as a release asset (see 'method'). Schedule it on Buffer's Facebook Page channel as a normal video post for Wed 2026-10-21 21:00 Cairo (UTC+3), with the title and description below. If Buffer has no title field, put the title as the first line of the text.",
+  "4. Never type passwords. No Chrome for this job.",
+  "5. Read the post back from Buffer. Then delete only the D:\\rtmp copy, and keep the release asset until the post is live. Report the scheduled time, the Buffer post id and the release asset URL."
  ],
  "title": "هل بدأت الحرب بين مصر والسودان؟ الحقيقة كاملة",
  "description": "غارة على منجم دهب في جبل العقيدات على الحدود، وأرقام ضحايا مختلفة، ومقالات وفيديوهات بتقول إن الحرب بدأت. في الحلقة دي بنفصل الحقيقة عن الشائعات خطوة بخطوة.\nفي رأيك: الحرب بين مصر والسودان ممكن تحصل فعلا؟ اكتب رأيك.\n#مصر #السودان #ديشو",
- "no_link_in_description": true
+ "no_link_in_description": true,
+ "method": "BUFFER API, not Chrome (his ask 10:50 UTC Oct 20: «ما ترفع علي اي بي اي بتاعتنا»). Use Buffer's Facebook Page channel as a normal video post (not a reel), media = a public URL. GitHub raw caps files at 100 MB, so upload the D:\\rtmp copy as a release asset on afaqaiteam-wq/deishoo-media (tag fb-long-egypt-sudan); release assets can be up to 2 GB. Use the asset's browser_download_url. If Buffer rejects it (size, length, post type or redirect), do NOT fall back to Chrome. Log the exact error and report. Counts toward the FB 10-post cap. Never delete posts."
 }

@@ -2286,7 +2286,7 @@
   }
  ],
  "retime_x": {
-  "his_words": "23:18 UTC Oct 22 Cairo in this thread: «1 اوك 2 اوك», answering Claude's two questions: (1) move the 10 booked X posts earlier so X starts Thu Oct 22 12:00, (2) delete the temp release of the Egypt-Sudan episode.",
+  "his_words": "23:18 UTC Oct 21 (02:18 Cairo Oct 22) in this thread: «1 اوك 2 اوك», answering Claude's two questions: (1) move the 10 booked X posts earlier so X starts Thu Oct 22 12:00, (2) delete the temp release of the Egypt-Sudan episode.",
   "do": "Change ONLY the time of these 10 already-booked X posts on Buffer (never delete or recreate), to new_x_cairo with utc_offset; read each back and log old/new UTC. All later X items use times_cairo['x'] with utc_offset_x (X now runs 4 days ahead of the FB date).",
   "posts": [
    {

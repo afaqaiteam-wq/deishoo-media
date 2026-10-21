@@ -1,6 +1,6 @@
 {
  "version": 2,
- "updated_utc": "2026-10-21T11:20:32Z",
+ "updated_utc": "2026-10-21T23:18:53Z",
  "how_to": "His words (21:28 UTC Oct 18, this thread): FB/TikTok 2 posts a day (Facebook Page 07:00 and 17:00, TikTok 07:00 and 18:00 Cairo); the device session may change ONLY the time (never delete) of any FB/TikTok post already scheduled on Buffer from Oct 19 on, to fit the grid; queue OK runs until 2026-11-21. STEP 1 (once): RETIME. For each entry in 'retime' (the 5 posts already in Buffer from Oct 19 on), change ONLY its time on both channels to new_times_cairo with its utc_offset; never delete or recreate it, keep caption and media. Read each one back and log old time, new time and post id. Any other Buffer post from Oct 19 on that is not in 'retime': do not touch it, log it as 'not-in-plan'. STEP 2 (every 30 min while the session runs, and on every «افحص الكيو»): for each item in 'items', in list order, schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at times_cairo[platform] with the item's utc_offset and the caption exactly as written, only while a slot is free under the 10-post cap per channel. Skip anything already done (by id in your log). If a time is less than 10 minutes away, skip it and log 'skipped-late'; never pick a new time yourself (Claude re-plans). If an item has 'only_if_url_exists', skip it until its url returns HTTP 200 and log 'waiting-file'. Items with a 'hold' field: never schedule them, log 'held'. Never delete any Buffer post; never edit any post other than the STEP 1 time changes; never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. type 'images' = Facebook multi-image post and TikTok photo post, images in the given order, no upload needed. If an item has 'captions' (per platform) use those instead of 'caption'. Use 'cover' as the video cover where Buffer allows it.",
  "retime": [
   {
@@ -76,14 +76,15 @@
    "times_cairo": {
     "facebook": "2026-10-26T07:00",
     "tiktok": "2026-10-26T07:00",
-    "x": "2026-10-26T12:00"
+    "x": "2026-10-22T12:00"
    },
    "utc_offset": "+03:00",
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+03:00"
   },
   {
    "id": "ramses-short-7",
@@ -106,14 +107,15 @@
    "times_cairo": {
     "facebook": "2026-10-26T17:00",
     "tiktok": "2026-10-26T18:00",
-    "x": "2026-10-26T21:00"
+    "x": "2026-10-22T21:00"
    },
    "utc_offset": "+03:00",
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+03:00"
   },
   {
    "id": "ramses-short-8",
@@ -136,14 +138,15 @@
    "times_cairo": {
     "facebook": "2026-10-27T07:00",
     "tiktok": "2026-10-27T07:00",
-    "x": "2026-10-27T12:00"
+    "x": "2026-10-23T12:00"
    },
    "utc_offset": "+03:00",
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+03:00"
   },
   {
    "id": "ramses-short-9",
@@ -166,14 +169,15 @@
    "times_cairo": {
     "facebook": "2026-10-27T17:00",
     "tiktok": "2026-10-27T18:00",
-    "x": "2026-10-27T21:00"
+    "x": "2026-10-23T21:00"
    },
    "utc_offset": "+03:00",
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+03:00"
   },
   {
    "id": "ramses-short-10",
@@ -196,14 +200,15 @@
    "times_cairo": {
     "facebook": "2026-10-28T07:00",
     "tiktok": "2026-10-28T07:00",
-    "x": "2026-10-28T12:00"
+    "x": "2026-10-24T12:00"
    },
    "utc_offset": "+03:00",
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+03:00"
   },
   {
    "id": "ramses-short-11",
@@ -226,14 +231,15 @@
    "times_cairo": {
     "facebook": "2026-10-28T17:00",
     "tiktok": "2026-10-28T18:00",
-    "x": "2026-10-28T21:00"
+    "x": "2026-10-24T21:00"
    },
    "utc_offset": "+03:00",
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+03:00"
   },
   {
    "id": "remix-genghis-g4",
@@ -249,7 +255,7 @@
    "times_cairo": {
     "facebook": "2026-10-29T07:00",
     "tiktok": "2026-10-29T07:00",
-    "x": "2026-10-29T12:00"
+    "x": "2026-10-25T12:00"
    },
    "utc_offset": "+03:00",
    "captions": {
@@ -259,7 +265,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+03:00"
   },
   {
    "id": "remix-genghis-g7",
@@ -275,7 +282,7 @@
    "times_cairo": {
     "facebook": "2026-10-29T17:00",
     "tiktok": "2026-10-29T18:00",
-    "x": "2026-10-29T21:00"
+    "x": "2026-10-25T21:00"
    },
    "utc_offset": "+03:00",
    "captions": {
@@ -285,7 +292,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+03:00"
   },
   {
    "id": "remix-gulf5",
@@ -303,7 +311,7 @@
    "times_cairo": {
     "facebook": "2026-10-30T07:00",
     "tiktok": "2026-10-30T07:00",
-    "x": "2026-10-30T12:00"
+    "x": "2026-10-26T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -313,7 +321,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+03:00"
   },
   {
    "id": "remix-tt1",
@@ -331,7 +340,7 @@
    "times_cairo": {
     "facebook": "2026-10-30T17:00",
     "tiktok": "2026-10-30T18:00",
-    "x": "2026-10-30T21:00"
+    "x": "2026-10-26T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -341,7 +350,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+03:00"
   },
   {
    "id": "remix-sub1",
@@ -359,7 +369,7 @@
    "times_cairo": {
     "facebook": "2026-10-31T07:00",
     "tiktok": "2026-10-31T07:00",
-    "x": "2026-10-31T12:00"
+    "x": "2026-10-27T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -369,7 +379,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+03:00"
   },
   {
    "id": "remix-gulf7",
@@ -387,7 +398,7 @@
    "times_cairo": {
     "facebook": "2026-10-31T17:00",
     "tiktok": "2026-10-31T18:00",
-    "x": "2026-10-31T21:00"
+    "x": "2026-10-27T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -397,7 +408,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+03:00"
   },
   {
    "id": "remix-tt3",
@@ -415,7 +427,7 @@
    "times_cairo": {
     "facebook": "2026-11-01T07:00",
     "tiktok": "2026-11-01T07:00",
-    "x": "2026-11-01T12:00"
+    "x": "2026-10-28T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -425,7 +437,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+03:00"
   },
   {
    "id": "remix-sub2",
@@ -443,7 +456,7 @@
    "times_cairo": {
     "facebook": "2026-11-01T17:00",
     "tiktok": "2026-11-01T18:00",
-    "x": "2026-11-01T21:00"
+    "x": "2026-10-28T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -453,7 +466,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+03:00"
   },
   {
    "id": "remix-tt4",
@@ -471,7 +485,7 @@
    "times_cairo": {
     "facebook": "2026-11-02T07:00",
     "tiktok": "2026-11-02T07:00",
-    "x": "2026-11-02T12:00"
+    "x": "2026-10-29T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -481,7 +495,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+03:00"
   },
   {
    "id": "remix-sub4",
@@ -499,7 +514,7 @@
    "times_cairo": {
     "facebook": "2026-11-02T17:00",
     "tiktok": "2026-11-02T18:00",
-    "x": "2026-11-02T21:00"
+    "x": "2026-10-29T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -509,7 +524,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+03:00"
   },
   {
    "id": "remix-genghis-g1",
@@ -526,7 +542,7 @@
    "times_cairo": {
     "facebook": "2026-11-03T07:00",
     "tiktok": "2026-11-03T07:00",
-    "x": "2026-11-03T12:00"
+    "x": "2026-10-30T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -536,7 +552,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-genghis-g5",
@@ -553,7 +570,7 @@
    "times_cairo": {
     "facebook": "2026-11-03T17:00",
     "tiktok": "2026-11-03T18:00",
-    "x": "2026-11-03T21:00"
+    "x": "2026-10-30T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -563,7 +580,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-genghis-g6",
@@ -580,7 +598,7 @@
    "times_cairo": {
     "facebook": "2026-11-04T07:00",
     "tiktok": "2026-11-04T07:00",
-    "x": "2026-11-04T12:00"
+    "x": "2026-10-31T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -590,7 +608,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-gulf2",
@@ -607,7 +626,7 @@
    "times_cairo": {
     "facebook": "2026-11-04T17:00",
     "tiktok": "2026-11-04T18:00",
-    "x": "2026-11-04T21:00"
+    "x": "2026-10-31T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -617,7 +636,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-sub5",
@@ -634,7 +654,7 @@
    "times_cairo": {
     "facebook": "2026-11-05T07:00",
     "tiktok": "2026-11-05T07:00",
-    "x": "2026-11-05T12:00"
+    "x": "2026-11-01T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -644,7 +664,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-men2",
@@ -661,7 +682,7 @@
    "times_cairo": {
     "facebook": "2026-11-05T17:00",
     "tiktok": "2026-11-05T18:00",
-    "x": "2026-11-05T21:00"
+    "x": "2026-11-01T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -671,7 +692,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-sub6",
@@ -688,7 +710,7 @@
    "times_cairo": {
     "facebook": "2026-11-06T07:00",
     "tiktok": "2026-11-06T07:00",
-    "x": "2026-11-06T12:00"
+    "x": "2026-11-02T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -698,7 +720,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-sub7",
@@ -715,7 +738,7 @@
    "times_cairo": {
     "facebook": "2026-11-06T17:00",
     "tiktok": "2026-11-06T18:00",
-    "x": "2026-11-06T21:00"
+    "x": "2026-11-02T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -725,7 +748,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-gulf3",
@@ -742,7 +766,7 @@
    "times_cairo": {
     "facebook": "2026-11-07T07:00",
     "tiktok": "2026-11-07T07:00",
-    "x": "2026-11-07T12:00"
+    "x": "2026-11-03T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -752,7 +776,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-gulf6",
@@ -769,7 +794,7 @@
    "times_cairo": {
     "facebook": "2026-11-07T17:00",
     "tiktok": "2026-11-07T18:00",
-    "x": "2026-11-07T21:00"
+    "x": "2026-11-03T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -779,7 +804,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-men3",
@@ -796,7 +822,7 @@
    "times_cairo": {
     "facebook": "2026-11-08T07:00",
     "tiktok": "2026-11-08T07:00",
-    "x": "2026-11-08T12:00"
+    "x": "2026-11-04T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -806,7 +832,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-gulf1",
@@ -823,7 +850,7 @@
    "times_cairo": {
     "facebook": "2026-11-08T17:00",
     "tiktok": "2026-11-08T18:00",
-    "x": "2026-11-08T21:00"
+    "x": "2026-11-04T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -833,7 +860,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-tt2",
@@ -850,7 +878,7 @@
    "times_cairo": {
     "facebook": "2026-11-09T07:00",
     "tiktok": "2026-11-09T07:00",
-    "x": "2026-11-09T12:00"
+    "x": "2026-11-05T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -860,7 +888,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-men1",
@@ -877,7 +906,7 @@
    "times_cairo": {
     "facebook": "2026-11-09T17:00",
     "tiktok": "2026-11-09T18:00",
-    "x": "2026-11-09T21:00"
+    "x": "2026-11-05T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -887,7 +916,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-gulf4",
@@ -904,7 +934,7 @@
    "times_cairo": {
     "facebook": "2026-11-10T07:00",
     "tiktok": "2026-11-10T07:00",
-    "x": "2026-11-10T12:00"
+    "x": "2026-11-06T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -914,7 +944,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-sub3",
@@ -931,7 +962,7 @@
    "times_cairo": {
     "facebook": "2026-11-10T17:00",
     "tiktok": "2026-11-10T18:00",
-    "x": "2026-11-10T21:00"
+    "x": "2026-11-06T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -941,7 +972,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-tt5",
@@ -958,7 +990,7 @@
    "times_cairo": {
     "facebook": "2026-11-11T07:00",
     "tiktok": "2026-11-11T07:00",
-    "x": "2026-11-11T12:00"
+    "x": "2026-11-07T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -968,7 +1000,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-men4",
@@ -985,7 +1018,7 @@
    "times_cairo": {
     "facebook": "2026-11-11T17:00",
     "tiktok": "2026-11-11T18:00",
-    "x": "2026-11-11T21:00"
+    "x": "2026-11-07T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -995,7 +1028,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-men5",
@@ -1012,7 +1046,7 @@
    "times_cairo": {
     "facebook": "2026-11-12T07:00",
     "tiktok": "2026-11-12T07:00",
-    "x": "2026-11-12T12:00"
+    "x": "2026-11-08T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1022,7 +1056,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-men6",
@@ -1039,7 +1074,7 @@
    "times_cairo": {
     "facebook": "2026-11-12T17:00",
     "tiktok": "2026-11-12T18:00",
-    "x": "2026-11-12T21:00"
+    "x": "2026-11-08T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1049,7 +1084,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "carousel-ramses",
@@ -1196,7 +1232,7 @@
    "times_cairo": {
     "facebook": "2026-11-15T17:00",
     "tiktok": "2026-11-15T18:00",
-    "x": "2026-11-15T21:00"
+    "x": "2026-11-11T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1206,7 +1242,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/enbJO9IKkPE",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-oth2",
@@ -1223,7 +1260,7 @@
    "times_cairo": {
     "facebook": "2026-11-16T07:00",
     "tiktok": "2026-11-16T07:00",
-    "x": "2026-11-16T12:00"
+    "x": "2026-11-12T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1233,7 +1270,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/enbJO9IKkPE",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-oth4",
@@ -1250,7 +1288,7 @@
    "times_cairo": {
     "facebook": "2026-11-16T17:00",
     "tiktok": "2026-11-16T18:00",
-    "x": "2026-11-16T21:00"
+    "x": "2026-11-12T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1260,7 +1298,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/enbJO9IKkPE",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-oth3",
@@ -1277,7 +1316,7 @@
    "times_cairo": {
     "facebook": "2026-11-17T07:00",
     "tiktok": "2026-11-17T07:00",
-    "x": "2026-11-17T12:00"
+    "x": "2026-11-13T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1287,7 +1326,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/enbJO9IKkPE",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-and1",
@@ -1304,7 +1344,7 @@
    "times_cairo": {
     "facebook": "2026-11-17T17:00",
     "tiktok": "2026-11-17T18:00",
-    "x": "2026-11-17T21:00"
+    "x": "2026-11-13T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1314,7 +1354,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/guJ8TXzuGLQ",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-and2",
@@ -1331,7 +1372,7 @@
    "times_cairo": {
     "facebook": "2026-11-18T07:00",
     "tiktok": "2026-11-18T07:00",
-    "x": "2026-11-18T12:00"
+    "x": "2026-11-14T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1341,7 +1382,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/guJ8TXzuGLQ",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-and3",
@@ -1358,7 +1400,7 @@
    "times_cairo": {
     "facebook": "2026-11-18T17:00",
     "tiktok": "2026-11-18T18:00",
-    "x": "2026-11-18T21:00"
+    "x": "2026-11-14T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1368,7 +1410,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/guJ8TXzuGLQ",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-tut1",
@@ -1385,7 +1428,7 @@
    "times_cairo": {
     "facebook": "2026-11-19T07:00",
     "tiktok": "2026-11-19T07:00",
-    "x": "2026-11-19T12:00"
+    "x": "2026-11-15T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1395,7 +1438,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/rTVDeMMDiJ0",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-tut2",
@@ -1412,7 +1456,7 @@
    "times_cairo": {
     "facebook": "2026-11-19T17:00",
     "tiktok": "2026-11-19T18:00",
-    "x": "2026-11-19T21:00"
+    "x": "2026-11-15T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1422,7 +1466,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/rTVDeMMDiJ0",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-tut3",
@@ -1439,7 +1484,7 @@
    "times_cairo": {
     "facebook": "2026-11-20T07:00",
     "tiktok": "2026-11-20T07:00",
-    "x": "2026-11-20T12:00"
+    "x": "2026-11-16T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1449,7 +1494,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/rTVDeMMDiJ0",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-sen1",
@@ -1466,7 +1512,7 @@
    "times_cairo": {
     "facebook": "2026-11-20T17:00",
     "tiktok": "2026-11-20T18:00",
-    "x": "2026-11-20T21:00"
+    "x": "2026-11-16T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1476,7 +1522,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/xX3SWNSBgnE",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-sen2",
@@ -1493,7 +1540,7 @@
    "times_cairo": {
     "facebook": "2026-11-21T07:00",
     "tiktok": "2026-11-21T07:00",
-    "x": "2026-11-21T12:00"
+    "x": "2026-11-17T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1503,7 +1550,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/xX3SWNSBgnE",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-sen3",
@@ -1521,7 +1569,7 @@
    "times_cairo": {
     "facebook": "2026-11-21T17:00",
     "tiktok": "2026-11-21T18:00",
-    "x": "2026-11-21T21:00"
+    "x": "2026-11-17T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1531,7 +1579,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/xX3SWNSBgnE",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-fly1",
@@ -1548,7 +1597,7 @@
    "times_cairo": {
     "facebook": "2026-11-22T07:00",
     "tiktok": "2026-11-22T07:00",
-    "x": "2026-11-22T12:00"
+    "x": "2026-11-18T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1558,7 +1607,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/e67VwgkQPno",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-fly2",
@@ -1575,7 +1625,7 @@
    "times_cairo": {
     "facebook": "2026-11-22T17:00",
     "tiktok": "2026-11-22T18:00",
-    "x": "2026-11-22T21:00"
+    "x": "2026-11-18T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1585,7 +1635,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/e67VwgkQPno",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-fly3",
@@ -1602,7 +1653,7 @@
    "times_cairo": {
     "facebook": "2026-11-23T07:00",
     "tiktok": "2026-11-23T07:00",
-    "x": "2026-11-23T12:00"
+    "x": "2026-11-19T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1612,7 +1663,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/e67VwgkQPno",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-fly4",
@@ -1629,7 +1681,7 @@
    "times_cairo": {
     "facebook": "2026-11-23T17:00",
     "tiktok": "2026-11-23T18:00",
-    "x": "2026-11-23T21:00"
+    "x": "2026-11-19T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1639,7 +1691,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/e67VwgkQPno",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-tit1",
@@ -1656,7 +1709,7 @@
    "times_cairo": {
     "facebook": "2026-11-24T07:00",
     "tiktok": "2026-11-24T07:00",
-    "x": "2026-11-24T12:00"
+    "x": "2026-11-20T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1666,7 +1719,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dAyUwObRga0",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-tit2",
@@ -1683,7 +1737,7 @@
    "times_cairo": {
     "facebook": "2026-11-24T17:00",
     "tiktok": "2026-11-24T18:00",
-    "x": "2026-11-24T21:00"
+    "x": "2026-11-20T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1693,7 +1747,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dAyUwObRga0",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-bmd1",
@@ -1710,7 +1765,7 @@
    "times_cairo": {
     "facebook": "2026-11-25T07:00",
     "tiktok": "2026-11-25T07:00",
-    "x": "2026-11-25T12:00"
+    "x": "2026-11-21T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1720,7 +1775,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/xLWAXymwzis",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-bmd2",
@@ -1737,7 +1793,7 @@
    "times_cairo": {
     "facebook": "2026-11-25T17:00",
     "tiktok": "2026-11-25T18:00",
-    "x": "2026-11-25T21:00"
+    "x": "2026-11-21T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1747,7 +1803,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/xLWAXymwzis",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-hnt1",
@@ -1765,7 +1822,7 @@
    "times_cairo": {
     "facebook": "2026-11-26T07:00",
     "tiktok": "2026-11-26T07:00",
-    "x": "2026-11-26T12:00"
+    "x": "2026-11-22T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1775,7 +1832,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/46x6Vv2GQ50",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-hnt2",
@@ -1793,7 +1851,7 @@
    "times_cairo": {
     "facebook": "2026-11-26T17:00",
     "tiktok": "2026-11-26T18:00",
-    "x": "2026-11-26T21:00"
+    "x": "2026-11-22T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1803,7 +1861,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/46x6Vv2GQ50",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-hnt3",
@@ -1821,7 +1880,7 @@
    "times_cairo": {
     "facebook": "2026-11-27T07:00",
     "tiktok": "2026-11-27T07:00",
-    "x": "2026-11-27T12:00"
+    "x": "2026-11-23T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1831,7 +1890,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/46x6Vv2GQ50",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-msk1",
@@ -1849,7 +1909,7 @@
    "times_cairo": {
     "facebook": "2026-11-27T17:00",
     "tiktok": "2026-11-27T18:00",
-    "x": "2026-11-27T21:00"
+    "x": "2026-11-23T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1859,7 +1919,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/pgnplR0V0hI",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-msk2",
@@ -1877,7 +1938,7 @@
    "times_cairo": {
     "facebook": "2026-11-28T07:00",
     "tiktok": "2026-11-28T07:00",
-    "x": "2026-11-28T12:00"
+    "x": "2026-11-24T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1887,7 +1948,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/pgnplR0V0hI",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-msk3",
@@ -1905,7 +1967,7 @@
    "times_cairo": {
     "facebook": "2026-11-28T17:00",
     "tiktok": "2026-11-28T18:00",
-    "x": "2026-11-28T21:00"
+    "x": "2026-11-24T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1915,7 +1977,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/pgnplR0V0hI",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-sub8",
@@ -1933,7 +1996,7 @@
    "times_cairo": {
     "facebook": "2026-11-29T07:00",
     "tiktok": "2026-11-29T07:00",
-    "x": "2026-11-29T12:00"
+    "x": "2026-11-25T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1943,7 +2006,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-tt7",
@@ -1961,7 +2025,7 @@
    "times_cairo": {
     "facebook": "2026-11-29T17:00",
     "tiktok": "2026-11-29T18:00",
-    "x": "2026-11-29T21:00"
+    "x": "2026-11-25T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1971,7 +2035,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-moj1",
@@ -1989,7 +2054,7 @@
    "times_cairo": {
     "facebook": "2026-11-30T07:00",
     "tiktok": "2026-11-30T07:00",
-    "x": "2026-11-30T12:00"
+    "x": "2026-11-26T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1999,7 +2064,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/1aewIctyFF8",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-moj2",
@@ -2017,7 +2083,7 @@
    "times_cairo": {
     "facebook": "2026-11-30T17:00",
     "tiktok": "2026-11-30T18:00",
-    "x": "2026-11-30T21:00"
+    "x": "2026-11-26T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2027,7 +2093,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/1aewIctyFF8",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-moj3",
@@ -2045,7 +2112,7 @@
    "times_cairo": {
     "facebook": "2026-12-01T07:00",
     "tiktok": "2026-12-01T07:00",
-    "x": "2026-12-01T12:00"
+    "x": "2026-11-27T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2055,7 +2122,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/1aewIctyFF8",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-trn1",
@@ -2073,7 +2141,7 @@
    "times_cairo": {
     "facebook": "2026-12-01T17:00",
     "tiktok": "2026-12-01T18:00",
-    "x": "2026-12-01T21:00"
+    "x": "2026-11-27T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2083,7 +2151,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/bf7dbvBy6h4",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-trn2",
@@ -2101,7 +2170,7 @@
    "times_cairo": {
     "facebook": "2026-12-02T07:00",
     "tiktok": "2026-12-02T07:00",
-    "x": "2026-12-02T12:00"
+    "x": "2026-11-28T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2111,7 +2180,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/bf7dbvBy6h4",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-khk1",
@@ -2129,7 +2199,7 @@
    "times_cairo": {
     "facebook": "2026-12-02T17:00",
     "tiktok": "2026-12-02T18:00",
-    "x": "2026-12-02T21:00"
+    "x": "2026-11-28T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2139,7 +2209,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-khk2",
@@ -2157,7 +2228,7 @@
    "times_cairo": {
     "facebook": "2026-12-03T07:00",
     "tiktok": "2026-12-03T07:00",
-    "x": "2026-12-03T12:00"
+    "x": "2026-11-29T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2167,7 +2238,8 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-khk3",
@@ -2185,7 +2257,7 @@
    "times_cairo": {
     "facebook": "2026-12-03T17:00",
     "tiktok": "2026-12-03T18:00",
-    "x": "2026-12-03T21:00"
+    "x": "2026-11-29T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2195,18 +2267,88 @@
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
     "minutes_after": 0,
     "mode": "thread-same-moment"
-   }
+   },
+   "utc_offset_x": "+02:00"
   }
  ],
- "x_how_to": "His words in this thread: 09:10 UTC Oct 20 «لا شغل كل المنصات لما يجي دروها» and 09:20 UTC Oct 20 «ايوه موافق», answering Claude's question: restart the queue for Facebook and TikTok, put every Short on X at the Facebook time, long-episode link as the first reply 15 minutes later, until Nov 21. X = Buffer channel mostafadeishoo. X items are those whose 'platforms' include 'x' (video Shorts only; carousels are not on X). Schedule on X at times_cairo['x'] (his ask 10:48 UTC Oct 20: X's own times, 12:00 and 21:00 Cairo on the FB date) with captions['x'] (already under 280, no link) and the item's video url, under X's own 10-post cap. Done-check is per (id, platform): an item already scheduled on FB/TikTok still gets its X post if X is not in the log for it. Same skipped-late / hold / never-delete rules as FB/TikTok. x_first_reply: his answer 18:52 UTC Oct 20 («عادي نزله في نفس الحلقة لينك اكس»): post the long-episode link as a 2-post THREAD at the same moment as the X post (Buffer can't delay it). New X posts: schedule as a thread (post + reply text). The 10 X posts already scheduled (Oct 26-30): add the reply only by EDITING each post into a thread, and only after Mostafa's own words in the Buffer thread say to; never delete and recreate. If Buffer can't edit them, log 'x-reply-manual' and leave them.",
+ "x_how_to": "His words in this thread: 09:10 UTC Oct 20 «لا شغل كل المنصات لما يجي دروها» and 09:20 UTC Oct 20 «ايوه موافق», answering Claude's question: restart the queue for Facebook and TikTok, put every Short on X at the Facebook time, long-episode link as the first reply 15 minutes later, until Nov 21. X = Buffer channel mostafadeishoo. X items are those whose 'platforms' include 'x' (video Shorts only; carousels are not on X). Schedule on X at times_cairo['x'] (X's own times 12:00 / 21:00 Cairo; since his OK 23:18 UTC Oct 21, X runs 4 days AHEAD of the FB date; use utc_offset_x for X) with captions['x'] (already under 280, no link) and the item's video url, under X's own 10-post cap. Done-check is per (id, platform): an item already scheduled on FB/TikTok still gets its X post if X is not in the log for it. Same skipped-late / hold / never-delete rules as FB/TikTok. x_first_reply: his answer 18:52 UTC Oct 20 («عادي نزله في نفس الحلقة لينك اكس»): post the long-episode link as a 2-post THREAD at the same moment as the X post (Buffer can't delay it). New X posts: schedule as a thread (post + reply text). The 10 X posts already scheduled (Oct 26-30): add the reply only by EDITING each post into a thread, and only after Mostafa's own words in the Buffer thread say to; never delete and recreate. If Buffer can't edit them, log 'x-reply-manual' and leave them.",
  "other_jobs": [
   "queue/fb-long-egypt-sudan.json: Egypt-Sudan long episode on the FB Page through the BUFFER API, Wed Oct 21 21:00 Cairo. PRIORITY: the next free Facebook slot goes to this post, not to queue items, until it is scheduled. Schedule it only after Mostafa's own word «اجدولها» (or the same in his words) in the Buffer thread."
  ],
  "requests": [
   {
+   "id": "req-delete-temp-release",
+   "what": "His OK (see retime_x.his_words, item 2): the Egypt-Sudan episode is live on FB (21:02 Oct 21). Delete the GitHub release egsd-long-temp and its assets (egsd-long-v4.mp4, egsd-long-fb.mp4, test file) in afaqaiteam-wq/deishoo-media. Nothing else. Log it."
+  },
+  {
    "id": "req-live-urls",
-   "what": "READ ONLY: list live permalinks of FB Page / TikTok / X posts that went out since the last run.",
-   "by": "publishing thread"
+   "what": "READ ONLY: list live permalinks of FB Page / TikTok / X posts that went out since the last run."
   }
- ]
+ ],
+ "retime_x": {
+  "his_words": "23:18 UTC Oct 22 Cairo in this thread: «1 اوك 2 اوك», answering Claude's two questions: (1) move the 10 booked X posts earlier so X starts Thu Oct 22 12:00, (2) delete the temp release of the Egypt-Sudan episode.",
+  "do": "Change ONLY the time of these 10 already-booked X posts on Buffer (never delete or recreate), to new_x_cairo with utc_offset; read each back and log old/new UTC. All later X items use times_cairo['x'] with utc_offset_x (X now runs 4 days ahead of the FB date).",
+  "posts": [
+   {
+    "id": "ramses-short-6",
+    "old_x_cairo": "2026-10-26T12:00",
+    "new_x_cairo": "2026-10-22T12:00",
+    "utc_offset": "+03:00"
+   },
+   {
+    "id": "ramses-short-7",
+    "old_x_cairo": "2026-10-26T21:00",
+    "new_x_cairo": "2026-10-22T21:00",
+    "utc_offset": "+03:00"
+   },
+   {
+    "id": "ramses-short-8",
+    "old_x_cairo": "2026-10-27T12:00",
+    "new_x_cairo": "2026-10-23T12:00",
+    "utc_offset": "+03:00"
+   },
+   {
+    "id": "ramses-short-9",
+    "old_x_cairo": "2026-10-27T21:00",
+    "new_x_cairo": "2026-10-23T21:00",
+    "utc_offset": "+03:00"
+   },
+   {
+    "id": "ramses-short-10",
+    "old_x_cairo": "2026-10-28T12:00",
+    "new_x_cairo": "2026-10-24T12:00",
+    "utc_offset": "+03:00"
+   },
+   {
+    "id": "ramses-short-11",
+    "old_x_cairo": "2026-10-28T21:00",
+    "new_x_cairo": "2026-10-24T21:00",
+    "utc_offset": "+03:00"
+   },
+   {
+    "id": "remix-genghis-g4",
+    "old_x_cairo": "2026-10-29T12:00",
+    "new_x_cairo": "2026-10-25T12:00",
+    "utc_offset": "+03:00"
+   },
+   {
+    "id": "remix-genghis-g7",
+    "old_x_cairo": "2026-10-29T21:00",
+    "new_x_cairo": "2026-10-25T21:00",
+    "utc_offset": "+03:00"
+   },
+   {
+    "id": "remix-gulf5",
+    "old_x_cairo": "2026-10-30T12:00",
+    "new_x_cairo": "2026-10-26T12:00",
+    "utc_offset": "+03:00"
+   },
+   {
+    "id": "remix-tt1",
+    "old_x_cairo": "2026-10-30T21:00",
+    "new_x_cairo": "2026-10-26T21:00",
+    "utc_offset": "+03:00"
+   }
+  ]
+ }
 }

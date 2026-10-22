@@ -1,6 +1,6 @@
 {
  "version": 2,
- "updated_utc": "2026-10-22T13:51:13Z",
+ "updated_utc": "2026-10-22T13:53:53Z",
  "how_to": "His words (21:28 UTC Oct 18, this thread): FB/TikTok 2 posts a day (Facebook Page 07:00 and 17:00, TikTok 07:00 and 18:00 Cairo); the device session may change ONLY the time (never delete) of any FB/TikTok post already scheduled on Buffer from Oct 19 on, to fit the grid; queue OK runs until 2026-11-21. STEP 1 (once): RETIME. For each entry in 'retime' (the 5 posts already in Buffer from Oct 19 on), change ONLY its time on both channels to new_times_cairo with its utc_offset; never delete or recreate it, keep caption and media. Read each one back and log old time, new time and post id. Any other Buffer post from Oct 19 on that is not in 'retime': do not touch it, log it as 'not-in-plan'. STEP 2 (every 30 min while the session runs, and on every «افحص الكيو»): for each item in 'items', in list order, schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at times_cairo[platform] with the item's utc_offset and the caption exactly as written, only while a slot is free under the 10-post cap per channel. Skip anything already done (by id in your log). If a time is less than 10 minutes away, skip it and log 'skipped-late'; never pick a new time yourself (Claude re-plans). If an item has 'only_if_url_exists', skip it until its url returns HTTP 200 and log 'waiting-file'. Items with a 'hold' field: never schedule them, log 'held'. Never delete any Buffer post; never edit any post other than the STEP 1 time changes; never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. type 'images' = Facebook multi-image post and TikTok photo post, images in the given order, no upload needed. If an item has 'captions' (per platform) use those instead of 'caption'. Use 'cover' as the video cover where Buffer allows it.",
  "retime": [
   {
@@ -81,8 +81,7 @@
    "utc_offset": "+03:00",
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+03:00"
   },
@@ -112,8 +111,7 @@
    "utc_offset": "+03:00",
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+03:00"
   },
@@ -143,8 +141,7 @@
    "utc_offset": "+03:00",
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+03:00"
   },
@@ -174,8 +171,7 @@
    "utc_offset": "+03:00",
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+03:00"
   },
@@ -205,8 +201,7 @@
    "utc_offset": "+03:00",
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+03:00"
   },
@@ -236,8 +231,7 @@
    "utc_offset": "+03:00",
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+03:00"
   },
@@ -263,8 +257,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+03:00"
   },
@@ -290,8 +283,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+03:00"
   },
@@ -319,8 +311,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+03:00"
   },
@@ -348,8 +339,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+03:00"
   },
@@ -377,8 +367,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+03:00"
   },
@@ -406,8 +395,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+03:00"
   },
@@ -435,8 +423,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+03:00"
   },
@@ -464,8 +451,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+03:00"
   },
@@ -493,8 +479,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+03:00"
   },
@@ -522,8 +507,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -550,8 +534,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -578,8 +561,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -606,8 +588,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -634,8 +615,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -662,8 +642,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -690,8 +669,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -718,8 +696,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -746,8 +723,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -774,8 +750,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -802,8 +777,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -830,8 +804,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -858,8 +831,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -886,8 +858,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -914,8 +885,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -942,8 +912,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -970,8 +939,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -998,8 +966,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1026,8 +993,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1054,8 +1020,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1082,8 +1047,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1240,8 +1204,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/enbJO9IKkPE",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1268,8 +1231,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/enbJO9IKkPE",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1296,8 +1258,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/enbJO9IKkPE",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1324,8 +1285,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/enbJO9IKkPE",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1352,8 +1312,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/guJ8TXzuGLQ",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1380,8 +1339,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/guJ8TXzuGLQ",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1408,8 +1366,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/guJ8TXzuGLQ",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1436,8 +1393,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/rTVDeMMDiJ0",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1464,8 +1420,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/rTVDeMMDiJ0",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1492,8 +1447,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/rTVDeMMDiJ0",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1520,8 +1474,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/xX3SWNSBgnE",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1548,8 +1501,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/xX3SWNSBgnE",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1577,8 +1529,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/xX3SWNSBgnE",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1605,8 +1556,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/e67VwgkQPno",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1633,8 +1583,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/e67VwgkQPno",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1661,8 +1610,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/e67VwgkQPno",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1689,8 +1637,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/e67VwgkQPno",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1717,8 +1664,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dAyUwObRga0",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1745,8 +1691,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dAyUwObRga0",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1773,8 +1718,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/xLWAXymwzis",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1801,8 +1745,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/xLWAXymwzis",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1830,8 +1773,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/46x6Vv2GQ50",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1859,8 +1801,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/46x6Vv2GQ50",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1888,8 +1829,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/46x6Vv2GQ50",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1917,8 +1857,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/pgnplR0V0hI",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1946,8 +1885,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/pgnplR0V0hI",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -1975,8 +1913,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/pgnplR0V0hI",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -2004,8 +1941,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -2033,8 +1969,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -2062,8 +1997,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/1aewIctyFF8",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -2091,8 +2025,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/1aewIctyFF8",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -2120,8 +2053,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/1aewIctyFF8",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -2149,8 +2081,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/bf7dbvBy6h4",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -2178,8 +2109,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/bf7dbvBy6h4",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -2207,8 +2137,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -2236,8 +2165,7 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   },
@@ -2265,35 +2193,16 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
-    "minutes_after": 0,
-    "mode": "thread-same-moment"
+    "mode": "manual"
    },
    "utc_offset_x": "+02:00"
   }
  ],
- "x_how_to": "His words in this thread: 09:10 UTC Oct 20 «لا شغل كل المنصات لما يجي دروها» and 09:20 UTC Oct 20 «ايوه موافق», answering Claude's question: restart the queue for Facebook and TikTok, put every Short on X at the Facebook time, long-episode link as the first reply 15 minutes later, until Nov 21. X = Buffer channel mostafadeishoo. X items are those whose 'platforms' include 'x' (video Shorts only; carousels are not on X). Schedule on X at times_cairo['x'] (X's own times 12:00 / 21:00 Cairo; since his OK 23:18 UTC Oct 21, X runs 4 days AHEAD of the FB date; use utc_offset_x for X) with captions['x'] (already under 280, no link) and the item's video url, under X's own 10-post cap. Done-check is per (id, platform): an item already scheduled on FB/TikTok still gets its X post if X is not in the log for it. Same skipped-late / hold / never-delete rules as FB/TikTok. x_first_reply: his answer 18:52 UTC Oct 20 («عادي نزله في نفس الحلقة لينك اكس»): post the long-episode link as a 2-post THREAD at the same moment as the X post (Buffer can't delay it). New X posts: schedule as a thread (post + reply text). The 10 X posts already scheduled (Oct 26-30): add the reply only by EDITING each post into a thread, and only after Mostafa's own words in the Buffer thread say to; never delete and recreate. If Buffer can't edit them, log 'x-reply-manual' and leave them.",
+ "x_how_to": "His words in this thread: 09:10 UTC Oct 20 «لا شغل كل المنصات لما يجي دروها» and 09:20 UTC Oct 20 «ايوه موافق», answering Claude's question: restart the queue for Facebook and TikTok, put every Short on X at the Facebook time, long-episode link as the first reply 15 minutes later, until Nov 21. X = Buffer channel mostafadeishoo. X items are those whose 'platforms' include 'x' (video Shorts only; carousels are not on X). Schedule on X at times_cairo['x'] (X's own times 12:00 / 21:00 Cairo; since his OK 23:18 UTC Oct 21, X runs 4 days AHEAD of the FB date; use utc_offset_x for X) with captions['x'] (already under 280, no link) and the item's video url, under X's own 10-post cap. Done-check is per (id, platform): an item already scheduled on FB/TikTok still gets its X post if X is not in the log for it. Same skipped-late / hold / never-delete rules as FB/TikTok. x_first_reply: MANUAL, his decision 13:53 UTC Oct 22 (if replies would cost Buffer slots, cancel them and he posts them by hand). Buffer's Free plan allows only ONE X thread scheduled at a time per queue, so never schedule X posts as threads. Schedule each X post alone; the reply text is his manual step. Never edit the booked X posts for this.",
  "other_jobs": [
   "queue/fb-long-egypt-sudan.json: Egypt-Sudan long episode on the FB Page through the BUFFER API, Wed Oct 21 21:00 Cairo. PRIORITY: the next free Facebook slot goes to this post, not to queue items, until it is scheduled. Schedule it only after Mostafa's own word «اجدولها» (or the same in his words) in the Buffer thread."
  ],
  "requests": [
-  {
-   "id": "req-x-reply-booked10",
-   "his_words": "In this thread at 07:40 UTC Oct 21, «عدلهم» answered Claude's question «فيه 10 بوستات X متجدولين قبل كده (26 لـ30 أكتوبر)، وجهازك محتاج كلامك هنا عشان يعدلهم ويضيف لهم الرد. أعدلهم؟». Before that, 18:52 UTC Oct 20: «عادي نزله في نفس الحلقة لينك اكس», meaning the link goes out at the same moment as the X post.",
-   "what": "For each of these 10 booked X posts, EDIT the existing Buffer post into a 2-post thread whose second post is the reply text below, posted at the same moment. Keep its time, caption and video; never delete or recreate. Read each back. If Buffer's API can't add a thread post to an existing post, do nothing to it, log 'x-reply-edit-unsupported' with the exact API error, and report it.",
-   "replies": {
-    "ramses-short-6": "الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA",
-    "ramses-short-7": "الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA",
-    "ramses-short-8": "الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA",
-    "ramses-short-9": "الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA",
-    "ramses-short-10": "الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA",
-    "ramses-short-11": "الحلقة كاملة على يوتيوب: https://youtu.be/y0setXucTkA",
-    "remix-genghis-g4": "الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
-    "remix-genghis-g7": "الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
-    "remix-gulf5": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
-    "remix-tt1": "الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E"
-   },
-   "also_report": "Before editing, note the X scheduled-post count. Edit ONE post first, then count again and report whether the thread reply takes its own slot under the 10-post cap or stays part of one post. If it takes a slot and X is at 10/10, stop after that one, report, and wait."
-  },
   {
    "id": "req-live-urls",
    "what": "READ ONLY: list live permalinks of FB Page / TikTok / X posts that went out since the last run."

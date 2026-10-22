@@ -2291,7 +2291,8 @@
     "remix-genghis-g7": "الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
     "remix-gulf5": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
     "remix-tt1": "الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E"
-   }
+   },
+   "also_report": "Before editing, note the X scheduled-post count. Edit ONE post first, then count again and report whether the thread reply takes its own slot under the 10-post cap or stays part of one post. If it takes a slot and X is at 10/10, stop after that one, report, and wait."
   },
   {
    "id": "req-live-urls",

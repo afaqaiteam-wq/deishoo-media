@@ -1,6 +1,6 @@
 {
  "version": 2,
- "updated_utc": "2026-10-21T23:18:53Z",
+ "updated_utc": "2026-10-22T11:27:03Z",
  "how_to": "His words (21:28 UTC Oct 18, this thread): FB/TikTok 2 posts a day (Facebook Page 07:00 and 17:00, TikTok 07:00 and 18:00 Cairo); the device session may change ONLY the time (never delete) of any FB/TikTok post already scheduled on Buffer from Oct 19 on, to fit the grid; queue OK runs until 2026-11-21. STEP 1 (once): RETIME. For each entry in 'retime' (the 5 posts already in Buffer from Oct 19 on), change ONLY its time on both channels to new_times_cairo with its utc_offset; never delete or recreate it, keep caption and media. Read each one back and log old time, new time and post id. Any other Buffer post from Oct 19 on that is not in 'retime': do not touch it, log it as 'not-in-plan'. STEP 2 (every 30 min while the session runs, and on every «افحص الكيو»): for each item in 'items', in list order, schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at times_cairo[platform] with the item's utc_offset and the caption exactly as written, only while a slot is free under the 10-post cap per channel. Skip anything already done (by id in your log). If a time is less than 10 minutes away, skip it and log 'skipped-late'; never pick a new time yourself (Claude re-plans). If an item has 'only_if_url_exists', skip it until its url returns HTTP 200 and log 'waiting-file'. Items with a 'hold' field: never schedule them, log 'held'. Never delete any Buffer post; never edit any post other than the STEP 1 time changes; never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. type 'images' = Facebook multi-image post and TikTok photo post, images in the given order, no upload needed. If an item has 'captions' (per platform) use those instead of 'caption'. Use 'cover' as the video cover where Buffer allows it.",
  "retime": [
   {
@@ -76,7 +76,7 @@
    "times_cairo": {
     "facebook": "2026-10-26T07:00",
     "tiktok": "2026-10-26T07:00",
-    "x": "2026-10-22T12:00"
+    "x": "2026-10-27T12:00"
    },
    "utc_offset": "+03:00",
    "x_first_reply": {
@@ -369,7 +369,7 @@
    "times_cairo": {
     "facebook": "2026-10-31T07:00",
     "tiktok": "2026-10-31T07:00",
-    "x": "2026-10-27T12:00"
+    "x": "2026-10-27T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -398,7 +398,7 @@
    "times_cairo": {
     "facebook": "2026-10-31T17:00",
     "tiktok": "2026-10-31T18:00",
-    "x": "2026-10-27T21:00"
+    "x": "2026-10-28T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -427,7 +427,7 @@
    "times_cairo": {
     "facebook": "2026-11-01T07:00",
     "tiktok": "2026-11-01T07:00",
-    "x": "2026-10-28T12:00"
+    "x": "2026-10-28T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -456,7 +456,7 @@
    "times_cairo": {
     "facebook": "2026-11-01T17:00",
     "tiktok": "2026-11-01T18:00",
-    "x": "2026-10-28T21:00"
+    "x": "2026-10-29T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -485,7 +485,7 @@
    "times_cairo": {
     "facebook": "2026-11-02T07:00",
     "tiktok": "2026-11-02T07:00",
-    "x": "2026-10-29T12:00"
+    "x": "2026-10-29T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -514,7 +514,7 @@
    "times_cairo": {
     "facebook": "2026-11-02T17:00",
     "tiktok": "2026-11-02T18:00",
-    "x": "2026-10-29T21:00"
+    "x": "2026-10-30T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -525,7 +525,7 @@
     "minutes_after": 0,
     "mode": "thread-same-moment"
    },
-   "utc_offset_x": "+03:00"
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "remix-genghis-g1",
@@ -542,7 +542,7 @@
    "times_cairo": {
     "facebook": "2026-11-03T07:00",
     "tiktok": "2026-11-03T07:00",
-    "x": "2026-10-30T12:00"
+    "x": "2026-10-30T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -570,7 +570,7 @@
    "times_cairo": {
     "facebook": "2026-11-03T17:00",
     "tiktok": "2026-11-03T18:00",
-    "x": "2026-10-30T21:00"
+    "x": "2026-10-31T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -598,7 +598,7 @@
    "times_cairo": {
     "facebook": "2026-11-04T07:00",
     "tiktok": "2026-11-04T07:00",
-    "x": "2026-10-31T12:00"
+    "x": "2026-10-31T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -626,7 +626,7 @@
    "times_cairo": {
     "facebook": "2026-11-04T17:00",
     "tiktok": "2026-11-04T18:00",
-    "x": "2026-10-31T21:00"
+    "x": "2026-11-01T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -654,7 +654,7 @@
    "times_cairo": {
     "facebook": "2026-11-05T07:00",
     "tiktok": "2026-11-05T07:00",
-    "x": "2026-11-01T12:00"
+    "x": "2026-11-01T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -682,7 +682,7 @@
    "times_cairo": {
     "facebook": "2026-11-05T17:00",
     "tiktok": "2026-11-05T18:00",
-    "x": "2026-11-01T21:00"
+    "x": "2026-11-02T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -710,7 +710,7 @@
    "times_cairo": {
     "facebook": "2026-11-06T07:00",
     "tiktok": "2026-11-06T07:00",
-    "x": "2026-11-02T12:00"
+    "x": "2026-11-02T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -738,7 +738,7 @@
    "times_cairo": {
     "facebook": "2026-11-06T17:00",
     "tiktok": "2026-11-06T18:00",
-    "x": "2026-11-02T21:00"
+    "x": "2026-11-03T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -766,7 +766,7 @@
    "times_cairo": {
     "facebook": "2026-11-07T07:00",
     "tiktok": "2026-11-07T07:00",
-    "x": "2026-11-03T12:00"
+    "x": "2026-11-03T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -794,7 +794,7 @@
    "times_cairo": {
     "facebook": "2026-11-07T17:00",
     "tiktok": "2026-11-07T18:00",
-    "x": "2026-11-03T21:00"
+    "x": "2026-11-04T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -822,7 +822,7 @@
    "times_cairo": {
     "facebook": "2026-11-08T07:00",
     "tiktok": "2026-11-08T07:00",
-    "x": "2026-11-04T12:00"
+    "x": "2026-11-04T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -850,7 +850,7 @@
    "times_cairo": {
     "facebook": "2026-11-08T17:00",
     "tiktok": "2026-11-08T18:00",
-    "x": "2026-11-04T21:00"
+    "x": "2026-11-05T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -878,7 +878,7 @@
    "times_cairo": {
     "facebook": "2026-11-09T07:00",
     "tiktok": "2026-11-09T07:00",
-    "x": "2026-11-05T12:00"
+    "x": "2026-11-05T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -906,7 +906,7 @@
    "times_cairo": {
     "facebook": "2026-11-09T17:00",
     "tiktok": "2026-11-09T18:00",
-    "x": "2026-11-05T21:00"
+    "x": "2026-11-06T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -934,7 +934,7 @@
    "times_cairo": {
     "facebook": "2026-11-10T07:00",
     "tiktok": "2026-11-10T07:00",
-    "x": "2026-11-06T12:00"
+    "x": "2026-11-06T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -962,7 +962,7 @@
    "times_cairo": {
     "facebook": "2026-11-10T17:00",
     "tiktok": "2026-11-10T18:00",
-    "x": "2026-11-06T21:00"
+    "x": "2026-11-07T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -990,7 +990,7 @@
    "times_cairo": {
     "facebook": "2026-11-11T07:00",
     "tiktok": "2026-11-11T07:00",
-    "x": "2026-11-07T12:00"
+    "x": "2026-11-07T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1018,7 +1018,7 @@
    "times_cairo": {
     "facebook": "2026-11-11T17:00",
     "tiktok": "2026-11-11T18:00",
-    "x": "2026-11-07T21:00"
+    "x": "2026-11-08T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1046,7 +1046,7 @@
    "times_cairo": {
     "facebook": "2026-11-12T07:00",
     "tiktok": "2026-11-12T07:00",
-    "x": "2026-11-08T12:00"
+    "x": "2026-11-08T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1074,7 +1074,7 @@
    "times_cairo": {
     "facebook": "2026-11-12T17:00",
     "tiktok": "2026-11-12T18:00",
-    "x": "2026-11-08T21:00"
+    "x": "2026-11-09T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1232,7 +1232,7 @@
    "times_cairo": {
     "facebook": "2026-11-15T17:00",
     "tiktok": "2026-11-15T18:00",
-    "x": "2026-11-11T21:00"
+    "x": "2026-11-09T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1260,7 +1260,7 @@
    "times_cairo": {
     "facebook": "2026-11-16T07:00",
     "tiktok": "2026-11-16T07:00",
-    "x": "2026-11-12T12:00"
+    "x": "2026-11-10T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1288,7 +1288,7 @@
    "times_cairo": {
     "facebook": "2026-11-16T17:00",
     "tiktok": "2026-11-16T18:00",
-    "x": "2026-11-12T21:00"
+    "x": "2026-11-10T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1316,7 +1316,7 @@
    "times_cairo": {
     "facebook": "2026-11-17T07:00",
     "tiktok": "2026-11-17T07:00",
-    "x": "2026-11-13T12:00"
+    "x": "2026-11-11T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1344,7 +1344,7 @@
    "times_cairo": {
     "facebook": "2026-11-17T17:00",
     "tiktok": "2026-11-17T18:00",
-    "x": "2026-11-13T21:00"
+    "x": "2026-11-11T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1372,7 +1372,7 @@
    "times_cairo": {
     "facebook": "2026-11-18T07:00",
     "tiktok": "2026-11-18T07:00",
-    "x": "2026-11-14T12:00"
+    "x": "2026-11-12T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1400,7 +1400,7 @@
    "times_cairo": {
     "facebook": "2026-11-18T17:00",
     "tiktok": "2026-11-18T18:00",
-    "x": "2026-11-14T21:00"
+    "x": "2026-11-12T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1428,7 +1428,7 @@
    "times_cairo": {
     "facebook": "2026-11-19T07:00",
     "tiktok": "2026-11-19T07:00",
-    "x": "2026-11-15T12:00"
+    "x": "2026-11-13T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1456,7 +1456,7 @@
    "times_cairo": {
     "facebook": "2026-11-19T17:00",
     "tiktok": "2026-11-19T18:00",
-    "x": "2026-11-15T21:00"
+    "x": "2026-11-13T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1484,7 +1484,7 @@
    "times_cairo": {
     "facebook": "2026-11-20T07:00",
     "tiktok": "2026-11-20T07:00",
-    "x": "2026-11-16T12:00"
+    "x": "2026-11-14T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1512,7 +1512,7 @@
    "times_cairo": {
     "facebook": "2026-11-20T17:00",
     "tiktok": "2026-11-20T18:00",
-    "x": "2026-11-16T21:00"
+    "x": "2026-11-14T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1540,7 +1540,7 @@
    "times_cairo": {
     "facebook": "2026-11-21T07:00",
     "tiktok": "2026-11-21T07:00",
-    "x": "2026-11-17T12:00"
+    "x": "2026-11-15T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1569,7 +1569,7 @@
    "times_cairo": {
     "facebook": "2026-11-21T17:00",
     "tiktok": "2026-11-21T18:00",
-    "x": "2026-11-17T21:00"
+    "x": "2026-11-15T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1597,7 +1597,7 @@
    "times_cairo": {
     "facebook": "2026-11-22T07:00",
     "tiktok": "2026-11-22T07:00",
-    "x": "2026-11-18T12:00"
+    "x": "2026-11-16T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1625,7 +1625,7 @@
    "times_cairo": {
     "facebook": "2026-11-22T17:00",
     "tiktok": "2026-11-22T18:00",
-    "x": "2026-11-18T21:00"
+    "x": "2026-11-16T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1653,7 +1653,7 @@
    "times_cairo": {
     "facebook": "2026-11-23T07:00",
     "tiktok": "2026-11-23T07:00",
-    "x": "2026-11-19T12:00"
+    "x": "2026-11-17T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1681,7 +1681,7 @@
    "times_cairo": {
     "facebook": "2026-11-23T17:00",
     "tiktok": "2026-11-23T18:00",
-    "x": "2026-11-19T21:00"
+    "x": "2026-11-17T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1709,7 +1709,7 @@
    "times_cairo": {
     "facebook": "2026-11-24T07:00",
     "tiktok": "2026-11-24T07:00",
-    "x": "2026-11-20T12:00"
+    "x": "2026-11-18T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1737,7 +1737,7 @@
    "times_cairo": {
     "facebook": "2026-11-24T17:00",
     "tiktok": "2026-11-24T18:00",
-    "x": "2026-11-20T21:00"
+    "x": "2026-11-18T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1765,7 +1765,7 @@
    "times_cairo": {
     "facebook": "2026-11-25T07:00",
     "tiktok": "2026-11-25T07:00",
-    "x": "2026-11-21T12:00"
+    "x": "2026-11-19T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1793,7 +1793,7 @@
    "times_cairo": {
     "facebook": "2026-11-25T17:00",
     "tiktok": "2026-11-25T18:00",
-    "x": "2026-11-21T21:00"
+    "x": "2026-11-19T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1822,7 +1822,7 @@
    "times_cairo": {
     "facebook": "2026-11-26T07:00",
     "tiktok": "2026-11-26T07:00",
-    "x": "2026-11-22T12:00"
+    "x": "2026-11-20T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1851,7 +1851,7 @@
    "times_cairo": {
     "facebook": "2026-11-26T17:00",
     "tiktok": "2026-11-26T18:00",
-    "x": "2026-11-22T21:00"
+    "x": "2026-11-20T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1880,7 +1880,7 @@
    "times_cairo": {
     "facebook": "2026-11-27T07:00",
     "tiktok": "2026-11-27T07:00",
-    "x": "2026-11-23T12:00"
+    "x": "2026-11-21T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1909,7 +1909,7 @@
    "times_cairo": {
     "facebook": "2026-11-27T17:00",
     "tiktok": "2026-11-27T18:00",
-    "x": "2026-11-23T21:00"
+    "x": "2026-11-21T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1938,7 +1938,7 @@
    "times_cairo": {
     "facebook": "2026-11-28T07:00",
     "tiktok": "2026-11-28T07:00",
-    "x": "2026-11-24T12:00"
+    "x": "2026-11-22T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1967,7 +1967,7 @@
    "times_cairo": {
     "facebook": "2026-11-28T17:00",
     "tiktok": "2026-11-28T18:00",
-    "x": "2026-11-24T21:00"
+    "x": "2026-11-22T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1996,7 +1996,7 @@
    "times_cairo": {
     "facebook": "2026-11-29T07:00",
     "tiktok": "2026-11-29T07:00",
-    "x": "2026-11-25T12:00"
+    "x": "2026-11-23T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2025,7 +2025,7 @@
    "times_cairo": {
     "facebook": "2026-11-29T17:00",
     "tiktok": "2026-11-29T18:00",
-    "x": "2026-11-25T21:00"
+    "x": "2026-11-23T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2054,7 +2054,7 @@
    "times_cairo": {
     "facebook": "2026-11-30T07:00",
     "tiktok": "2026-11-30T07:00",
-    "x": "2026-11-26T12:00"
+    "x": "2026-11-24T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2083,7 +2083,7 @@
    "times_cairo": {
     "facebook": "2026-11-30T17:00",
     "tiktok": "2026-11-30T18:00",
-    "x": "2026-11-26T21:00"
+    "x": "2026-11-24T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2112,7 +2112,7 @@
    "times_cairo": {
     "facebook": "2026-12-01T07:00",
     "tiktok": "2026-12-01T07:00",
-    "x": "2026-11-27T12:00"
+    "x": "2026-11-25T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2141,7 +2141,7 @@
    "times_cairo": {
     "facebook": "2026-12-01T17:00",
     "tiktok": "2026-12-01T18:00",
-    "x": "2026-11-27T21:00"
+    "x": "2026-11-25T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2170,7 +2170,7 @@
    "times_cairo": {
     "facebook": "2026-12-02T07:00",
     "tiktok": "2026-12-02T07:00",
-    "x": "2026-11-28T12:00"
+    "x": "2026-11-26T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2199,7 +2199,7 @@
    "times_cairo": {
     "facebook": "2026-12-02T17:00",
     "tiktok": "2026-12-02T18:00",
-    "x": "2026-11-28T21:00"
+    "x": "2026-11-26T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2228,7 +2228,7 @@
    "times_cairo": {
     "facebook": "2026-12-03T07:00",
     "tiktok": "2026-12-03T07:00",
-    "x": "2026-11-29T12:00"
+    "x": "2026-11-27T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2257,7 +2257,7 @@
    "times_cairo": {
     "facebook": "2026-12-03T17:00",
     "tiktok": "2026-12-03T18:00",
-    "x": "2026-11-29T21:00"
+    "x": "2026-11-27T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2277,77 +2277,20 @@
  ],
  "requests": [
   {
-   "id": "req-delete-temp-release",
-   "what": "His OK (see retime_x.his_words, item 2): the Egypt-Sudan episode is live on FB (21:02 Oct 21). Delete the GitHub release egsd-long-temp and its assets (egsd-long-v4.mp4, egsd-long-fb.mp4, test file) in afaqaiteam-wq/deishoo-media. Nothing else. Log it."
-  },
-  {
    "id": "req-live-urls",
    "what": "READ ONLY: list live permalinks of FB Page / TikTok / X posts that went out since the last run."
   }
  ],
  "retime_x": {
   "his_words": "23:18 UTC Oct 21 (02:18 Cairo Oct 22) in this thread: «1 اوك 2 اوك», answering Claude's two questions: (1) move the 10 booked X posts earlier so X starts Thu Oct 22 12:00, (2) delete the temp release of the Egypt-Sudan episode.",
-  "do": "Change ONLY the time of these 10 already-booked X posts on Buffer (never delete or recreate), to new_x_cairo with utc_offset; read each back and log old/new UTC. All later X items use times_cairo['x'] with utc_offset_x (X now runs 4 days ahead of the FB date).",
+  "do": "Change ONLY the time of the booked X post listed in 'posts' (ramses-short-6, still at Oct 26 12:00 and clashing with gulf5) to new_x_cairo; never delete or recreate; read back and log. The other 9 were moved on Oct 22 14:30. All later X items use times_cairo['x'] with utc_offset_x.",
   "posts": [
    {
     "id": "ramses-short-6",
     "old_x_cairo": "2026-10-26T12:00",
-    "new_x_cairo": "2026-10-22T12:00",
-    "utc_offset": "+03:00"
-   },
-   {
-    "id": "ramses-short-7",
-    "old_x_cairo": "2026-10-26T21:00",
-    "new_x_cairo": "2026-10-22T21:00",
-    "utc_offset": "+03:00"
-   },
-   {
-    "id": "ramses-short-8",
-    "old_x_cairo": "2026-10-27T12:00",
-    "new_x_cairo": "2026-10-23T12:00",
-    "utc_offset": "+03:00"
-   },
-   {
-    "id": "ramses-short-9",
-    "old_x_cairo": "2026-10-27T21:00",
-    "new_x_cairo": "2026-10-23T21:00",
-    "utc_offset": "+03:00"
-   },
-   {
-    "id": "ramses-short-10",
-    "old_x_cairo": "2026-10-28T12:00",
-    "new_x_cairo": "2026-10-24T12:00",
-    "utc_offset": "+03:00"
-   },
-   {
-    "id": "ramses-short-11",
-    "old_x_cairo": "2026-10-28T21:00",
-    "new_x_cairo": "2026-10-24T21:00",
-    "utc_offset": "+03:00"
-   },
-   {
-    "id": "remix-genghis-g4",
-    "old_x_cairo": "2026-10-29T12:00",
-    "new_x_cairo": "2026-10-25T12:00",
-    "utc_offset": "+03:00"
-   },
-   {
-    "id": "remix-genghis-g7",
-    "old_x_cairo": "2026-10-29T21:00",
-    "new_x_cairo": "2026-10-25T21:00",
-    "utc_offset": "+03:00"
-   },
-   {
-    "id": "remix-gulf5",
-    "old_x_cairo": "2026-10-30T12:00",
-    "new_x_cairo": "2026-10-26T12:00",
-    "utc_offset": "+03:00"
-   },
-   {
-    "id": "remix-tt1",
-    "old_x_cairo": "2026-10-30T21:00",
-    "new_x_cairo": "2026-10-26T21:00",
-    "utc_offset": "+03:00"
+    "new_x_cairo": "2026-10-27T12:00",
+    "utc_offset": "+02:00",
+    "note": "missed its Oct 22 12:00 move; booked post: change time only"
    }
   ]
  }

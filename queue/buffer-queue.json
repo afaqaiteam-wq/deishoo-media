@@ -1,6 +1,6 @@
 {
  "version": 2,
- "updated_utc": "2026-10-25T22:20:11Z",
+ "updated_utc": "2026-10-25T22:38:24Z",
  "how_to": "His words (21:28 UTC Oct 18, this thread): FB/TikTok 2 posts a day (Facebook Page 07:00 and 17:00, TikTok 07:00 and 18:00 Cairo); the device session may change ONLY the time (never delete) of any FB/TikTok post already scheduled on Buffer from Oct 19 on, to fit the grid; queue OK runs until 2026-11-21. STEP 1 (once): RETIME. For each entry in 'retime' (the 5 posts already in Buffer from Oct 19 on), change ONLY its time on both channels to new_times_cairo with its utc_offset; never delete or recreate it, keep caption and media. Read each one back and log old time, new time and post id. Any other Buffer post from Oct 19 on that is not in 'retime': do not touch it, log it as 'not-in-plan'. STEP 2 (every 30 min while the session runs, and on every «افحص الكيو»): for each item in 'items', in list order, schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at times_cairo[platform] with the item's utc_offset and the caption exactly as written, only while a slot is free under the 10-post cap per channel. Skip anything already done (by id in your log). If a time is less than 10 minutes away, skip it and log 'skipped-late'; never pick a new time yourself (Claude re-plans). If an item has 'only_if_url_exists', skip it until its url returns HTTP 200 and log 'waiting-file'. Items with a 'hold' field: never schedule them, log 'held'. Never delete any Buffer post; never edit any post other than the STEP 1 time changes; never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. type 'images' = Facebook multi-image post and TikTok photo post, images in the given order, no upload needed. If an item has 'captions' (per platform) use those instead of 'caption'. Use 'cover' as the video cover where Buffer allows it.",
  "retime": [
   {
@@ -2388,6 +2388,68 @@
    "utc_offset_x": "+02:00",
    "hold": "past his queue OK (ends Nov 21): do NOT schedule until he extends it in the thread and Claude removes this field",
    "source": "remix batch 19 (remix/batch19/batch19.json)"
+  },
+  {
+   "id": "remix-es12",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/egypt-sudan/es12-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/egypt-sudan/es12-cover.jpg",
+   "caption": "سواقين نقل مصريين اتضرب عليهم نار في سوق جنوب الخرطوم.. والدافع اللي اتقال لسه ما اتأكدش. #السودان #مصر #ديشو\n\nمين المسؤول عن الدم ده؟ اكتب رأيك\nالموسيقى: Aggressor - Kevin MacLeod (incompetech.com), CC BY 4.0",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/T84u1ievIsw ; TikTok cover from phone",
+   "times_cairo": {
+    "facebook": "2026-12-07T07:00",
+    "tiktok": "2026-12-07T07:00",
+    "x": "2026-12-01T12:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "tiktok": "سواقين نقل مصريين اتضرب عليهم نار في سوق جنوب الخرطوم.. والدافع اللي اتقال لسه ما اتأكدش. #السودان #مصر #ديشو\n\nمين المسؤول عن الدم ده؟ اكتب رأيك\nالموسيقى: Aggressor - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "x": "سواقين نقل مصريين اتضرب عليهم نار في سوق جنوب الخرطوم.. والدافع اللي اتقال لسه ما اتأكدش.\n\nمين المسؤول عن الدم ده؟ اكتب رأيك\n#السودان #مصر\nالموسيقى: Aggressor - Kevin MacLeod (incompetech.com), CC BY 4.0"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/T84u1ievIsw",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00",
+   "hold": "past his queue OK (ends Nov 21): do NOT schedule until he extends it in the thread and Claude removes this field",
+   "source": "remix batch 20 (remix/batch20/batch20.json)"
+  },
+  {
+   "id": "remix-es13",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/egypt-sudan/es13-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/egypt-sudan/es13-cover.jpg",
+   "caption": "«الطيران المصري بيضرب الدعم السريع».. الجزيرة اتحققت: مسيرات للجيش السوداني وصوت الطيارات اتحط في المونتاج. #السودان #مصر #ديشو\n\nمين المستفيد من الفيديوهات دي؟ اكتب رأيك\nالموسيقى: Killers - Kevin MacLeod (incompetech.com), CC BY 4.0",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/T84u1ievIsw ; TikTok cover from phone",
+   "times_cairo": {
+    "facebook": "2026-12-07T17:00",
+    "tiktok": "2026-12-07T18:00",
+    "x": "2026-12-01T21:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "tiktok": "«الطيران المصري بيضرب الدعم السريع».. الجزيرة اتحققت: مسيرات للجيش السوداني وصوت الطيارات اتحط في المونتاج. #السودان #مصر #ديشو\n\nمين المستفيد من الفيديوهات دي؟ اكتب رأيك\nالموسيقى: Killers - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "x": "«الطيران المصري بيضرب الدعم السريع».. الجزيرة اتحققت: مسيرات للجيش السوداني وصوت الطيارات اتحط في المونتاج.\n\nمين المستفيد من الفيديوهات دي؟ اكتب رأيك\n#السودان #مصر\nالموسيقى: Killers - Kevin MacLeod (incompetech.com), CC BY 4.0"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/T84u1ievIsw",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00",
+   "hold": "past his queue OK (ends Nov 21): do NOT schedule until he extends it in the thread and Claude removes this field",
+   "source": "remix batch 20 (remix/batch20/batch20.json)"
   }
  ],
  "x_how_to": "His words in this thread: 09:10 UTC Oct 20 «لا شغل كل المنصات لما يجي دروها» and 09:20 UTC Oct 20 «ايوه موافق», answering Claude's question: restart the queue for Facebook and TikTok, put every Short on X at the Facebook time, long-episode link as the first reply 15 minutes later, until Nov 21. X = Buffer channel mostafadeishoo. X items are those whose 'platforms' include 'x' (video Shorts only; carousels are not on X). Schedule on X at times_cairo['x'] (X's own times 12:00 / 21:00 Cairo; since his OK 23:18 UTC Oct 21, X runs 4 days AHEAD of the FB date; use utc_offset_x for X) with captions['x'] (already under 280, no link) and the item's video url, under X's own 10-post cap. Done-check is per (id, platform): an item already scheduled on FB/TikTok still gets its X post if X is not in the log for it. Same skipped-late / hold / never-delete rules as FB/TikTok. x_first_reply: MANUAL, his decision 13:53 UTC Oct 22 (if replies would cost Buffer slots, cancel them and he posts them by hand). Buffer's Free plan allows only ONE X thread scheduled at a time per queue, so never schedule X posts as threads. Schedule each X post alone; the reply text is his manual step. Never edit the booked X posts for this.",

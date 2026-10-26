@@ -1,6 +1,6 @@
 {
  "version": 2,
- "updated_utc": "2026-10-26T00:48:15Z",
+ "updated_utc": "2026-10-26T03:22:08Z",
  "how_to": "His words (21:28 UTC Oct 18, this thread): FB/TikTok 2 posts a day (Facebook Page 07:00 and 17:00, TikTok 07:00 and 18:00 Cairo); the device session may change ONLY the time (never delete) of any FB/TikTok post already scheduled on Buffer from Oct 19 on, to fit the grid; queue OK runs until 2026-11-21. STEP 1 (once): RETIME. For each entry in 'retime' (the 5 posts already in Buffer from Oct 19 on), change ONLY its time on both channels to new_times_cairo with its utc_offset; never delete or recreate it, keep caption and media. Read each one back and log old time, new time and post id. Any other Buffer post from Oct 19 on that is not in 'retime': do not touch it, log it as 'not-in-plan'. STEP 2 (every 30 min while the session runs, and on every «افحص الكيو»): for each item in 'items', in list order, schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at times_cairo[platform] with the item's utc_offset and the caption exactly as written, only while a slot is free under the 10-post cap per channel. Skip anything already done (by id in your log). If a time is less than 10 minutes away, skip it and log 'skipped-late'; never pick a new time yourself (Claude re-plans). If an item has 'only_if_url_exists', skip it until its url returns HTTP 200 and log 'waiting-file'. Items with a 'hold' field: never schedule them, log 'held'. Never delete any Buffer post; never edit any post other than the STEP 1 time changes; never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. type 'images' = Facebook multi-image post and TikTok photo post, images in the given order, no upload needed. If an item has 'captions' (per platform) use those instead of 'caption'. Use 'cover' as the video cover where Buffer allows it.",
  "retime": [
   {
@@ -2636,6 +2636,192 @@
    "utc_offset_x": "+02:00",
    "hold": "past his queue OK (ends Nov 21): do NOT schedule until he extends it in the thread and Claude removes this field",
    "source": "remix batch 21 (remix/batch21/batch21.json)"
+  },
+  {
+   "id": "remix-ep11",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/epstein/ep11-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/epstein/ep11-cover.jpg",
+   "caption": "جزيرة شكلها جنة في الكاريبي.. وسكان الجزر اللي جنبها سموها اسم مرعب. #إبستين #ديشو\n\nإزاي حاجة زي دي تفضل مخفية سنين؟ اكتب رأيك\nالموسيقى: Five Armies - Kevin MacLeod (incompetech.com), CC BY 4.0",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/IneS_M41TsY ; TikTok cover from phone",
+   "times_cairo": {
+    "facebook": "2026-12-11T07:00",
+    "tiktok": "2026-12-11T07:00",
+    "x": "2026-12-05T12:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "tiktok": "جزيرة شكلها جنة في الكاريبي.. وسكان الجزر اللي جنبها سموها اسم مرعب. #إبستين #ديشو\n\nإزاي حاجة زي دي تفضل مخفية سنين؟ اكتب رأيك\nالموسيقى: Five Armies - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "x": "جزيرة شكلها جنة في الكاريبي.. وسكان الجزر اللي جنبها سموها اسم مرعب.\n\nإزاي حاجة زي دي تفضل مخفية سنين؟ اكتب رأيك\n#إبستين #ديشو\nالموسيقى: Five Armies - Kevin MacLeod (incompetech.com), CC BY 4.0"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/IneS_M41TsY",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00",
+   "hold": "past his queue OK (ends Nov 21): do NOT schedule until he extends it in the thread and Claude removes this field",
+   "source": "remix batch 22 (remix/batch22/batch22.json)"
+  },
+  {
+   "id": "remix-ep12",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/epstein/ep12-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/epstein/ep12-cover.jpg",
+   "caption": "شكوى واحدة سنة 2005.. وكل بنت كانت بتكشف بنات تانيين. #إبستين #ديشو\n\nليه القضية اتأخرت كل ده؟ اكتب رأيك\nالموسيقى: Investigations - Kevin MacLeod (incompetech.com), CC BY 4.0",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/IneS_M41TsY ; TikTok cover from phone",
+   "times_cairo": {
+    "facebook": "2026-12-11T17:00",
+    "tiktok": "2026-12-11T18:00",
+    "x": "2026-12-05T21:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "tiktok": "شكوى واحدة سنة 2005.. وكل بنت كانت بتكشف بنات تانيين. #إبستين #ديشو\n\nليه القضية اتأخرت كل ده؟ اكتب رأيك\nالموسيقى: Investigations - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "x": "شكوى واحدة سنة 2005.. وكل بنت كانت بتكشف بنات تانيين.\n\nليه القضية اتأخرت كل ده؟ اكتب رأيك\n#إبستين #ديشو\nالموسيقى: Investigations - Kevin MacLeod (incompetech.com), CC BY 4.0"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/IneS_M41TsY",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00",
+   "hold": "past his queue OK (ends Nov 21): do NOT schedule until he extends it in the thread and Claude removes this field",
+   "source": "remix batch 22 (remix/batch22/batch22.json)"
+  },
+  {
+   "id": "remix-ep13",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/epstein/ep13-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/epstein/ep13-cover.jpg",
+   "caption": "صفقة سرية.. 18 شهر بس، و12 ساعة في اليوم بره السجن في مكتبه. #إبستين #ديشو\n\nالصفقة دي كانت عدالة ولا هروب؟ اكتب رأيك\nالموسيقى: Hitman - Kevin MacLeod (incompetech.com), CC BY 4.0",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/IneS_M41TsY ; TikTok cover from phone",
+   "times_cairo": {
+    "facebook": "2026-12-12T07:00",
+    "tiktok": "2026-12-12T07:00",
+    "x": "2026-12-06T12:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "tiktok": "صفقة سرية.. 18 شهر بس، و12 ساعة في اليوم بره السجن في مكتبه. #إبستين #ديشو\n\nالصفقة دي كانت عدالة ولا هروب؟ اكتب رأيك\nالموسيقى: Hitman - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "x": "صفقة سرية.. 18 شهر بس، و12 ساعة في اليوم بره السجن في مكتبه.\n\nالصفقة دي كانت عدالة ولا هروب؟ اكتب رأيك\n#إبستين #ديشو\nالموسيقى: Hitman - Kevin MacLeod (incompetech.com), CC BY 4.0"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/IneS_M41TsY",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00",
+   "hold": "past his queue OK (ends Nov 21): do NOT schedule until he extends it in the thread and Claude removes this field",
+   "source": "remix batch 22 (remix/batch22/batch22.json)"
+  },
+  {
+   "id": "remix-ep14",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/epstein/ep14-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/epstein/ep14-cover.jpg",
+   "caption": "صحفية واحدة رجعت فتحت القضية.. وأكتر من 80 ضحية محتملة. #إبستين #ديشو\n\nالصحافة تقدر تغير مصير قضية؟ اكتب رأيك\nالموسيقى: Exciting Trailer - Kevin MacLeod (incompetech.com), CC BY 4.0",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/IneS_M41TsY ; TikTok cover from phone",
+   "times_cairo": {
+    "facebook": "2026-12-12T17:00",
+    "tiktok": "2026-12-12T18:00",
+    "x": "2026-12-06T21:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "tiktok": "صحفية واحدة رجعت فتحت القضية.. وأكتر من 80 ضحية محتملة. #إبستين #ديشو\n\nالصحافة تقدر تغير مصير قضية؟ اكتب رأيك\nالموسيقى: Exciting Trailer - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "x": "صحفية واحدة رجعت فتحت القضية.. وأكتر من 80 ضحية محتملة.\n\nالصحافة تقدر تغير مصير قضية؟ اكتب رأيك\n#إبستين #ديشو\nالموسيقى: Exciting Trailer - Kevin MacLeod (incompetech.com), CC BY 4.0"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/IneS_M41TsY",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00",
+   "hold": "past his queue OK (ends Nov 21): do NOT schedule until he extends it in the thread and Claude removes this field",
+   "source": "remix batch 22 (remix/batch22/batch22.json)"
+  },
+  {
+   "id": "remix-ep15",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/epstein/ep15-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/epstein/ep15-cover.jpg",
+   "caption": "لقوه ميت في زنزانته قبل المحاكمة.. والرواية الرسمية انتحار. #إبستين #ديشو\n\nانتحر ولا لأ؟ اكتب رأيك\nالموسيقى: Interloper - Kevin MacLeod (incompetech.com), CC BY 4.0",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/IneS_M41TsY ; TikTok cover from phone",
+   "times_cairo": {
+    "facebook": "2026-12-13T07:00",
+    "tiktok": "2026-12-13T07:00",
+    "x": "2026-12-07T12:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "tiktok": "لقوه ميت في زنزانته قبل المحاكمة.. والرواية الرسمية انتحار. #إبستين #ديشو\n\nانتحر ولا لأ؟ اكتب رأيك\nالموسيقى: Interloper - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "x": "لقوه ميت في زنزانته قبل المحاكمة.. والرواية الرسمية انتحار.\n\nانتحر ولا لأ؟ اكتب رأيك\n#إبستين #ديشو\nالموسيقى: Interloper - Kevin MacLeod (incompetech.com), CC BY 4.0"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/IneS_M41TsY",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00",
+   "hold": "past his queue OK (ends Nov 21): do NOT schedule until he extends it in the thread and Claude removes this field",
+   "source": "remix batch 22 (remix/batch22/batch22.json)"
+  },
+  {
+   "id": "remix-ep16",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/epstein/ep16-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/epstein/ep16-cover.jpg",
+   "caption": "الكونجرس أجبر وزارة العدل تنشر ملفات إبستين.. واسم ترامب ظهر فيها. #إبستين #ديشو\n\nالملفات دي لسه مخبية إيه؟ اكتب رأيك\nالموسيقى: Echoes of Time - Kevin MacLeod (incompetech.com), CC BY 4.0",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/IneS_M41TsY ; TikTok cover from phone",
+   "times_cairo": {
+    "facebook": "2026-12-13T17:00",
+    "tiktok": "2026-12-13T18:00",
+    "x": "2026-12-07T21:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "tiktok": "الكونجرس أجبر وزارة العدل تنشر ملفات إبستين.. واسم ترامب ظهر فيها. #إبستين #ديشو\n\nالملفات دي لسه مخبية إيه؟ اكتب رأيك\nالموسيقى: Echoes of Time - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "x": "الكونجرس أجبر وزارة العدل تنشر ملفات إبستين.. واسم ترامب ظهر فيها.\n\nالملفات دي لسه مخبية إيه؟ اكتب رأيك\n#إبستين #ديشو\nالموسيقى: Echoes of Time - Kevin MacLeod (incompetech.com), CC BY 4.0"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/IneS_M41TsY",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00",
+   "hold": "past his queue OK (ends Nov 21): do NOT schedule until he extends it in the thread and Claude removes this field",
+   "source": "remix batch 22 (remix/batch22/batch22.json)"
   }
  ],
  "x_how_to": "His words in this thread: 09:10 UTC Oct 20 «لا شغل كل المنصات لما يجي دروها» and 09:20 UTC Oct 20 «ايوه موافق», answering Claude's question: restart the queue for Facebook and TikTok, put every Short on X at the Facebook time, long-episode link as the first reply 15 minutes later, until Nov 21. X = Buffer channel mostafadeishoo. X items are those whose 'platforms' include 'x' (video Shorts only; carousels are not on X). Schedule on X at times_cairo['x'] (X's own times 12:00 / 21:00 Cairo; since his OK 23:18 UTC Oct 21, X runs 4 days AHEAD of the FB date; use utc_offset_x for X) with captions['x'] (already under 280, no link) and the item's video url, under X's own 10-post cap. Done-check is per (id, platform): an item already scheduled on FB/TikTok still gets its X post if X is not in the log for it. Same skipped-late / hold / never-delete rules as FB/TikTok. x_first_reply: MANUAL, his decision 13:53 UTC Oct 22 (if replies would cost Buffer slots, cancel them and he posts them by hand). Buffer's Free plan allows only ONE X thread scheduled at a time per queue, so never schedule X posts as threads. Schedule each X post alone; the reply text is his manual step. Never edit the booked X posts for this.",

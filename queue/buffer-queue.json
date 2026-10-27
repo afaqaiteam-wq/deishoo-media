@@ -1,6 +1,6 @@
 {
  "version": 2,
- "updated_utc": "2026-10-26T03:22:08Z",
+ "updated_utc": "2026-10-27T15:05:41Z",
  "how_to": "His words (21:28 UTC Oct 18, this thread): FB/TikTok 2 posts a day (Facebook Page 07:00 and 17:00, TikTok 07:00 and 18:00 Cairo); the device session may change ONLY the time (never delete) of any FB/TikTok post already scheduled on Buffer from Oct 19 on, to fit the grid; queue OK runs until 2026-11-21. STEP 1 (once): RETIME. For each entry in 'retime' (the 5 posts already in Buffer from Oct 19 on), change ONLY its time on both channels to new_times_cairo with its utc_offset; never delete or recreate it, keep caption and media. Read each one back and log old time, new time and post id. Any other Buffer post from Oct 19 on that is not in 'retime': do not touch it, log it as 'not-in-plan'. STEP 2 (every 30 min while the session runs, and on every «افحص الكيو»): for each item in 'items', in list order, schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at times_cairo[platform] with the item's utc_offset and the caption exactly as written, only while a slot is free under the 10-post cap per channel. Skip anything already done (by id in your log). If a time is less than 10 minutes away, skip it and log 'skipped-late'; never pick a new time yourself (Claude re-plans). If an item has 'only_if_url_exists', skip it until its url returns HTTP 200 and log 'waiting-file'. Items with a 'hold' field: never schedule them, log 'held'. Never delete any Buffer post; never edit any post other than the STEP 1 time changes; never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. type 'images' = Facebook multi-image post and TikTok photo post, images in the given order, no upload needed. If an item has 'captions' (per platform) use those instead of 'caption'. Use 'cover' as the video cover where Buffer allows it.",
  "retime": [
   {
@@ -236,6 +236,38 @@
    "utc_offset_x": "+03:00"
   },
   {
+   "id": "balbalady-pyramid",
+   "priority": 1,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/balbalady-media/balbalady/bb-pyramid.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/balbalady-media/balbalady/bb-pyramid-cover.jpg",
+   "caption": "2 مليون حجر، كل واحد أتقل من عربية.. واتنقلوا للهرم من غير عجل. إزاي؟\n\nالسر كان في واحد بيمشي قدام الزحافة ويرش مياه على الرمل.\n\nكنت تعرف حكاية الرمل المبلول دي؟ اكتب رأيك\n\n#الهرم #مصرالقديمة #بالبلديكده #ديشو\nالموسيقى: Hep Cats - Kevin MacLeod (incompetech.com), CC BY 4.0",
+   "manual_after": "FB first comment: كنت تعرف حكاية الرمل المبلول دي؟ اكتب رأيك ; TikTok pinned comment: كنت تعرف حكاية الرمل المبلول دي؟ اكتب رأيك ; covers on FB/TikTok from phone",
+   "times_cairo": {
+    "facebook": "2026-10-28T23:00",
+    "tiktok": "2026-10-28T23:00",
+    "x": "2026-10-28T23:00"
+   },
+   "utc_offset": "+03:00",
+   "captions": {
+    "facebook": "2 مليون حجر، كل واحد أتقل من عربية.. واتنقلوا للهرم من غير عجل. إزاي؟\n\nالسر كان في واحد بيمشي قدام الزحافة ويرش مياه على الرمل.\n\nكنت تعرف حكاية الرمل المبلول دي؟ اكتب رأيك\n\n#الهرم #مصرالقديمة #بالبلديكده #ديشو\nالموسيقى: Hep Cats - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "tiktok": "حجارة الهرم\n2 مليون حجر، كل واحد أتقل من عربية.. واتنقلوا للهرم من غير عجل. إزاي؟\n\nكنت تعرف حكاية الرمل المبلول دي؟ اكتب رأيك\n\n#الهرم #مصرالقديمة #بالبلديكده #ديشو\nالموسيقى: Hep Cats - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "x": "2 مليون حجر، كل واحد أتقل من عربية.. واتنقلوا للهرم من غير عجل. إزاي؟\n\nكنت تعرف حكاية الرمل المبلول دي؟ اكتب رأيك\n#الهرم #مصرالقديمة #بالبلديكده #ديشو"
+   },
+   "x_first_reply": {
+    "text": "كنت تعرف حكاية الرمل المبلول دي؟ اكتب رأيك",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+03:00",
+   "source": "«بالبلدي كده» series, 23:00 Cairo test slot (his OK 2026-10-27 in the series thread)",
+   "approval": "His words 14:35 UTC Oct 27 (بالبلدي كده thread): «احجز وقولي بعد الحجز هتحتاج مني افحص الكيو كل كام يوم وذكرني قبلها في الشات الرئيسي». 3rd daily test slot 23:00 Cairo, every 2 days."
+  },
+  {
    "id": "remix-genghis-g4",
    "priority": 2,
    "platforms": [
@@ -342,6 +374,38 @@
     "mode": "manual"
    },
    "utc_offset_x": "+03:00"
+  },
+  {
+   "id": "balbalady-deadsea",
+   "priority": 1,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/balbalady-media/balbalady/bb-deadsea.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/balbalady-media/balbalady/bb-deadsea-cover.jpg",
+   "caption": "تنام على ضهرك في البحر الميت وتقرا الجرنال.. ومتغرقش!\n\nالملح فيه وصل لحوالي 34%، فالمياه بقت أتقل بكتير وبتزقك لفوق. وهو أخفض نقطة على اليابسة، حوالي 430 متر تحت سطح البحر.\n\nتنزل البحر الميت ولا تخاف؟ اكتب رأيك\n\n#البحرالميت #معلومات #بالبلديكده #ديشو\nالموسيقى: Hep Cats - Kevin MacLeod (incompetech.com), CC BY 4.0",
+   "manual_after": "FB first comment: تنزل البحر الميت ولا تخاف؟ اكتب رأيك ; TikTok pinned comment: تنزل البحر الميت ولا تخاف؟ اكتب رأيك ; covers on FB/TikTok from phone",
+   "times_cairo": {
+    "facebook": "2026-10-30T23:00",
+    "tiktok": "2026-10-30T23:00",
+    "x": "2026-10-30T23:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "facebook": "تنام على ضهرك في البحر الميت وتقرا الجرنال.. ومتغرقش!\n\nالملح فيه وصل لحوالي 34%، فالمياه بقت أتقل بكتير وبتزقك لفوق. وهو أخفض نقطة على اليابسة، حوالي 430 متر تحت سطح البحر.\n\nتنزل البحر الميت ولا تخاف؟ اكتب رأيك\n\n#البحرالميت #معلومات #بالبلديكده #ديشو\nالموسيقى: Hep Cats - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "tiktok": "البحر الميت\nتنام على ضهرك في البحر الميت وتقرا الجرنال.. ومتغرقش!\n\nتنزل البحر الميت ولا تخاف؟ اكتب رأيك\n\n#البحرالميت #معلومات #بالبلديكده #ديشو\nالموسيقى: Hep Cats - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "x": "تنام على ضهرك في البحر الميت وتقرا الجرنال.. ومتغرقش!\n\nتنزل البحر الميت ولا تخاف؟ اكتب رأيك\n#البحرالميت #معلومات #بالبلديكده #ديشو"
+   },
+   "x_first_reply": {
+    "text": "تنزل البحر الميت ولا تخاف؟ اكتب رأيك",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00",
+   "source": "«بالبلدي كده» series, 23:00 Cairo test slot (his OK 2026-10-27 in the series thread)",
+   "approval": "His words 14:35 UTC Oct 27 (بالبلدي كده thread): «احجز وقولي بعد الحجز هتحتاج مني افحص الكيو كل كام يوم وذكرني قبلها في الشات الرئيسي». 3rd daily test slot 23:00 Cairo, every 2 days."
   },
   {
    "id": "ms990-s1",
@@ -464,6 +528,38 @@
    "utc_offset_x": "+03:00"
   },
   {
+   "id": "balbalady-gps",
+   "priority": 1,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/balbalady-media/balbalady/bb-gps.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/balbalady-media/balbalady/bb-gps-cover.jpg",
+   "caption": "الـGPS في موبايلك شغال من غير نت!\n\nقمر على بعد 20 ألف كيلو بيبعت الساعة بالظبط، وموبايلك بيحسب الرسالة اتأخرت قد إيه فيعرف مكانك. والنت محتاجه للخريطة بس. والأغرب إن ساعات الأقمار بتسبق ساعاتنا 38 مايكروثانية في اليوم.\n\nكنت فاكر إن الـGPS محتاج نت؟ اكتب رأيك\n\n#GPS #تكنولوجيا #بالبلديكده #ديشو\nالموسيقى: Hep Cats - Kevin MacLeod (incompetech.com), CC BY 4.0",
+   "manual_after": "FB first comment: كنت فاكر إن الـGPS محتاج نت؟ اكتب رأيك ; TikTok pinned comment: كنت فاكر إن الـGPS محتاج نت؟ اكتب رأيك ; covers on FB/TikTok from phone",
+   "times_cairo": {
+    "facebook": "2026-11-01T23:00",
+    "tiktok": "2026-11-01T23:00",
+    "x": "2026-11-01T23:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "facebook": "الـGPS في موبايلك شغال من غير نت!\n\nقمر على بعد 20 ألف كيلو بيبعت الساعة بالظبط، وموبايلك بيحسب الرسالة اتأخرت قد إيه فيعرف مكانك. والنت محتاجه للخريطة بس. والأغرب إن ساعات الأقمار بتسبق ساعاتنا 38 مايكروثانية في اليوم.\n\nكنت فاكر إن الـGPS محتاج نت؟ اكتب رأيك\n\n#GPS #تكنولوجيا #بالبلديكده #ديشو\nالموسيقى: Hep Cats - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "tiktok": "الجي بي اس من غير نت\nالـGPS في موبايلك شغال من غير نت!\n\nكنت فاكر إن الـGPS محتاج نت؟ اكتب رأيك\n\n#GPS #تكنولوجيا #بالبلديكده #ديشو\nالموسيقى: Hep Cats - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "x": "الـGPS في موبايلك شغال من غير نت!\n\nكنت فاكر إن الـGPS محتاج نت؟ اكتب رأيك\n#GPS #تكنولوجيا #بالبلديكده #ديشو"
+   },
+   "x_first_reply": {
+    "text": "كنت فاكر إن الـGPS محتاج نت؟ اكتب رأيك",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00",
+   "source": "«بالبلدي كده» series, 23:00 Cairo test slot (his OK 2026-10-27 in the series thread)",
+   "approval": "His words 14:35 UTC Oct 27 (بالبلدي كده thread): «احجز وقولي بعد الحجز هتحتاج مني افحص الكيو كل كام يوم وذكرني قبلها في الشات الرئيسي». 3rd daily test slot 23:00 Cairo, every 2 days."
+  },
+  {
    "id": "ms990-s3",
    "priority": 1,
    "platforms": [
@@ -580,6 +676,38 @@
    "utc_offset_x": "+02:00"
   },
   {
+   "id": "balbalady-radar",
+   "priority": 1,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/balbalady-media/balbalady/bb-radar.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/balbalady-media/balbalady/bb-radar-cover.jpg",
+   "caption": "إزاي الرادار عرف إنك ماشي 120 وانت لسه بعيد عنه بميت متر؟\n\nالرادار مش كاميرا. بيرمي موجة على عربيتك، ولو بتقرب الموجة بترجع مضغوطة، وكل ما تسرع تتضغط أكتر. زي صوت الإسعاف وهي جاية ناحيتك. ونفس الفكرة دي الدكاترة بيسمعوا بيها دقات قلب الجنين.\n\nاتعملك مخالفة رادار قبل كده؟ اكتب رأيك\n\n#الرادار #السرعة #بالبلديكده #ديشو\nالموسيقى: Hep Cats - Kevin MacLeod (incompetech.com), CC BY 4.0",
+   "manual_after": "FB first comment: اتعملك مخالفة رادار قبل كده؟ اكتب رأيك ; TikTok pinned comment: اتعملك مخالفة رادار قبل كده؟ اكتب رأيك ; covers on FB/TikTok from phone",
+   "times_cairo": {
+    "facebook": "2026-11-03T23:00",
+    "tiktok": "2026-11-03T23:00",
+    "x": "2026-11-03T23:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "facebook": "إزاي الرادار عرف إنك ماشي 120 وانت لسه بعيد عنه بميت متر؟\n\nالرادار مش كاميرا. بيرمي موجة على عربيتك، ولو بتقرب الموجة بترجع مضغوطة، وكل ما تسرع تتضغط أكتر. زي صوت الإسعاف وهي جاية ناحيتك. ونفس الفكرة دي الدكاترة بيسمعوا بيها دقات قلب الجنين.\n\nاتعملك مخالفة رادار قبل كده؟ اكتب رأيك\n\n#الرادار #السرعة #بالبلديكده #ديشو\nالموسيقى: Hep Cats - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "tiktok": "رادار السرعة\nإزاي الرادار عرف إنك ماشي 120 وانت لسه بعيد عنه بميت متر؟\n\nاتعملك مخالفة رادار قبل كده؟ اكتب رأيك\n\n#الرادار #السرعة #بالبلديكده #ديشو\nالموسيقى: Hep Cats - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "x": "إزاي الرادار عرف إنك ماشي 120 وانت لسه بعيد عنه بميت متر؟\n\nاتعملك مخالفة رادار قبل كده؟ اكتب رأيك\n#الرادار #السرعة #بالبلديكده #ديشو"
+   },
+   "x_first_reply": {
+    "text": "اتعملك مخالفة رادار قبل كده؟ اكتب رأيك",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00",
+   "source": "«بالبلدي كده» series, 23:00 Cairo test slot (his OK 2026-10-27 in the series thread)",
+   "approval": "His words 14:35 UTC Oct 27 (بالبلدي كده thread): «احجز وقولي بعد الحجز هتحتاج مني افحص الكيو كل كام يوم وذكرني قبلها في الشات الرئيسي». 3rd daily test slot 23:00 Cairo, every 2 days."
+  },
+  {
    "id": "remix-sub4",
    "priority": 3,
    "platforms": [
@@ -687,6 +815,38 @@
     "mode": "manual"
    },
    "utc_offset_x": "+02:00"
+  },
+  {
+   "id": "balbalady-dam",
+   "priority": 1,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/balbalady-media/balbalady/bb-dam.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/balbalady-media/balbalady/bb-dam-cover.jpg",
+   "caption": "إزاي مية واقفة في بحيرة في أسوان بتنوّر لمبة في القاهرة؟\n\nالمية بتنزل في أنفاق وتلف توربينة، والتوربينة بتلف مغناطيس جوه لفايف نحاس فتطلع كهربا. بتسافر على 500 ألف فولت، وتوصل بيتك 220. والكهربا في بيتك بتغيّر اتجاهها 50 مرة في الثانية.\n\nكنت تعرف إن الكهربا في بيتك بتغيّر اتجاهها 50 مرة في الثانية؟ اكتب رأيك\n\n#السدالعالي #أسوان #بالبلديكده #ديشو\nالموسيقى: Hep Cats - Kevin MacLeod (incompetech.com), CC BY 4.0",
+   "manual_after": "FB first comment: كنت تعرف إن الكهربا في بيتك بتغيّر اتجاهها 50 مرة في الثانية؟ اكتب رأيك ; TikTok pinned comment: كنت تعرف إن الكهربا في بيتك بتغيّر اتجاهها 50 مرة في الثانية؟ اكتب رأيك ; covers on FB/TikTok from phone",
+   "times_cairo": {
+    "facebook": "2026-11-05T23:00",
+    "tiktok": "2026-11-05T23:00",
+    "x": "2026-11-05T23:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "facebook": "إزاي مية واقفة في بحيرة في أسوان بتنوّر لمبة في القاهرة؟\n\nالمية بتنزل في أنفاق وتلف توربينة، والتوربينة بتلف مغناطيس جوه لفايف نحاس فتطلع كهربا. بتسافر على 500 ألف فولت، وتوصل بيتك 220. والكهربا في بيتك بتغيّر اتجاهها 50 مرة في الثانية.\n\nكنت تعرف إن الكهربا في بيتك بتغيّر اتجاهها 50 مرة في الثانية؟ اكتب رأيك\n\n#السدالعالي #أسوان #بالبلديكده #ديشو\nالموسيقى: Hep Cats - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "tiktok": "كهربا السد العالي\nإزاي مية واقفة في بحيرة في أسوان بتنوّر لمبة في القاهرة؟\n\nكنت تعرف إن الكهربا في بيتك بتغيّر اتجاهها 50 مرة في الثانية؟ اكتب رأيك\n\n#السدالعالي #أسوان #بالبلديكده #ديشو\nالموسيقى: Hep Cats - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "x": "إزاي مية واقفة في بحيرة في أسوان بتنوّر لمبة في القاهرة؟\n\nكنت تعرف إن الكهربا في بيتك بتغيّر اتجاهها 50 مرة في الثانية؟ اكتب رأيك\n#السدالعالي #أسوان #بالبلديكده #ديشو"
+   },
+   "x_first_reply": {
+    "text": "كنت تعرف إن الكهربا في بيتك بتغيّر اتجاهها 50 مرة في الثانية؟ اكتب رأيك",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00",
+   "source": "«بالبلدي كده» series, 23:00 Cairo test slot (his OK 2026-10-27 in the series thread)",
+   "approval": "His words 14:35 UTC Oct 27 (بالبلدي كده thread): «احجز وقولي بعد الحجز هتحتاج مني افحص الكيو كل كام يوم وذكرني قبلها في الشات الرئيسي». 3rd daily test slot 23:00 Cairo, every 2 days."
   },
   {
    "id": "remix-gulf2",
@@ -797,6 +957,38 @@
    "utc_offset_x": "+02:00"
   },
   {
+   "id": "balbalady-ac",
+   "priority": 1,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/balbalady-media/balbalady/bb-ac.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/balbalady-media/balbalady/bb-ac-cover.jpg",
+   "caption": "التكييف مش بيعمل برد.. هو بينقل الحر من أوضتك لبره!\n\nغاز بيلف في مواسير بين جوه وبره، بيتبخر جوه فيشفط السخونية، وبره الكومبروسر بيضغطه فيسخن والمروحة ترمي سخونيته في الشارع. وعشان كده بينقّط مياه. وأول تكييف اتعمل سنة 1902 لمطبعة في نيويورك.\n\nالتكييف عندك بينقّط في الشارع ولا متوصل بخرطوم؟ اكتب رأيك\n\n#التكييف #معلومات #بالبلديكده #ديشو\nالموسيقى: Hep Cats - Kevin MacLeod (incompetech.com), CC BY 4.0",
+   "manual_after": "FB first comment: التكييف عندك بينقّط في الشارع ولا متوصل بخرطوم؟ اكتب رأيك ; TikTok pinned comment: التكييف عندك بينقّط في الشارع ولا متوصل بخرطوم؟ اكتب رأيك ; covers on FB/TikTok from phone",
+   "times_cairo": {
+    "facebook": "2026-11-07T23:00",
+    "tiktok": "2026-11-07T23:00",
+    "x": "2026-11-07T23:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "facebook": "التكييف مش بيعمل برد.. هو بينقل الحر من أوضتك لبره!\n\nغاز بيلف في مواسير بين جوه وبره، بيتبخر جوه فيشفط السخونية، وبره الكومبروسر بيضغطه فيسخن والمروحة ترمي سخونيته في الشارع. وعشان كده بينقّط مياه. وأول تكييف اتعمل سنة 1902 لمطبعة في نيويورك.\n\nالتكييف عندك بينقّط في الشارع ولا متوصل بخرطوم؟ اكتب رأيك\n\n#التكييف #معلومات #بالبلديكده #ديشو\nالموسيقى: Hep Cats - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "tiktok": "التكييف بيشتغل إزاي\nالتكييف مش بيعمل برد.. هو بينقل الحر من أوضتك لبره!\n\nالتكييف عندك بينقّط في الشارع ولا متوصل بخرطوم؟ اكتب رأيك\n\n#التكييف #معلومات #بالبلديكده #ديشو\nالموسيقى: Hep Cats - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "x": "التكييف مش بيعمل برد.. هو بينقل الحر من أوضتك لبره!\n\nالتكييف عندك بينقّط في الشارع ولا متوصل بخرطوم؟ اكتب رأيك\n#التكييف #معلومات #بالبلديكده #ديشو"
+   },
+   "x_first_reply": {
+    "text": "التكييف عندك بينقّط في الشارع ولا متوصل بخرطوم؟ اكتب رأيك",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00",
+   "source": "«بالبلدي كده» series, 23:00 Cairo test slot (his OK 2026-10-27 in the series thread)",
+   "approval": "His words 14:35 UTC Oct 27 (بالبلدي كده thread): «احجز وقولي بعد الحجز هتحتاج مني افحص الكيو كل كام يوم وذكرني قبلها في الشات الرئيسي». 3rd daily test slot 23:00 Cairo, every 2 days."
+  },
+  {
    "id": "remix-sub7",
    "priority": 3,
    "platforms": [
@@ -903,6 +1095,38 @@
     "mode": "manual"
    },
    "utc_offset_x": "+02:00"
+  },
+  {
+   "id": "balbalady-tax",
+   "priority": 1,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/balbalady-media/balbalady/bb-tax.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/balbalady-media/balbalady/bb-tax-cover.jpg",
+   "caption": "عمود رخام جوه بير.. كان بيحدد الضرايب على مصر كلها!\n\nمقياس النيل في جزيرة الروضة: لو المية وصلت 16 ذراع يبقى المحصول حلو والضريبة كاملة، ولو أقل يبقى فيه جفاف والضريبة تقل. ولو وصلت 16 البلد كلها تحتفل بعيد اسمه وفاء النيل.\n\nتفتكر لو مقياس النيل لسه بيحدد الضرايب، كانت هتبقى أرحم؟ اكتب رأيك\n\n#مقياسالنيل #تاريخمصر #بالبلديكده #ديشو\nالموسيقى: Hep Cats - Kevin MacLeod (incompetech.com), CC BY 4.0",
+   "manual_after": "FB first comment: تفتكر لو مقياس النيل لسه بيحدد الضرايب، كانت هتبقى أرحم؟ اكتب رأيك ; TikTok pinned comment: تفتكر لو مقياس النيل لسه بيحدد الضرايب، كانت هتبقى أرحم؟ اكتب رأيك ; covers on FB/TikTok from phone",
+   "times_cairo": {
+    "facebook": "2026-11-09T23:00",
+    "tiktok": "2026-11-09T23:00",
+    "x": "2026-11-09T23:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "facebook": "عمود رخام جوه بير.. كان بيحدد الضرايب على مصر كلها!\n\nمقياس النيل في جزيرة الروضة: لو المية وصلت 16 ذراع يبقى المحصول حلو والضريبة كاملة، ولو أقل يبقى فيه جفاف والضريبة تقل. ولو وصلت 16 البلد كلها تحتفل بعيد اسمه وفاء النيل.\n\nتفتكر لو مقياس النيل لسه بيحدد الضرايب، كانت هتبقى أرحم؟ اكتب رأيك\n\n#مقياسالنيل #تاريخمصر #بالبلديكده #ديشو\nالموسيقى: Hep Cats - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "tiktok": "مقياس النيل\nعمود رخام جوه بير.. كان بيحدد الضرايب على مصر كلها!\n\nتفتكر لو مقياس النيل لسه بيحدد الضرايب، كانت هتبقى أرحم؟ اكتب رأيك\n\n#مقياسالنيل #تاريخمصر #بالبلديكده #ديشو\nالموسيقى: Hep Cats - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "x": "عمود رخام جوه بير.. كان بيحدد الضرايب على مصر كلها!\n\nتفتكر لو مقياس النيل لسه بيحدد الضرايب، كانت هتبقى أرحم؟ اكتب رأيك\n#مقياسالنيل #تاريخمصر #بالبلديكده #ديشو"
+   },
+   "x_first_reply": {
+    "text": "تفتكر لو مقياس النيل لسه بيحدد الضرايب، كانت هتبقى أرحم؟ اكتب رأيك",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00",
+   "source": "«بالبلدي كده» series, 23:00 Cairo test slot (his OK 2026-10-27 in the series thread)",
+   "approval": "His words 14:35 UTC Oct 27 (بالبلدي كده thread): «احجز وقولي بعد الحجز هتحتاج مني افحص الكيو كل كام يوم وذكرني قبلها في الشات الرئيسي». 3rd daily test slot 23:00 Cairo, every 2 days."
   },
   {
    "id": "remix-gulf1",

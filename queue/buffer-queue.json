@@ -1,6 +1,6 @@
 {
  "version": 2,
- "updated_utc": "2026-10-27T15:05:41Z",
+ "updated_utc": "2026-10-27T18:03:27Z",
  "how_to": "His words (21:28 UTC Oct 18, this thread): FB/TikTok 2 posts a day (Facebook Page 07:00 and 17:00, TikTok 07:00 and 18:00 Cairo); the device session may change ONLY the time (never delete) of any FB/TikTok post already scheduled on Buffer from Oct 19 on, to fit the grid; queue OK runs until 2026-11-21. STEP 1 (once): RETIME. For each entry in 'retime' (the 5 posts already in Buffer from Oct 19 on), change ONLY its time on both channels to new_times_cairo with its utc_offset; never delete or recreate it, keep caption and media. Read each one back and log old time, new time and post id. Any other Buffer post from Oct 19 on that is not in 'retime': do not touch it, log it as 'not-in-plan'. STEP 2 (every 30 min while the session runs, and on every «افحص الكيو»): for each item in 'items', in list order, schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at times_cairo[platform] with the item's utc_offset and the caption exactly as written, only while a slot is free under the 10-post cap per channel. Skip anything already done (by id in your log). If a time is less than 10 minutes away, skip it and log 'skipped-late'; never pick a new time yourself (Claude re-plans). If an item has 'only_if_url_exists', skip it until its url returns HTTP 200 and log 'waiting-file'. Items with a 'hold' field: never schedule them, log 'held'. Never delete any Buffer post; never edit any post other than the STEP 1 time changes; never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. type 'images' = Facebook multi-image post and TikTok photo post, images in the given order, no upload needed. If an item has 'captions' (per platform) use those instead of 'caption'. Use 'cover' as the video cover where Buffer allows it.",
  "retime": [
   {
@@ -3056,6 +3056,12 @@
   {
    "id": "req-live-urls",
    "what": "READ ONLY: list live permalinks of FB Page / TikTok / X posts that went out since the last run."
+  },
+  {
+   "id": "req-auto-script",
+   "his_ok": "18:02 UTC Oct 27 in this thread he chose «اعمله» on Claude's card «أعمل سكريبت صغير على جهازك يجدول بوستات الكيو لوحده كل يوم من غير كريديت؟» (card context: a plain script, not Claude, run daily 21:00 Cairo by Windows Task Scheduler, reads the queue file, schedules on Buffer whatever has a free slot with the same caption and time, never deletes anything, writes the log; no credits; PC must be on). His follow-up question 18:01 UTC: «هو انا لازم اقولك افحص الكيو كل 3 ايام ما ينفعش انت تعملها اتوماتيك في الميعاد المطلوب اللي ما يستهلكش كريديت ؟»",
+   "what": "ONE TIME: write a standalone Python script (no Claude/LLM calls) at D:\\Mostafa REELS Editor\\tools\\buffer_auto_queue.py that does exactly STEP 2 of how_to plus x_how_to: fetch queue/buffer-queue.json from the public repo raw URL, for each item in list order and each platform, skip done (per id+platform in social/buffer-scheduled-log.json), skip 'hold', skip-late if under 10 min away (log it), skip 'only_if_url_exists' until 200, schedule only while the channel has a free slot under the 10-post cap, caption/captions exactly, video url, times_cairo with utc_offset / utc_offset_x, X posts alone (never threads), read back each new post and log its Buffer id. Also record live permalinks of posts published since the last run in the log. Never delete or edit any Buffer post, never touch Metricool, never print or log the key (read it from _secrets at run time). Hard stop: do nothing after 2026-11-21 23:59 Cairo (his queue OK end). Then register a Windows Task Scheduler task 'Deishoo Buffer Queue' running it daily at 21:00 Cairo, with 'run as soon as possible after a missed start' enabled, only for this user, no admin rights needed. Test it once now in a dry-run mode (no writes to Buffer) and once for real, and report: task created yes/no, next run time, what the real run booked. Do not create any other scheduled task.",
+   "status": "new"
   }
  ],
  "retime_x": {

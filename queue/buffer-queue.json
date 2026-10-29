@@ -1,6 +1,6 @@
 {
  "version": 2,
- "updated_utc": "2026-10-29T00:49:28Z",
+ "updated_utc": "2026-10-29T20:05:30Z",
  "how_to": "His words (21:28 UTC Oct 18, this thread): FB/TikTok 2 posts a day (Facebook Page 07:00 and 17:00, TikTok 07:00 and 18:00 Cairo); the device session may change ONLY the time (never delete) of any FB/TikTok post already scheduled on Buffer from Oct 19 on, to fit the grid; queue OK has NO end date (his words 20:00 UTC Oct 27: «بقولك علي طول طالما في جدوله جدول بدون افحص الكيو»; was until 2026-11-21). STEP 1 (once): RETIME. For each entry in 'retime' (the 5 posts already in Buffer from Oct 19 on), change ONLY its time on both channels to new_times_cairo with its utc_offset; never delete or recreate it, keep caption and media. Read each one back and log old time, new time and post id. Any other Buffer post from Oct 19 on that is not in 'retime': do not touch it, log it as 'not-in-plan'. STEP 2 (every 30 min while the session runs, and on every «افحص الكيو»): for each item in 'items', in list order, schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at times_cairo[platform] with the item's utc_offset and the caption exactly as written, only while a slot is free under the 10-post cap per channel. Skip anything already done (by id in your log). If a time is less than 10 minutes away, skip it and log 'skipped-late'; never pick a new time yourself (Claude re-plans). If an item has 'only_if_url_exists', skip it until its url returns HTTP 200 and log 'waiting-file'. Items with a 'hold' field: never schedule them, log 'held'. Never delete any Buffer post; never edit any post other than the STEP 1 time changes; never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. type 'images' = Facebook multi-image post and TikTok photo post, images in the given order, no upload needed. If an item has 'captions' (per platform) use those instead of 'caption'. Use 'cover' as the video cover where Buffer allows it.",
  "retime": [
   {
@@ -348,32 +348,35 @@
    "utc_offset_x": "+03:00"
   },
   {
-   "id": "remix-tt1",
-   "priority": 3,
+   "id": "pyr-filmed-1",
+   "priority": 1,
    "platforms": [
     "facebook",
     "tiktok",
     "x"
    ],
    "type": "video",
-   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/timetravel/tt1-A.mp4",
-   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/timetravel/tt1-cover.jpg",
-   "caption": "راجل قال إنه جاي من سنة 2256 وكسب 350 مليون دولار من البورصة.. القصة كلها طلعت نكتة والناس صدقتها. انت كنت هتصدق؟ #السفرعبرالزمن #أخبارمضروبة #ديشو\n\nكنت هتصدق قصة المسافر من المستقبل؟ اكتب رأيك",
-   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E ; TikTok cover from phone",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/pyramids-filmed/pf1-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/pyramids-filmed/pf1-cover.jpg",
+   "caption": "إيلون ماسك قال إن الفضائيين بنوا الأهرامات.. ومصر ردت عليه بالدليل. #إيلون_ماسك #الأهرامات #ديشو\n\nمين كسب الخناقة: ماسك ولا مصر؟ اكتب رأيك",
+   "captions": {
+    "facebook": "إيلون ماسك قال إن الفضائيين بنوا الأهرامات.. ومصر ردت عليه بالدليل. #إيلون_ماسك #الأهرامات #ديشو\n\nمين كسب الخناقة: ماسك ولا مصر؟ اكتب رأيك",
+    "tiktok": "الفضائيين بنوا الاهرامات؟ ايلون ماسك قالها ومصر ردت عليه\nمين كسب: ماسك ولا مصر؟\nالحلقة كاملة على يوتيوب (اللينك في البايو) #ايلون_ماسك #الاهرامات #قصص_حقيقية #ديشو",
+    "x": "إيلون ماسك قال إن الفضائيين بنوا الأهرامات.. ومصر ردت عليه بالدليل. #إيلون_ماسك #الأهرامات #ديشو\n\nمين كسب الخناقة: ماسك ولا مصر؟ اكتب رأيك"
+   },
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/YokV_C0A4d4 ; TikTok pinned: مين اللي كسب الخناقة دي: ماسك ولا مصر؟ اكتب رأيك ; covers from phone",
+   "x_first_reply": {
+    "text": "الحلقة كاملة: https://youtu.be/YokV_C0A4d4",
+    "mode": "manual"
+   },
+   "approval": "His words 19:55 UTC Oct 29 (Pyramids thread): «بص جدول ال3 شورتس بكرة وعدي يوم وجدول بعده وعدي يوم وجدول بعده ... ورحل اللي كان مكانه من الشورتس لقدام»",
    "times_cairo": {
     "facebook": "2026-10-30T17:00",
     "tiktok": "2026-10-30T18:00",
-    "x": "2026-10-26T21:00"
+    "x": "2026-10-30T21:00"
    },
    "utc_offset": "+02:00",
-   "captions": {
-    "x": "راجل قال إنه جاي من سنة 2256 وكسب 350 مليون دولار من البورصة.. القصة كلها طلعت نكتة والناس صدقتها. انت كنت هتصدق؟\n\nكنت هتصدق قصة المسافر من المستقبل؟ اكتب رأيك\n#السفرعبرالزمن #ديشو"
-   },
-   "x_first_reply": {
-    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E",
-    "mode": "manual"
-   },
-   "utc_offset_x": "+03:00"
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "balbalady-deadsea",
@@ -408,6 +411,34 @@
    "approval": "His words 14:35 UTC Oct 27 (بالبلدي كده thread): «احجز وقولي بعد الحجز هتحتاج مني افحص الكيو كل كام يوم وذكرني قبلها في الشات الرئيسي». 3rd daily test slot 23:00 Cairo, every 2 days."
   },
   {
+   "id": "remix-tt1",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/timetravel/tt1-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/timetravel/tt1-cover.jpg",
+   "caption": "راجل قال إنه جاي من سنة 2256 وكسب 350 مليون دولار من البورصة.. القصة كلها طلعت نكتة والناس صدقتها. انت كنت هتصدق؟ #السفرعبرالزمن #أخبارمضروبة #ديشو\n\nكنت هتصدق قصة المسافر من المستقبل؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E ; TikTok cover from phone",
+   "times_cairo": {
+    "facebook": "2026-10-31T07:00",
+    "tiktok": "2026-10-31T07:00",
+    "x": "2026-10-26T21:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "x": "راجل قال إنه جاي من سنة 2256 وكسب 350 مليون دولار من البورصة.. القصة كلها طلعت نكتة والناس صدقتها. انت كنت هتصدق؟\n\nكنت هتصدق قصة المسافر من المستقبل؟ اكتب رأيك\n#السفرعبرالزمن #ديشو"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+03:00"
+  },
+  {
    "id": "ms990-s1",
    "priority": 1,
    "platforms": [
@@ -432,8 +463,8 @@
    "location": "القاهرة، مصر (only where Buffer supports it, see location_rule)",
    "approval": "Mostafa 2026-10-23 22:04 UTC «موافق جدولهم علي كل المنصات وزعهم علي الايام الفاضية معانا»",
    "times_cairo": {
-    "facebook": "2026-10-31T07:00",
-    "tiktok": "2026-10-31T07:00",
+    "facebook": "2026-10-31T17:00",
+    "tiktok": "2026-10-31T18:00",
     "x": "2026-10-27T21:00"
    },
    "utc_offset": "+02:00",
@@ -453,8 +484,8 @@
    "caption": "صاروخ نووي بيطلع من تحت البحر.. رأس واحد قوته 475 كيلو طن، يعني أكتر من 30 مرة قنبلة هيروشيما. #ترايدنت #الغواصات #ديشو\n\nالصواريخ دي بتحمي العالم ولا بتقربنا من الحرب؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-10-31T17:00",
-    "tiktok": "2026-10-31T18:00",
+    "facebook": "2026-11-01T07:00",
+    "tiktok": "2026-11-01T07:00",
     "x": "2026-10-28T12:00"
    },
    "utc_offset": "+02:00",
@@ -468,7 +499,7 @@
    "utc_offset_x": "+03:00"
   },
   {
-   "id": "ms990-s2",
+   "id": "pyr-filmed-2",
    "priority": 1,
    "platforms": [
     "facebook",
@@ -476,56 +507,27 @@
     "x"
    ],
    "type": "video",
-   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/ms990/ms990-s2-A.mp4",
-   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/ms990/ms990-s2-cover.jpg",
-   "caption": "«شد معايا، شد معايا».. آخر دقيقة في كابينة رحلة مصر للطيران 990.\n\nفعل متعمد ولا عطل في الطيارة؟ اكتب رأيك.\nابعتها لحد بيحب حكايات الطيران.\nالحلقة كاملة على يوتيوب، اللينك في البايو.\n\n#مصرللطيران990 #الصندوقالأسود #حوادثالطيران #ديشو\nالموسيقى: Gathering Darkness - Kevin MacLeod (incompetech.com), CC BY 4.0",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/pyramids-filmed/pf2-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/pyramids-filmed/pf2-cover.jpg",
+   "caption": "حصان اتكعبل جنب الهرم.. وكشف أشهر كدبة في أفلام هوليوود. #الأهرامات #بناة_الأهرامات #ديشو\n\nابعتها لحد لسه مصدق إن العبيد هما اللي بنوا الهرم",
    "captions": {
-    "facebook": "«شد معايا، شد معايا».. آخر دقيقة في كابينة رحلة مصر للطيران 990.\n\nفعل متعمد ولا عطل في الطيارة؟ اكتب رأيك.\nابعتها لحد بيحب حكايات الطيران.\nالحلقة كاملة على يوتيوب، اللينك في البايو.\n\n#مصرللطيران990 #الصندوقالأسود #حوادثالطيران #ديشو\nالموسيقى: Gathering Darkness - Kevin MacLeod (incompetech.com), CC BY 4.0",
-    "tiktok": "«شد معايا، شد معايا».. آخر دقيقة في كابينة رحلة مصر للطيران 990. رحلة مصر للطيران 990، البطوطي، الصندوق الأسود.\n\nفعل متعمد ولا عطل في الطيارة؟ اكتب رأيك في كومنت.\n\n#مصرللطيران990 #الصندوقالأسود #حوادثالطيران #ديشو\nالموسيقى: Gathering Darkness - Kevin MacLeod (incompetech.com), CC BY 4.0",
-    "x": "«شد معايا، شد معايا».. آخر دقيقة في كابينة رحلة مصر للطيران 990: المصاعد اتحركت عكس بعض والمحركات وقفت. أمريكا قالت حاجة ومصر قالت حاجة تانية. فعل متعمد ولا عطل في الطيارة؟\nالموسيقى: Gathering Darkness - Kevin MacLeod (incompetech.com), CC BY 4.0"
+    "facebook": "حصان اتكعبل جنب الهرم.. وكشف أشهر كدبة في أفلام هوليوود. #الأهرامات #بناة_الأهرامات #ديشو\n\nابعتها لحد لسه مصدق إن العبيد هما اللي بنوا الهرم",
+    "tiktok": "مين بنى الاهرامات؟ العبيد ولا العمال؟ حصان كشف الحقيقة سنة 1990\nكنت مصدق حكاية العبيد؟\nالحلقة كاملة على يوتيوب (اللينك في البايو) #الاهرامات #بناة_الاهرامات #قصص_حقيقية #ديشو",
+    "x": "حصان اتكعبل جنب الهرم.. وكشف أشهر كدبة في أفلام هوليوود. #الأهرامات #بناة_الأهرامات #ديشو\n\nابعتها لحد لسه مصدق إن العبيد هما اللي بنوا الهرم"
    },
-   "manual_after": "FB first comment: التقرير الأمريكي قال حاجة ومصر قالت حاجة تانية.. انت شايف آخر دقيقة في رحلة 990 كانت فعل متعمد ولا عطل في الطيارة؟ الحلقة كاملة على يوتيوب: https://youtu.be/Kp2tmlmDR9U ; TikTok cover from phone",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/YokV_C0A4d4 ; TikTok pinned: كنت مصدق حكاية العبيد قبل الفيديو ده؟ اكتب رأيك ; covers from phone",
    "x_first_reply": {
-    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/Kp2tmlmDR9U",
+    "text": "الحلقة كاملة: https://youtu.be/YokV_C0A4d4",
     "mode": "manual"
    },
-   "location": "القاهرة، مصر (only where Buffer supports it, see location_rule)",
-   "approval": "Mostafa 2026-10-23 22:04 UTC «موافق جدولهم علي كل المنصات وزعهم علي الايام الفاضية معانا»",
-   "times_cairo": {
-    "facebook": "2026-11-01T07:00",
-    "tiktok": "2026-11-01T07:00",
-    "x": "2026-10-28T21:00"
-   },
-   "utc_offset": "+02:00",
-   "utc_offset_x": "+03:00"
-  },
-  {
-   "id": "remix-gulf7",
-   "priority": 3,
-   "platforms": [
-    "facebook",
-    "tiktok",
-    "x"
-   ],
-   "type": "video",
-   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/gulf/gulf7-A.mp4",
-   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/gulf/gulf7-cover.jpg",
-   "caption": "العراق وليبيا جربوا سقوط الديكتاتور بإيد أجنبية.. والنتيجة؟ وإيران؟ #إيران #العراق #ليبيا #ديشو\n\nسقوط الديكتاتور بإيد أجنبية بيفيد الشعب ولا بيضرّه؟ اكتب رأيك",
-   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI ; TikTok cover from phone",
+   "approval": "His words 19:55 UTC Oct 29 (Pyramids thread): «بص جدول ال3 شورتس بكرة وعدي يوم وجدول بعده وعدي يوم وجدول بعده ... ورحل اللي كان مكانه من الشورتس لقدام»",
    "times_cairo": {
     "facebook": "2026-11-01T17:00",
     "tiktok": "2026-11-01T18:00",
-    "x": "2026-10-29T12:00"
+    "x": "2026-11-01T21:00"
    },
    "utc_offset": "+02:00",
-   "captions": {
-    "x": "العراق وليبيا جربوا سقوط الديكتاتور بإيد أجنبية.. والنتيجة؟ وإيران؟\n\nسقوط الديكتاتور بإيد أجنبية بيفيد الشعب ولا بيضرّه؟ اكتب رأيك\n#إيران #ديشو"
-   },
-   "x_first_reply": {
-    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
-    "mode": "manual"
-   },
-   "utc_offset_x": "+03:00"
+   "utc_offset_x": "+02:00"
   },
   {
    "id": "balbalady-gps",
@@ -560,6 +562,66 @@
    "approval": "His words 14:35 UTC Oct 27 (بالبلدي كده thread): «احجز وقولي بعد الحجز هتحتاج مني افحص الكيو كل كام يوم وذكرني قبلها في الشات الرئيسي». 3rd daily test slot 23:00 Cairo, every 2 days."
   },
   {
+   "id": "ms990-s2",
+   "priority": 1,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/ms990/ms990-s2-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/ms990/ms990-s2-cover.jpg",
+   "caption": "«شد معايا، شد معايا».. آخر دقيقة في كابينة رحلة مصر للطيران 990.\n\nفعل متعمد ولا عطل في الطيارة؟ اكتب رأيك.\nابعتها لحد بيحب حكايات الطيران.\nالحلقة كاملة على يوتيوب، اللينك في البايو.\n\n#مصرللطيران990 #الصندوقالأسود #حوادثالطيران #ديشو\nالموسيقى: Gathering Darkness - Kevin MacLeod (incompetech.com), CC BY 4.0",
+   "captions": {
+    "facebook": "«شد معايا، شد معايا».. آخر دقيقة في كابينة رحلة مصر للطيران 990.\n\nفعل متعمد ولا عطل في الطيارة؟ اكتب رأيك.\nابعتها لحد بيحب حكايات الطيران.\nالحلقة كاملة على يوتيوب، اللينك في البايو.\n\n#مصرللطيران990 #الصندوقالأسود #حوادثالطيران #ديشو\nالموسيقى: Gathering Darkness - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "tiktok": "«شد معايا، شد معايا».. آخر دقيقة في كابينة رحلة مصر للطيران 990. رحلة مصر للطيران 990، البطوطي، الصندوق الأسود.\n\nفعل متعمد ولا عطل في الطيارة؟ اكتب رأيك في كومنت.\n\n#مصرللطيران990 #الصندوقالأسود #حوادثالطيران #ديشو\nالموسيقى: Gathering Darkness - Kevin MacLeod (incompetech.com), CC BY 4.0",
+    "x": "«شد معايا، شد معايا».. آخر دقيقة في كابينة رحلة مصر للطيران 990: المصاعد اتحركت عكس بعض والمحركات وقفت. أمريكا قالت حاجة ومصر قالت حاجة تانية. فعل متعمد ولا عطل في الطيارة؟\nالموسيقى: Gathering Darkness - Kevin MacLeod (incompetech.com), CC BY 4.0"
+   },
+   "manual_after": "FB first comment: التقرير الأمريكي قال حاجة ومصر قالت حاجة تانية.. انت شايف آخر دقيقة في رحلة 990 كانت فعل متعمد ولا عطل في الطيارة؟ الحلقة كاملة على يوتيوب: https://youtu.be/Kp2tmlmDR9U ; TikTok cover from phone",
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/Kp2tmlmDR9U",
+    "mode": "manual"
+   },
+   "location": "القاهرة، مصر (only where Buffer supports it, see location_rule)",
+   "approval": "Mostafa 2026-10-23 22:04 UTC «موافق جدولهم علي كل المنصات وزعهم علي الايام الفاضية معانا»",
+   "times_cairo": {
+    "facebook": "2026-11-02T07:00",
+    "tiktok": "2026-11-02T07:00",
+    "x": "2026-10-28T21:00"
+   },
+   "utc_offset": "+02:00",
+   "utc_offset_x": "+03:00"
+  },
+  {
+   "id": "remix-gulf7",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/gulf/gulf7-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/gulf/gulf7-cover.jpg",
+   "caption": "العراق وليبيا جربوا سقوط الديكتاتور بإيد أجنبية.. والنتيجة؟ وإيران؟ #إيران #العراق #ليبيا #ديشو\n\nسقوط الديكتاتور بإيد أجنبية بيفيد الشعب ولا بيضرّه؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI ; TikTok cover from phone",
+   "times_cairo": {
+    "facebook": "2026-11-02T17:00",
+    "tiktok": "2026-11-02T18:00",
+    "x": "2026-10-29T12:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "x": "العراق وليبيا جربوا سقوط الديكتاتور بإيد أجنبية.. والنتيجة؟ وإيران؟\n\nسقوط الديكتاتور بإيد أجنبية بيفيد الشعب ولا بيضرّه؟ اكتب رأيك\n#إيران #ديشو"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+03:00"
+  },
+  {
    "id": "ms990-s3",
    "priority": 1,
    "platforms": [
@@ -584,95 +646,42 @@
    "location": "القاهرة، مصر (only where Buffer supports it, see location_rule)",
    "approval": "Mostafa 2026-10-23 22:04 UTC «موافق جدولهم علي كل المنصات وزعهم علي الايام الفاضية معانا»",
    "times_cairo": {
-    "facebook": "2026-11-02T07:00",
-    "tiktok": "2026-11-02T07:00",
+    "facebook": "2026-11-03T07:00",
+    "tiktok": "2026-11-03T07:00",
     "x": "2026-10-29T21:00"
    },
    "utc_offset": "+02:00",
    "utc_offset_x": "+03:00"
   },
   {
-   "id": "remix-tt3",
-   "priority": 3,
+   "id": "pyr-filmed-3",
+   "priority": 1,
    "platforms": [
     "facebook",
     "tiktok",
     "x"
    ],
    "type": "video",
-   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/timetravel/tt3-A.mp4",
-   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/timetravel/tt3-cover.jpg",
-   "caption": "الساعة اللي فوق في الفضاء بتسبق ساعتك 38 ميكروثانية كل يوم.. ولو محدش صلّحها، الجي بي اس كله يبوظ. #تمددالزمن #السفرعبرالزمن #ديشو\n\nكنت تعرف إن الزمن في الفضاء بيجري أسرع؟ اكتب رأيك",
-   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E ; TikTok cover from phone",
-   "times_cairo": {
-    "facebook": "2026-11-02T17:00",
-    "tiktok": "2026-11-02T18:00",
-    "x": "2026-10-30T12:00"
-   },
-   "utc_offset": "+02:00",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/pyramids-filmed/pf3-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/pyramids-filmed/pf3-cover.jpg",
+   "caption": "حتة خشب من جوه الهرم الأكبر.. اتلاقت في علبة سيجار في إسكتلندا. #الهرم_الأكبر #الأهرامات #ديشو\n\nتفتكر كانت بتعمل إيه جوه الهرم؟ اكتب رأيك",
    "captions": {
-    "x": "الساعة اللي فوق في الفضاء بتسبق ساعتك 38 ميكروثانية كل يوم.. ولو محدش صلّحها، الجي بي اس كله يبوظ.\n\nكنت تعرف إن الزمن في الفضاء بيجري أسرع؟ اكتب رأيك\n#تمددالزمن #ديشو"
+    "facebook": "حتة خشب من جوه الهرم الأكبر.. اتلاقت في علبة سيجار في إسكتلندا. #الهرم_الأكبر #الأهرامات #ديشو\n\nتفتكر كانت بتعمل إيه جوه الهرم؟ اكتب رأيك",
+    "tiktok": "خشب من جوه الهرم الاكبر اتلاقى في علبة سيجار في اسكتلندا\nتفتكر كان بيعمل ايه جوه الهرم؟\nالحلقة كاملة على يوتيوب (اللينك في البايو) #الهرم_الاكبر #الاهرامات #قصص_حقيقية #ديشو",
+    "x": "حتة خشب من جوه الهرم الأكبر.. اتلاقت في علبة سيجار في إسكتلندا. #الهرم_الأكبر #الأهرامات #ديشو\n\nتفتكر كانت بتعمل إيه جوه الهرم؟ اكتب رأيك"
    },
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/YokV_C0A4d4 ; TikTok pinned: تفتكر حتة الخشب دي كانت بتعمل إيه جوه الهرم؟ ; covers from phone",
    "x_first_reply": {
-    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E",
+    "text": "الحلقة كاملة: https://youtu.be/YokV_C0A4d4",
     "mode": "manual"
    },
-   "utc_offset_x": "+02:00"
-  },
-  {
-   "id": "remix-sub2",
-   "priority": 3,
-   "platforms": [
-    "facebook",
-    "tiktok",
-    "x"
-   ],
-   "type": "video",
-   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/submarine/sub2-A.mp4",
-   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/submarine/sub2-cover.jpg",
-   "caption": "الهروب من غواصة غارقة بيبقى من أنبوب الطوربيد.. عرضه 53 سم بس، وبدلة الهروب وزنها 23 كيلو. #الغواصات #القواتالبحريةالمصرية #ديشو\n\nتقدر تهرب من أنبوب عرضه 53 سم تحت المية؟ اكتب رأيك",
-   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U ; TikTok cover from phone",
-   "times_cairo": {
-    "facebook": "2026-11-03T07:00",
-    "tiktok": "2026-11-03T07:00",
-    "x": "2026-10-30T21:00"
-   },
-   "utc_offset": "+02:00",
-   "captions": {
-    "x": "الهروب من غواصة غارقة بيبقى من أنبوب الطوربيد.. عرضه 53 سم بس، وبدلة الهروب وزنها 23 كيلو.\n\nتقدر تهرب من أنبوب عرضه 53 سم تحت المية؟ اكتب رأيك\n#الغواصات #ديشو"
-   },
-   "x_first_reply": {
-    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
-    "mode": "manual"
-   },
-   "utc_offset_x": "+02:00"
-  },
-  {
-   "id": "remix-tt4",
-   "priority": 3,
-   "platforms": [
-    "facebook",
-    "tiktok",
-    "x"
-   ],
-   "type": "video",
-   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/timetravel/tt4-A.mp4",
-   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/timetravel/tt4-cover.jpg",
-   "caption": "رائد فضاء روسي سافر للمستقبل فعلا.. بس 0.02 ثانية. ولو قربت من سرعة الضوء 10 سنين؟ ترجع بعد 9000 سنة. #الفضاء #السفرعبرالزمن #ديشو\n\nهتركب الصاروخ وترجع بعد 9000 سنة؟ اكتب رأيك",
-   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E ; TikTok cover from phone",
+   "approval": "His words 19:55 UTC Oct 29 (Pyramids thread): «بص جدول ال3 شورتس بكرة وعدي يوم وجدول بعده وعدي يوم وجدول بعده ... ورحل اللي كان مكانه من الشورتس لقدام»",
    "times_cairo": {
     "facebook": "2026-11-03T17:00",
     "tiktok": "2026-11-03T18:00",
-    "x": "2026-10-31T12:00"
+    "x": "2026-11-03T21:00"
    },
    "utc_offset": "+02:00",
-   "captions": {
-    "x": "رائد فضاء روسي سافر للمستقبل فعلا.. بس 0.02 ثانية. ولو قربت من سرعة الضوء 10 سنين؟ ترجع بعد 9000 سنة.\n\nهتركب الصاروخ وترجع بعد 9000 سنة؟ اكتب رأيك\n#الفضاء #ديشو"
-   },
-   "x_first_reply": {
-    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E",
-    "mode": "manual"
-   },
    "utc_offset_x": "+02:00"
   },
   {
@@ -708,6 +717,90 @@
    "approval": "His words 14:35 UTC Oct 27 (بالبلدي كده thread): «احجز وقولي بعد الحجز هتحتاج مني افحص الكيو كل كام يوم وذكرني قبلها في الشات الرئيسي». 3rd daily test slot 23:00 Cairo, every 2 days."
   },
   {
+   "id": "remix-tt3",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/timetravel/tt3-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/timetravel/tt3-cover.jpg",
+   "caption": "الساعة اللي فوق في الفضاء بتسبق ساعتك 38 ميكروثانية كل يوم.. ولو محدش صلّحها، الجي بي اس كله يبوظ. #تمددالزمن #السفرعبرالزمن #ديشو\n\nكنت تعرف إن الزمن في الفضاء بيجري أسرع؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E ; TikTok cover from phone",
+   "times_cairo": {
+    "facebook": "2026-11-04T07:00",
+    "tiktok": "2026-11-04T07:00",
+    "x": "2026-10-30T12:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "x": "الساعة اللي فوق في الفضاء بتسبق ساعتك 38 ميكروثانية كل يوم.. ولو محدش صلّحها، الجي بي اس كله يبوظ.\n\nكنت تعرف إن الزمن في الفضاء بيجري أسرع؟ اكتب رأيك\n#تمددالزمن #ديشو"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00"
+  },
+  {
+   "id": "remix-sub2",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/submarine/sub2-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/submarine/sub2-cover.jpg",
+   "caption": "الهروب من غواصة غارقة بيبقى من أنبوب الطوربيد.. عرضه 53 سم بس، وبدلة الهروب وزنها 23 كيلو. #الغواصات #القواتالبحريةالمصرية #ديشو\n\nتقدر تهرب من أنبوب عرضه 53 سم تحت المية؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U ; TikTok cover from phone",
+   "times_cairo": {
+    "facebook": "2026-11-04T17:00",
+    "tiktok": "2026-11-04T18:00",
+    "x": "2026-10-31T12:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "x": "الهروب من غواصة غارقة بيبقى من أنبوب الطوربيد.. عرضه 53 سم بس، وبدلة الهروب وزنها 23 كيلو.\n\nتقدر تهرب من أنبوب عرضه 53 سم تحت المية؟ اكتب رأيك\n#الغواصات #ديشو"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00"
+  },
+  {
+   "id": "remix-tt4",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/timetravel/tt4-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/timetravel/tt4-cover.jpg",
+   "caption": "رائد فضاء روسي سافر للمستقبل فعلا.. بس 0.02 ثانية. ولو قربت من سرعة الضوء 10 سنين؟ ترجع بعد 9000 سنة. #الفضاء #السفرعبرالزمن #ديشو\n\nهتركب الصاروخ وترجع بعد 9000 سنة؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E ; TikTok cover from phone",
+   "times_cairo": {
+    "facebook": "2026-11-05T07:00",
+    "tiktok": "2026-11-05T07:00",
+    "x": "2026-10-31T21:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "x": "رائد فضاء روسي سافر للمستقبل فعلا.. بس 0.02 ثانية. ولو قربت من سرعة الضوء 10 سنين؟ ترجع بعد 9000 سنة.\n\nهتركب الصاروخ وترجع بعد 9000 سنة؟ اكتب رأيك\n#الفضاء #ديشو"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00"
+  },
+  {
    "id": "remix-sub4",
    "priority": 3,
    "platforms": [
@@ -721,9 +814,9 @@
    "caption": "صاروخ واحد يشيل 14 رأس نووي.. والغواصة تشيل 24 صاروخ. وبعدين جت معاهدة ستارت. #ستارت #غواصةأوهايو #ديشو\n\nالمعاهدات بتحمي العالم ولا حبر على ورق؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-11-04T07:00",
-    "tiktok": "2026-11-04T07:00",
-    "x": "2026-10-31T21:00"
+    "facebook": "2026-11-05T17:00",
+    "tiktok": "2026-11-05T18:00",
+    "x": "2026-11-01T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -731,87 +824,6 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
-    "mode": "manual"
-   },
-   "utc_offset_x": "+02:00"
-  },
-  {
-   "id": "remix-genghis-g1",
-   "priority": 3,
-   "platforms": [
-    "facebook",
-    "tiktok",
-    "x"
-   ],
-   "type": "video",
-   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/genghis/g1-A.mp4",
-   "caption": "المغول اللي ما حدش قدر يوقفهم.. اتكسروا في عين جالوت قدام قطز وبيبرس. #عينجالوت #المماليك #ديشو\n\nلو ما كانتش عين جالوت.. كان إيه اللي هيحصل؟ اكتب رأيك",
-   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
-   "times_cairo": {
-    "facebook": "2026-11-04T17:00",
-    "tiktok": "2026-11-04T18:00",
-    "x": "2026-11-01T12:00"
-   },
-   "utc_offset": "+02:00",
-   "captions": {
-    "x": "المغول اللي ما حدش قدر يوقفهم.. اتكسروا في عين جالوت قدام قطز وبيبرس.\n\nلو ما كانتش عين جالوت.. كان إيه اللي هيحصل؟ اكتب رأيك\n#عينجالوت #ديشو"
-   },
-   "x_first_reply": {
-    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
-    "mode": "manual"
-   },
-   "utc_offset_x": "+02:00"
-  },
-  {
-   "id": "remix-genghis-g5",
-   "priority": 3,
-   "platforms": [
-    "facebook",
-    "tiktok",
-    "x"
-   ],
-   "type": "video",
-   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/genghis/g5-A.mp4",
-   "caption": "جندي هرب؟ التسعة اللي معاه يتعدموا.. ده كان نظام جنكيز خان. #جنكيزخان #المغول #ديشو\n\nالقسوة هي سر جيش المغول؟ اكتب رأيك",
-   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
-   "times_cairo": {
-    "facebook": "2026-11-05T07:00",
-    "tiktok": "2026-11-05T07:00",
-    "x": "2026-11-01T21:00"
-   },
-   "utc_offset": "+02:00",
-   "captions": {
-    "x": "جندي هرب؟ التسعة اللي معاه يتعدموا.. ده كان نظام جنكيز خان.\n\nالقسوة هي سر جيش المغول؟ اكتب رأيك\n#جنكيزخان #ديشو"
-   },
-   "x_first_reply": {
-    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
-    "mode": "manual"
-   },
-   "utc_offset_x": "+02:00"
-  },
-  {
-   "id": "remix-genghis-g6",
-   "priority": 3,
-   "platforms": [
-    "facebook",
-    "tiktok",
-    "x"
-   ],
-   "type": "video",
-   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/genghis/g6-A.mp4",
-   "caption": "صلاح الدين وجنكيز خان عاشوا في نفس الزمن.. واحد بيرجع القدس والتاني بيجهز لدمار شامل. #صلاحالدين #جنكيزخان #ديشو\n\nصلاح الدين ولا جنكيز خان؟ اكتب رأيك",
-   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
-   "times_cairo": {
-    "facebook": "2026-11-05T17:00",
-    "tiktok": "2026-11-05T18:00",
-    "x": "2026-11-02T12:00"
-   },
-   "utc_offset": "+02:00",
-   "captions": {
-    "x": "صلاح الدين وجنكيز خان عاشوا في نفس الزمن.. واحد بيرجع القدس والتاني بيجهز لدمار شامل.\n\nصلاح الدين ولا جنكيز خان؟ اكتب رأيك\n#صلاحالدين #ديشو"
-   },
-   "x_first_reply": {
-    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
     "mode": "manual"
    },
    "utc_offset_x": "+02:00"
@@ -849,6 +861,87 @@
    "approval": "His words 14:35 UTC Oct 27 (بالبلدي كده thread): «احجز وقولي بعد الحجز هتحتاج مني افحص الكيو كل كام يوم وذكرني قبلها في الشات الرئيسي». 3rd daily test slot 23:00 Cairo, every 2 days."
   },
   {
+   "id": "remix-genghis-g1",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/genghis/g1-A.mp4",
+   "caption": "المغول اللي ما حدش قدر يوقفهم.. اتكسروا في عين جالوت قدام قطز وبيبرس. #عينجالوت #المماليك #ديشو\n\nلو ما كانتش عين جالوت.. كان إيه اللي هيحصل؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
+   "times_cairo": {
+    "facebook": "2026-11-06T07:00",
+    "tiktok": "2026-11-06T07:00",
+    "x": "2026-11-02T12:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "x": "المغول اللي ما حدش قدر يوقفهم.. اتكسروا في عين جالوت قدام قطز وبيبرس.\n\nلو ما كانتش عين جالوت.. كان إيه اللي هيحصل؟ اكتب رأيك\n#عينجالوت #ديشو"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00"
+  },
+  {
+   "id": "remix-genghis-g5",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/genghis/g5-A.mp4",
+   "caption": "جندي هرب؟ التسعة اللي معاه يتعدموا.. ده كان نظام جنكيز خان. #جنكيزخان #المغول #ديشو\n\nالقسوة هي سر جيش المغول؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
+   "times_cairo": {
+    "facebook": "2026-11-06T17:00",
+    "tiktok": "2026-11-06T18:00",
+    "x": "2026-11-02T21:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "x": "جندي هرب؟ التسعة اللي معاه يتعدموا.. ده كان نظام جنكيز خان.\n\nالقسوة هي سر جيش المغول؟ اكتب رأيك\n#جنكيزخان #ديشو"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00"
+  },
+  {
+   "id": "remix-genghis-g6",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/genghis/g6-A.mp4",
+   "caption": "صلاح الدين وجنكيز خان عاشوا في نفس الزمن.. واحد بيرجع القدس والتاني بيجهز لدمار شامل. #صلاحالدين #جنكيزخان #ديشو\n\nصلاح الدين ولا جنكيز خان؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
+   "times_cairo": {
+    "facebook": "2026-11-07T07:00",
+    "tiktok": "2026-11-07T07:00",
+    "x": "2026-11-03T12:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "x": "صلاح الدين وجنكيز خان عاشوا في نفس الزمن.. واحد بيرجع القدس والتاني بيجهز لدمار شامل.\n\nصلاح الدين ولا جنكيز خان؟ اكتب رأيك\n#صلاحالدين #ديشو"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00"
+  },
+  {
    "id": "remix-gulf2",
    "priority": 3,
    "platforms": [
@@ -861,9 +954,9 @@
    "caption": "ترامب كتب «مش هاخد نوبل» 6 مرات في بوست واحد (21 يونيو 2025).. يستاهلها ولا لأ؟ #ترامب #نوبل #إيران #ديشو\n\nفي رأيك: ترامب يستاهل نوبل للسلام؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
    "times_cairo": {
-    "facebook": "2026-11-06T07:00",
-    "tiktok": "2026-11-06T07:00",
-    "x": "2026-11-02T21:00"
+    "facebook": "2026-11-07T17:00",
+    "tiktok": "2026-11-07T18:00",
+    "x": "2026-11-04T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -871,87 +964,6 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
-    "mode": "manual"
-   },
-   "utc_offset_x": "+02:00"
-  },
-  {
-   "id": "remix-sub5",
-   "priority": 3,
-   "platforms": [
-    "facebook",
-    "tiktok",
-    "x"
-   ],
-   "type": "video",
-   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/submarine/sub5-A.mp4",
-   "caption": "على عمق 500 متر الضغط 50 ضعف اللي على السطح.. وده اللي حصل مع تيتان. #تيتان #الغواصات #ديشو\n\nتنزل لحطام تيتانيك في غواصة؟ اكتب رأيك",
-   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
-   "times_cairo": {
-    "facebook": "2026-11-06T17:00",
-    "tiktok": "2026-11-06T18:00",
-    "x": "2026-11-03T12:00"
-   },
-   "utc_offset": "+02:00",
-   "captions": {
-    "x": "على عمق 500 متر الضغط 50 ضعف اللي على السطح.. وده اللي حصل مع تيتان.\n\nتنزل لحطام تيتانيك في غواصة؟ اكتب رأيك\n#تيتان #ديشو"
-   },
-   "x_first_reply": {
-    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
-    "mode": "manual"
-   },
-   "utc_offset_x": "+02:00"
-  },
-  {
-   "id": "remix-men2",
-   "priority": 3,
-   "platforms": [
-    "facebook",
-    "tiktok",
-    "x"
-   ],
-   "type": "video",
-   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/mencho/men2-A.mp4",
-   "caption": "الجيش المكسيكي طلع بالطيارات عشان يقبض على إل منشو.. والكارتل كان مستنيه بقاذفات آر بي جي ووقّع طيارة عسكرية. #المنشو #المكسيك #ديشو\n\nإزاي كارتل يبقى أقوى من جيش دولة؟ اكتب رأيك",
-   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
-   "times_cairo": {
-    "facebook": "2026-11-07T07:00",
-    "tiktok": "2026-11-07T07:00",
-    "x": "2026-11-03T21:00"
-   },
-   "utc_offset": "+02:00",
-   "captions": {
-    "x": "الجيش المكسيكي طلع بالطيارات عشان يقبض على إل منشو.. والكارتل كان مستنيه بقاذفات آر بي جي ووقّع طيارة عسكرية.\n\nإزاي كارتل يبقى أقوى من جيش دولة؟ اكتب رأيك\n#المنشو #ديشو"
-   },
-   "x_first_reply": {
-    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
-    "mode": "manual"
-   },
-   "utc_offset_x": "+02:00"
-  },
-  {
-   "id": "remix-sub6",
-   "priority": 3,
-   "platforms": [
-    "facebook",
-    "tiktok",
-    "x"
-   ],
-   "type": "video",
-   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/submarine/sub6-A.mp4",
-   "caption": "الغواصة النووية مش محتاجة تطلع على السطح.. الحاجة الوحيدة اللي بتطلعها هي الأكل. #الغواصات #ديشو\n\nتقدر تعيش شهور تحت المية؟ اكتب رأيك",
-   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
-   "times_cairo": {
-    "facebook": "2026-11-07T17:00",
-    "tiktok": "2026-11-07T18:00",
-    "x": "2026-11-04T12:00"
-   },
-   "utc_offset": "+02:00",
-   "captions": {
-    "x": "الغواصة النووية مش محتاجة تطلع على السطح.. الحاجة الوحيدة اللي بتطلعها هي الأكل.\n\nتقدر تعيش شهور تحت المية؟ اكتب رأيك\n#الغواصات #ديشو"
-   },
-   "x_first_reply": {
-    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
     "mode": "manual"
    },
    "utc_offset_x": "+02:00"
@@ -989,6 +1001,87 @@
    "approval": "His words 14:35 UTC Oct 27 (بالبلدي كده thread): «احجز وقولي بعد الحجز هتحتاج مني افحص الكيو كل كام يوم وذكرني قبلها في الشات الرئيسي». 3rd daily test slot 23:00 Cairo, every 2 days."
   },
   {
+   "id": "remix-sub5",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/submarine/sub5-A.mp4",
+   "caption": "على عمق 500 متر الضغط 50 ضعف اللي على السطح.. وده اللي حصل مع تيتان. #تيتان #الغواصات #ديشو\n\nتنزل لحطام تيتانيك في غواصة؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
+   "times_cairo": {
+    "facebook": "2026-11-08T07:00",
+    "tiktok": "2026-11-08T07:00",
+    "x": "2026-11-04T21:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "x": "على عمق 500 متر الضغط 50 ضعف اللي على السطح.. وده اللي حصل مع تيتان.\n\nتنزل لحطام تيتانيك في غواصة؟ اكتب رأيك\n#تيتان #ديشو"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00"
+  },
+  {
+   "id": "remix-men2",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/mencho/men2-A.mp4",
+   "caption": "الجيش المكسيكي طلع بالطيارات عشان يقبض على إل منشو.. والكارتل كان مستنيه بقاذفات آر بي جي ووقّع طيارة عسكرية. #المنشو #المكسيك #ديشو\n\nإزاي كارتل يبقى أقوى من جيش دولة؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
+   "times_cairo": {
+    "facebook": "2026-11-08T17:00",
+    "tiktok": "2026-11-08T18:00",
+    "x": "2026-11-05T12:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "x": "الجيش المكسيكي طلع بالطيارات عشان يقبض على إل منشو.. والكارتل كان مستنيه بقاذفات آر بي جي ووقّع طيارة عسكرية.\n\nإزاي كارتل يبقى أقوى من جيش دولة؟ اكتب رأيك\n#المنشو #ديشو"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00"
+  },
+  {
+   "id": "remix-sub6",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/submarine/sub6-A.mp4",
+   "caption": "الغواصة النووية مش محتاجة تطلع على السطح.. الحاجة الوحيدة اللي بتطلعها هي الأكل. #الغواصات #ديشو\n\nتقدر تعيش شهور تحت المية؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
+   "times_cairo": {
+    "facebook": "2026-11-09T07:00",
+    "tiktok": "2026-11-09T07:00",
+    "x": "2026-11-05T21:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "x": "الغواصة النووية مش محتاجة تطلع على السطح.. الحاجة الوحيدة اللي بتطلعها هي الأكل.\n\nتقدر تعيش شهور تحت المية؟ اكتب رأيك\n#الغواصات #ديشو"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00"
+  },
+  {
    "id": "remix-sub7",
    "priority": 3,
    "platforms": [
@@ -1001,9 +1094,9 @@
    "caption": "الطبقة السودة على الغواصة مطاط.. والسبب إنه بيبلع الصوت. #الغواصات #ديشو\n\nتختار هيكل أحادي ولا مزدوج؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
    "times_cairo": {
-    "facebook": "2026-11-08T07:00",
-    "tiktok": "2026-11-08T07:00",
-    "x": "2026-11-04T21:00"
+    "facebook": "2026-11-09T17:00",
+    "tiktok": "2026-11-09T18:00",
+    "x": "2026-11-06T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1011,87 +1104,6 @@
    },
    "x_first_reply": {
     "text": "الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
-    "mode": "manual"
-   },
-   "utc_offset_x": "+02:00"
-  },
-  {
-   "id": "remix-gulf3",
-   "priority": 3,
-   "platforms": [
-    "facebook",
-    "tiktok",
-    "x"
-   ],
-   "type": "video",
-   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/gulf/gulf3-A.mp4",
-   "caption": "بعد إعلان الهدنة بساعات (24 يونيو 2025) الطرفين رجعوا يضربوا.. وترامب: «مش مبسوط من إسرائيل ولا من إيران». مين خرقها الأول؟ #ترامب #إيران #إسرائيل #ديشو\n\nفي رأيك: مين اللي خرق الهدنة الأول؟ اكتب رأيك",
-   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
-   "times_cairo": {
-    "facebook": "2026-11-08T17:00",
-    "tiktok": "2026-11-08T18:00",
-    "x": "2026-11-05T12:00"
-   },
-   "utc_offset": "+02:00",
-   "captions": {
-    "x": "بعد إعلان الهدنة بساعات (24 يونيو 2025) الطرفين رجعوا يضربوا.. وترامب: «مش مبسوط من إسرائيل ولا من إيران». مين خرقها الأول؟\n\nفي رأيك: مين اللي خرق الهدنة الأول؟ اكتب رأيك\n#ترامب #ديشو"
-   },
-   "x_first_reply": {
-    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
-    "mode": "manual"
-   },
-   "utc_offset_x": "+02:00"
-  },
-  {
-   "id": "remix-gulf6",
-   "priority": 3,
-   "platforms": [
-    "facebook",
-    "tiktok",
-    "x"
-   ],
-   "type": "video",
-   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/gulf/gulf6-A.mp4",
-   "caption": "أوباما عمل الاتفاق النووي 2015.. ترامب لغاه 2018 وقال «معيب».. وبرقية مسرّبة قالت السبب شخصي. انت مصدّق مين؟ #ترامب #أوباما #إيران #ديشو\n\nترامب لغى الاتفاق عشان أوباما ولا عشان الاتفاق وحش؟ اكتب رأيك",
-   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
-   "times_cairo": {
-    "facebook": "2026-11-09T07:00",
-    "tiktok": "2026-11-09T07:00",
-    "x": "2026-11-05T21:00"
-   },
-   "utc_offset": "+02:00",
-   "captions": {
-    "x": "أوباما عمل الاتفاق النووي 2015.. ترامب لغاه 2018 وقال «معيب».. وبرقية مسرّبة قالت السبب شخصي. انت مصدّق مين؟\n\nترامب لغى الاتفاق عشان أوباما ولا عشان الاتفاق وحش؟ اكتب رأيك\n#ترامب #ديشو"
-   },
-   "x_first_reply": {
-    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
-    "mode": "manual"
-   },
-   "utc_offset_x": "+02:00"
-  },
-  {
-   "id": "remix-men3",
-   "priority": 3,
-   "platforms": [
-    "facebook",
-    "tiktok",
-    "x"
-   ],
-   "type": "video",
-   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/mencho/men3-A.mp4",
-   "caption": "«بلاتا أو بلومو».. يا تاخد الفلوس يا تاخد الرصاص. ده اللي بيتقال لعُمد مدن المكسيك. #المنشو #المكسيك #ديشو\n\nلو انت مكان العمدة.. هتعمل إيه؟ اكتب رأيك",
-   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
-   "times_cairo": {
-    "facebook": "2026-11-09T17:00",
-    "tiktok": "2026-11-09T18:00",
-    "x": "2026-11-06T12:00"
-   },
-   "utc_offset": "+02:00",
-   "captions": {
-    "x": "«بلاتا أو بلومو».. يا تاخد الفلوس يا تاخد الرصاص. ده اللي بيتقال لعُمد مدن المكسيك.\n\nلو انت مكان العمدة.. هتعمل إيه؟ اكتب رأيك\n#المنشو #ديشو"
-   },
-   "x_first_reply": {
-    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
     "mode": "manual"
    },
    "utc_offset_x": "+02:00"
@@ -1129,6 +1141,87 @@
    "approval": "His words 14:35 UTC Oct 27 (بالبلدي كده thread): «احجز وقولي بعد الحجز هتحتاج مني افحص الكيو كل كام يوم وذكرني قبلها في الشات الرئيسي». 3rd daily test slot 23:00 Cairo, every 2 days."
   },
   {
+   "id": "remix-gulf3",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/gulf/gulf3-A.mp4",
+   "caption": "بعد إعلان الهدنة بساعات (24 يونيو 2025) الطرفين رجعوا يضربوا.. وترامب: «مش مبسوط من إسرائيل ولا من إيران». مين خرقها الأول؟ #ترامب #إيران #إسرائيل #ديشو\n\nفي رأيك: مين اللي خرق الهدنة الأول؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
+   "times_cairo": {
+    "facebook": "2026-11-10T07:00",
+    "tiktok": "2026-11-10T07:00",
+    "x": "2026-11-06T21:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "x": "بعد إعلان الهدنة بساعات (24 يونيو 2025) الطرفين رجعوا يضربوا.. وترامب: «مش مبسوط من إسرائيل ولا من إيران». مين خرقها الأول؟\n\nفي رأيك: مين اللي خرق الهدنة الأول؟ اكتب رأيك\n#ترامب #ديشو"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00"
+  },
+  {
+   "id": "remix-gulf6",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/gulf/gulf6-A.mp4",
+   "caption": "أوباما عمل الاتفاق النووي 2015.. ترامب لغاه 2018 وقال «معيب».. وبرقية مسرّبة قالت السبب شخصي. انت مصدّق مين؟ #ترامب #أوباما #إيران #ديشو\n\nترامب لغى الاتفاق عشان أوباما ولا عشان الاتفاق وحش؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
+   "times_cairo": {
+    "facebook": "2026-11-10T17:00",
+    "tiktok": "2026-11-10T18:00",
+    "x": "2026-11-07T12:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "x": "أوباما عمل الاتفاق النووي 2015.. ترامب لغاه 2018 وقال «معيب».. وبرقية مسرّبة قالت السبب شخصي. انت مصدّق مين؟\n\nترامب لغى الاتفاق عشان أوباما ولا عشان الاتفاق وحش؟ اكتب رأيك\n#ترامب #ديشو"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00"
+  },
+  {
+   "id": "remix-men3",
+   "priority": 3,
+   "platforms": [
+    "facebook",
+    "tiktok",
+    "x"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/mencho/men3-A.mp4",
+   "caption": "«بلاتا أو بلومو».. يا تاخد الفلوس يا تاخد الرصاص. ده اللي بيتقال لعُمد مدن المكسيك. #المنشو #المكسيك #ديشو\n\nلو انت مكان العمدة.. هتعمل إيه؟ اكتب رأيك",
+   "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
+   "times_cairo": {
+    "facebook": "2026-11-11T07:00",
+    "tiktok": "2026-11-11T07:00",
+    "x": "2026-11-07T21:00"
+   },
+   "utc_offset": "+02:00",
+   "captions": {
+    "x": "«بلاتا أو بلومو».. يا تاخد الفلوس يا تاخد الرصاص. ده اللي بيتقال لعُمد مدن المكسيك.\n\nلو انت مكان العمدة.. هتعمل إيه؟ اكتب رأيك\n#المنشو #ديشو"
+   },
+   "x_first_reply": {
+    "text": "الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
+    "mode": "manual"
+   },
+   "utc_offset_x": "+02:00"
+  },
+  {
    "id": "remix-gulf1",
    "priority": 3,
    "platforms": [
@@ -1141,9 +1234,9 @@
    "caption": "نتنياهو قال «مش فاكر» 1778 مرة.. والاستجواب بدأ قبل ضرب إيران بعشر أيام بس (3 يونيو 2025). ذكاء ولا هروب؟ #نتنياهو #إسرائيل #إيران #ديشو\n\n«مش فاكر» دي ذكاء ولا هروب من الحقيقة؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
    "times_cairo": {
-    "facebook": "2026-11-10T07:00",
-    "tiktok": "2026-11-10T07:00",
-    "x": "2026-11-06T21:00"
+    "facebook": "2026-11-11T17:00",
+    "tiktok": "2026-11-11T18:00",
+    "x": "2026-11-08T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1168,9 +1261,9 @@
    "caption": "ستيفن هوكينغ عمل حفلة للمسافرين عبر الزمن وبعت الدعوات بعد ما خلصت.. ومحدش جه. يبقى السفر للماضي مستحيل؟ #ستيفنهوكينغ #السفرعبرالزمن #ديشو\n\nليه محدش جه حفلة هوكينغ؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E",
    "times_cairo": {
-    "facebook": "2026-11-10T17:00",
-    "tiktok": "2026-11-10T18:00",
-    "x": "2026-11-07T12:00"
+    "facebook": "2026-11-12T07:00",
+    "tiktok": "2026-11-12T07:00",
+    "x": "2026-11-08T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1195,9 +1288,9 @@
    "caption": "إل منشو بعد ما اترحّل من أمريكا بقى ظابط شرطة في المكسيك.. واتعلم إزاي يشتري الظباط. #المنشو #المكسيك #ديشو\n\nليه الفساد في الشرطة بيخلي العصابات أقوى؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
    "times_cairo": {
-    "facebook": "2026-11-11T07:00",
-    "tiktok": "2026-11-11T07:00",
-    "x": "2026-11-07T21:00"
+    "facebook": "2026-11-12T17:00",
+    "tiktok": "2026-11-12T18:00",
+    "x": "2026-11-09T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1222,9 +1315,9 @@
    "caption": "ترامب قال «دمار شامل».. وتقييم المخابرات الأمريكية (24 يونيو 2025) قال إن اليورانيوم ما اتدمرش وجزء منه اتنقل قبل الضربة. مين صح؟ #إيران #ترامب #فوردو #ديشو\n\nفي رأيك: الضربة دمرت البرنامج النووي ولا أخرته بس؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
    "times_cairo": {
-    "facebook": "2026-11-11T17:00",
-    "tiktok": "2026-11-11T18:00",
-    "x": "2026-11-08T12:00"
+    "facebook": "2026-11-13T07:00",
+    "tiktok": "2026-11-13T07:00",
+    "x": "2026-11-09T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1249,9 +1342,9 @@
    "caption": "البحرية المصرية عندها 4 غواصات تايب 209 ألمانية و4 روميو.. والتدريب في رأس التين وكيل. #القواتالبحريةالمصرية #غواصاتمصر #ديشو\n\nمصر محتاجة غواصات نووية؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
    "times_cairo": {
-    "facebook": "2026-11-12T07:00",
-    "tiktok": "2026-11-12T07:00",
-    "x": "2026-11-08T21:00"
+    "facebook": "2026-11-13T17:00",
+    "tiktok": "2026-11-13T18:00",
+    "x": "2026-11-10T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1276,9 +1369,9 @@
    "caption": "ساعة واحدة جنب ثقب أسود = 7 سنين على الأرض.. وفي 2019 شفنا أول صورة حقيقية لثقب أسود. #ثقبأسود #السفرعبرالزمن #ديشو\n\nتقضي ساعة جنب ثقب أسود وترجع بعد 7 سنين؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E",
    "times_cairo": {
-    "facebook": "2026-11-12T17:00",
-    "tiktok": "2026-11-12T18:00",
-    "x": "2026-11-09T12:00"
+    "facebook": "2026-11-14T07:00",
+    "tiktok": "2026-11-14T07:00",
+    "x": "2026-11-10T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1303,9 +1396,9 @@
    "caption": "أمريكا بنفسها دخّلت أكتر من 2000 قطعة سلاح للمكسيك في عملية اسمها Fast and Furious.. واتنين منهم اتلقوا في مكان مقتل عميل حدود أمريكي. #المنشو #المكسيك #ديشو\n\nأمريكا كانت عارفة ولا دي غلطة؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
    "times_cairo": {
-    "facebook": "2026-11-13T07:00",
-    "tiktok": "2026-11-13T07:00",
-    "x": "2026-11-09T21:00"
+    "facebook": "2026-11-14T17:00",
+    "tiktok": "2026-11-14T18:00",
+    "x": "2026-11-11T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1330,9 +1423,9 @@
    "caption": "2 ملي جرام بس تقتل إنسان.. والحباية بتتكلف 10 سنت. ده الفنتانيل اللي قتل حوالي 73 ألف شخص في أمريكا في سنة واحدة. #المنشو #الفنتانيل #ديشو\n\nمين المسؤول الأول عن الأزمة دي؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
    "times_cairo": {
-    "facebook": "2026-11-13T17:00",
-    "tiktok": "2026-11-13T18:00",
-    "x": "2026-11-10T12:00"
+    "facebook": "2026-11-15T07:00",
+    "tiktok": "2026-11-15T07:00",
+    "x": "2026-11-11T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1357,9 +1450,9 @@
    "caption": "مكافأة 20 ألف بيزو على راس كل عسكري.. و20 ولاية ولعت في نفس الوقت. ده اللي عمله كارتل خاليسكو بعد موت إل منشو. #المنشو #المكسيك #ديشو\n\nالدولة تقدر تكسب الحرب دي إزاي؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
    "times_cairo": {
-    "facebook": "2026-11-14T07:00",
-    "tiktok": "2026-11-14T07:00",
-    "x": "2026-11-10T21:00"
+    "facebook": "2026-11-15T17:00",
+    "tiktok": "2026-11-15T18:00",
+    "x": "2026-11-12T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1392,8 +1485,8 @@
    "caption": "ملك مصر اتقتل جوه قصره.. والأشعة كشفت الجريمة بعد 3000 سنة.\nجرح في الرقبة، وصباع مقطوع، وقضاة اتحاكموا هما كمان.\nتفتكر الملكة تيي كانت تستاهل نفس العقاب اللي اتحكم بيه على الباقيين؟\nالحلقة كاملة على يوتيوب، اللينك في البايو\n#رمسيس #الفراعنة #مصرالقديمة #تاريخ #ديشو",
    "manual_after": "FB first comment (free plan has no first comment): لو انت كنت قاضي في المحاكمة دي: بنتاور كان يستاهل العقاب ده، ولا أمه هي اللي كان المفروض تتحاسب الأول؟ الحلقة كاملة على يوتيوب، اللينك في البايو",
    "times_cairo": {
-    "facebook": "2026-11-14T17:00",
-    "tiktok": "2026-11-14T18:00"
+    "facebook": "2026-11-16T07:00",
+    "tiktok": "2026-11-16T07:00"
    },
    "utc_offset": "+02:00"
   },
@@ -1418,8 +1511,8 @@
    "caption": "غارة على منجم دهب في جبل العقيدات، وأرقام ضحايا مختلفة حسب كل مصدر، وفيديوهات قالت CNN بالعربية ومصراوي إنها قديمة أو مش مصرية.\nجمعنالك كل رواية ومين قالها، من غير ما نحكم قبل التحقيق.\nتفتكر الإعلام بيكبّر الموضوع؟\nالحلقة كاملة على يوتيوب، اللينك في البايو\n#مصر #السودان #حلايب #أخبار #ديشو",
    "manual_after": "FB first comment (free plan has no first comment): في رأيك: أنهي رقم تصدقه؟ وليه؟ الحلقة كاملة وكل وجهات النظر على يوتيوب، اللينك في البايو",
    "times_cairo": {
-    "facebook": "2026-11-15T07:00",
-    "tiktok": "2026-11-15T07:00"
+    "facebook": "2026-11-16T17:00",
+    "tiktok": "2026-11-16T18:00"
    },
    "utc_offset": "+02:00"
   },
@@ -1444,8 +1537,8 @@
    "caption": "جرعتين من مادة الإعدام… وخرجت عايشة.\nليلة 30 سبتمبر دقيقة بدقيقة، ومكالمات الطوارئ، وليه الإعدام فشل.\nلو انت القاضي: يعدموها تاني ولا كفاية كده؟\nالحلقة كاملة على يوتيوب، اللينك في البايو\n#كريستابايك #الإعدام #قضاياحقيقية #أمريكا #ديشو",
    "manual_after": "FB first comment (free plan has no first comment): لو انت القاضي: يعدموها تاني ولا كفاية كده؟ الحلقة كاملة على يوتيوب، اللينك في البايو",
    "times_cairo": {
-    "facebook": "2026-11-15T17:00",
-    "tiktok": "2026-11-15T18:00"
+    "facebook": "2026-11-17T07:00",
+    "tiktok": "2026-11-17T07:00"
    },
    "utc_offset": "+02:00"
   },
@@ -1470,8 +1563,8 @@
    "caption": "في كل كابينة طيارة فاس طوارئ معمولة عشان تنقذ… بس يوم 30 سبتمبر اتعمل بيها العكس بالضبط.\nمين نزّل طيارة فلاي دبي بجد؟ مش سبّاك.\nلو كنت راكب على الرحلة دي، كنت هتعمل إيه؟\nالحلقة كاملة على يوتيوب، اللينك في البايو\n#فلايدبي #طيران #قصصحقيقية #ديشو",
    "manual_after": "FB first comment (free plan has no first comment): باب كابينة الطيارة: يفضل مقفول من جوه وبس، ولا لازم يكون فيه طريقة تفتحه من برّه؟ اكتب «جوه» أو «برّه». الحلقة كاملة على يوتيوب، اللينك في البايو",
    "times_cairo": {
-    "facebook": "2026-11-16T07:00",
-    "tiktok": "2026-11-16T07:00"
+    "facebook": "2026-11-17T17:00",
+    "tiktok": "2026-11-17T18:00"
    },
    "utc_offset": "+02:00"
   },
@@ -1496,8 +1589,8 @@
    "caption": "عربية على المور بتطلع المطلع لوحدها، وإزازة مية بتطلع لفوق.\nناس بتقول جن، وناس بتقول مغناطيس… والاتنين غلط.\nتفتكر ليه نفس الحكاية موجودة في الهند وكوريا وأمريكا واسكتلندا؟\nالحلقة كاملة على يوتيوب، اللينك في البايو\n#واديالجن #المدينةالمنورة #ظواهرغريبة #خداعبصري #ديشو",
    "manual_after": "FB first comment (free plan has no first comment): زرت وادي الجن قبل كده؟ ولو رحت، هتحط العربية على المور تجرب؟ الحلقة كاملة على يوتيوب، اللينك في البايو",
    "times_cairo": {
-    "facebook": "2026-11-16T17:00",
-    "tiktok": "2026-11-16T18:00"
+    "facebook": "2026-11-18T07:00",
+    "tiktok": "2026-11-18T07:00"
    },
    "utc_offset": "+02:00"
   },
@@ -1514,9 +1607,9 @@
    "caption": "ربطوا سفنهم في سفن الروم بالسلاسل وحوّلوا البحر لأرض.. والإمبراطور هرب متنكر في زي جندي. معركة ذات الصواري في عهد عثمان بن عفان. #عثمانبنعفان #ذاتالصواري #ديشو\n\nإيه أذكى خطة حربية في التاريخ؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/enbJO9IKkPE",
    "times_cairo": {
-    "facebook": "2026-11-17T07:00",
-    "tiktok": "2026-11-17T07:00",
-    "x": "2026-11-11T12:00"
+    "facebook": "2026-11-18T17:00",
+    "tiktok": "2026-11-18T18:00",
+    "x": "2026-11-12T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1541,9 +1634,9 @@
    "caption": "عثمان قال لعمرو بن العاص: الناقة درّت لبن أكتر بعدك.. فرد عمرو: عشان جوّعتوا عيالها. وبعدها الروم خدوا إسكندرية، ومصر استغاثت بعمرو. #عمروبنالعاص #مصر #ديشو\n\nالضرايب العالية بتقوي الدولة ولا بتضعفها؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/enbJO9IKkPE",
    "times_cairo": {
-    "facebook": "2026-11-17T17:00",
-    "tiktok": "2026-11-17T18:00",
-    "x": "2026-11-11T21:00"
+    "facebook": "2026-11-19T07:00",
+    "tiktok": "2026-11-19T07:00",
+    "x": "2026-11-13T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1568,9 +1661,9 @@
    "caption": "قبرص كانت قريبة لدرجة إنهم بيسمعوا نباح كلابهم.. وعثمان وافق يركبوا البحر لأول مرة بشرط غريب: معاوية ياخد مراته معاه في المركب. #عثمانبنعفان #قبرص #ديشو\n\nشرط عثمان ده كان صح ولا مبالغة؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/enbJO9IKkPE",
    "times_cairo": {
-    "facebook": "2026-11-18T07:00",
-    "tiktok": "2026-11-18T07:00",
-    "x": "2026-11-12T12:00"
+    "facebook": "2026-11-19T17:00",
+    "tiktok": "2026-11-19T18:00",
+    "x": "2026-11-13T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1595,9 +1688,9 @@
    "caption": "ألف دينار دهب في حجر النبي صلى الله عليه وسلم.. فقال: ما ضر عثمان ما عمل بعد اليوم. جيش العسرة. #عثمانبنعفان #تبوك #ديشو\n\nلو معاك ثروة زي دي.. كنت هتعمل بيها إيه؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/enbJO9IKkPE",
    "times_cairo": {
-    "facebook": "2026-11-18T17:00",
-    "tiktok": "2026-11-18T18:00",
-    "x": "2026-11-12T21:00"
+    "facebook": "2026-11-20T07:00",
+    "tiktok": "2026-11-20T07:00",
+    "x": "2026-11-14T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1622,9 +1715,9 @@
    "caption": "3 طيارات عدّت من فوقهم.. وكتبوا SOS بالروج.. ورصّوا الشنط صليب على التلج. ولا طيارة شافتهم. #الأنديز #رحلة571 #ديشو\n\nلو كنت مكانهم كنت هتعمل إيه عشان يشوفوك؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/guJ8TXzuGLQ",
    "times_cairo": {
-    "facebook": "2026-11-19T07:00",
-    "tiktok": "2026-11-19T07:00",
-    "x": "2026-11-13T12:00"
+    "facebook": "2026-11-20T17:00",
+    "tiktok": "2026-11-20T18:00",
+    "x": "2026-11-14T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1649,9 +1742,9 @@
    "caption": "لقوا راديو الطيارة اللي بيبعت استغاثة.. بس الطيارة 115 فولت متردد والبطاريات 24 فولت مستمر. فكان الحل الوحيد إنهم يمشوا. #الأنديز #رحلة571 #ديشو\n\nلو كنت معاهم كنت هتمشي ولا هتستنى؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/guJ8TXzuGLQ",
    "times_cairo": {
-    "facebook": "2026-11-19T17:00",
-    "tiktok": "2026-11-19T18:00",
-    "x": "2026-11-13T21:00"
+    "facebook": "2026-11-21T07:00",
+    "tiktok": "2026-11-21T07:00",
+    "x": "2026-11-15T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1676,9 +1769,9 @@
    "caption": "فاق من الغيبوبة لقى أمه ماتت.. وبعد 8 أيام أخته كمان. وعاش 3 أيام على حبة سوداني واحدة. فرناندو بارادو. #الأنديز #رحلة571 #ديشو\n\nإيه اللي بيخلي الإنسان يكمل بعد ما يخسر كل حاجة؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/guJ8TXzuGLQ",
    "times_cairo": {
-    "facebook": "2026-11-20T07:00",
-    "tiktok": "2026-11-20T07:00",
-    "x": "2026-11-14T12:00"
+    "facebook": "2026-11-21T17:00",
+    "tiktok": "2026-11-21T18:00",
+    "x": "2026-11-15T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1703,9 +1796,9 @@
    "caption": "آخر موسم تمويل.. ودرجة سلم في الصخر.. وعند الدرجة رقم 12 باب مختوم بختم أنوبيس. ولما بص جوه قال: حاجات مذهلة. #توتعنخآمون #الأقصر #ديشو\n\nلو كنت مكان كارتر كنت هتكمل ولا تبطل؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/rTVDeMMDiJ0",
    "times_cairo": {
-    "facebook": "2026-11-20T17:00",
-    "tiktok": "2026-11-20T18:00",
-    "x": "2026-11-14T21:00"
+    "facebook": "2026-11-22T07:00",
+    "tiktok": "2026-11-22T07:00",
+    "x": "2026-11-16T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1730,9 +1823,9 @@
    "caption": "كوبرا بلعت كناري كارتر بعد اكتشاف المقبرة بأيام.. وبعد شهور مات اللورد كارنارفون في القاهرة. لعنة ولا صدفة؟ #توتعنخآمون #لعنةالفراعنة #ديشو\n\nلعنة الفراعنة حقيقة ولا صدفة؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/rTVDeMMDiJ0",
    "times_cairo": {
-    "facebook": "2026-11-21T07:00",
-    "tiktok": "2026-11-21T07:00",
-    "x": "2026-11-15T12:00"
+    "facebook": "2026-11-22T17:00",
+    "tiktok": "2026-11-22T18:00",
+    "x": "2026-11-16T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1757,9 +1850,9 @@
    "caption": "الدكتور عز الدين طه قال إن لعنة الفراعنة فطر بيتعالج بمضاد حيوي.. وبعد مؤتمره الصحفي مات في حادثة عربية. #توتعنخآمون #لعنةالفراعنة #ديشو\n\nموت الدكتور طه صدفة ولا لعنة؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/rTVDeMMDiJ0",
    "times_cairo": {
-    "facebook": "2026-11-21T17:00",
-    "tiktok": "2026-11-21T18:00",
-    "x": "2026-11-15T21:00"
+    "facebook": "2026-11-23T07:00",
+    "tiktok": "2026-11-23T07:00",
+    "x": "2026-11-17T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1784,9 +1877,9 @@
    "caption": "ظابط بريطاني خطف زوجين عواجيز و4 أطفال من جزيرة سنتينل سنة 1880.. والجراثيم اللي رجعت معاهم ممكن تكون سبب عنفهم لحد النهارده. #سنتينل #جزيرةسنتينل #ديشو\n\nهل كان لازم العالم يسيب القبيلة دي في حالها؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/xX3SWNSBgnE",
    "times_cairo": {
-    "facebook": "2026-11-22T07:00",
-    "tiktok": "2026-11-22T07:00",
-    "x": "2026-11-16T12:00"
+    "facebook": "2026-11-23T17:00",
+    "tiktok": "2026-11-23T18:00",
+    "x": "2026-11-17T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1811,9 +1904,9 @@
    "caption": "اكتشفوا الحديد من حطام سفينة بريمروز 1981.. وبعد تسونامي 2004 ضربوا هليكوبتر خفر السواحل بالسهام، وساعتها العالم عرف إنهم بخير. #سنتينل #جزيرةسنتينل #ديشو\n\nالقبيلة دي بتدافع عن نفسها ولا عدوانية؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/xX3SWNSBgnE",
    "times_cairo": {
-    "facebook": "2026-11-22T17:00",
-    "tiktok": "2026-11-22T18:00",
-    "x": "2026-11-16T21:00"
+    "facebook": "2026-11-24T07:00",
+    "tiktok": "2026-11-24T07:00",
+    "x": "2026-11-18T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1839,9 +1932,9 @@
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/xX3SWNSBgnE",
    "only_if_url_exists": true,
    "times_cairo": {
-    "facebook": "2026-11-23T07:00",
-    "tiktok": "2026-11-23T07:00",
-    "x": "2026-11-17T12:00"
+    "facebook": "2026-11-24T17:00",
+    "tiktok": "2026-11-24T18:00",
+    "x": "2026-11-18T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1866,9 +1959,9 @@
    "caption": "بعد 11 سبتمبر باب الكابينة بقى مقوى ومحدش يدخل إلا لو اللي جوه فتح.. لحد ما مساعد طيار قفل على نفسه سنة 2015 و150 واحد ماتوا في جبال الألب. #فلايدبي #طيران #ديشو\n\nباب الكابينة المقفول بيحمي الطيارة ولا بيخطرها؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/e67VwgkQPno",
    "times_cairo": {
-    "facebook": "2026-11-23T17:00",
-    "tiktok": "2026-11-23T18:00",
-    "x": "2026-11-17T21:00"
+    "facebook": "2026-11-25T07:00",
+    "tiktok": "2026-11-25T07:00",
+    "x": "2026-11-19T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1893,9 +1986,9 @@
    "caption": "مصر للطيران 990 وقعت في الأطلنطي سنة 1999.. أمريكا قالت مساعد الطيار ومصر قالت عطل ميكانيكي.. وجملة توكلت على الله اتفهمت كأنها اعتراف. #مصرللطيران #طيران #ديشو\n\nليه جملة بنقولها كل يوم اتقرت كأنها اعتراف؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/e67VwgkQPno",
    "times_cairo": {
-    "facebook": "2026-11-24T07:00",
-    "tiktok": "2026-11-24T07:00",
-    "x": "2026-11-18T12:00"
+    "facebook": "2026-11-25T17:00",
+    "tiktok": "2026-11-25T18:00",
+    "x": "2026-11-19T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1920,9 +2013,9 @@
    "caption": "انت قفلت الوقود ليه؟ والتاني قال لا.. إير إنديا 171 والصينية 5735: مفاتيح وقود اتقفلت في الجو والتحقيق لسه ما اتحسمش. #طيران #إيرإنديا #ديشو\n\nليه التحقيقات دي بتاخد سنين ومحدش بيعرف الحقيقة؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/e67VwgkQPno",
    "times_cairo": {
-    "facebook": "2026-11-24T17:00",
-    "tiktok": "2026-11-24T18:00",
-    "x": "2026-11-18T21:00"
+    "facebook": "2026-11-26T07:00",
+    "tiktok": "2026-11-26T07:00",
+    "x": "2026-11-20T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1947,9 +2040,9 @@
    "caption": "سنة 1996 نتنياهو كان ورا بيريز في الاستطلاعات.. وجات تفجيرات الأوتوبيسات وكسب بفرق حوالي 1%. فلما حد يحكيلك حكاية، اسأل مين اللي بيحكيها الأول. #نتنياهو #إسرائيل #ديشو\n\nالخوف بيكسب الانتخابات؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/e67VwgkQPno",
    "times_cairo": {
-    "facebook": "2026-11-25T07:00",
-    "tiktok": "2026-11-25T07:00",
-    "x": "2026-11-19T12:00"
+    "facebook": "2026-11-26T17:00",
+    "tiktok": "2026-11-26T18:00",
+    "x": "2026-11-20T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -1974,9 +2067,9 @@
    "caption": "لقوا تايتانيك سنة 1985 على عمق 3800 متر.. والنهارده البكتيريا بتاكل حطامها، ومن المتوقع إنها تختفي بالكامل بحلول 2030. #تيتانيك #تايتانيك #ديشو\n\nلازم يطلعوا حطام تايتانيك قبل ما يختفي ولا يسيبوه مكانه؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dAyUwObRga0",
    "times_cairo": {
-    "facebook": "2026-11-25T17:00",
-    "tiktok": "2026-11-25T18:00",
-    "x": "2026-11-19T21:00"
+    "facebook": "2026-11-27T07:00",
+    "tiktok": "2026-11-27T07:00",
+    "x": "2026-11-21T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2001,9 +2094,9 @@
    "caption": "ملياردير أسترالي قال هيبني تايتانيك 2 نسخة طبق الأصل وتمشي في نفس المسار.. كان المفروض 2016، ولسه ما كملتش. #تيتانيك #تايتانيك #ديشو\n\nلو تايتانيك 2 اتبنت فعلا هتركبها؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dAyUwObRga0",
    "times_cairo": {
-    "facebook": "2026-11-26T07:00",
-    "tiktok": "2026-11-26T07:00",
-    "x": "2026-11-20T12:00"
+    "facebook": "2026-11-27T17:00",
+    "tiktok": "2026-11-27T18:00",
+    "x": "2026-11-21T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2028,9 +2121,9 @@
    "caption": "سفينة حربية أمريكية عليها 306 شخص و11 ألف طن منجنيز.. بعتت رسالة واحدة واختفت للأبد سنة 1918. يو إس إس سايكلوبس. #برمودا #مثلثبرمودا #ديشو\n\nإيه اللي ممكن يخفي سفينة بالحجم ده من غير أي أثر؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/xLWAXymwzis",
    "times_cairo": {
-    "facebook": "2026-11-26T17:00",
-    "tiktok": "2026-11-26T18:00",
-    "x": "2026-11-20T21:00"
+    "facebook": "2026-11-28T07:00",
+    "tiktok": "2026-11-28T07:00",
+    "x": "2026-11-22T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2055,9 +2148,9 @@
    "caption": "لقوا سفينة سليمة في مثلث برمودا من غير ولا إنسان.. بعتوا رجالة يسوقوها، وبعد العاصفة الرجالة اختفوا. بس هل الحكاية حقيقية أصلا؟ #برمودا #مثلثبرمودا #ديشو\n\nإيلين أوستن حكاية حقيقية ولا أسطورة؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/xLWAXymwzis",
    "times_cairo": {
-    "facebook": "2026-11-27T07:00",
-    "tiktok": "2026-11-27T07:00",
-    "x": "2026-11-21T12:00"
+    "facebook": "2026-11-28T17:00",
+    "tiktok": "2026-11-28T18:00",
+    "x": "2026-11-22T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2082,9 +2175,9 @@
    "caption": "أكتر من 3000 جندي في الحرب الكورية جالهم مرض غامض والوفيات وصلت لحد 15%.. والسر طلع في الفيران وفي نهر بين الكوريتين. فيروس هانتا. #هانتا #فيروسهانتا #ديشو\n\nهل في فيروسات تانية مستخبية زي هانتا؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/46x6Vv2GQ50",
    "times_cairo": {
-    "facebook": "2026-11-27T17:00",
-    "tiktok": "2026-11-27T18:00",
-    "x": "2026-11-21T21:00"
+    "facebook": "2026-11-29T07:00",
+    "tiktok": "2026-11-29T07:00",
+    "x": "2026-11-23T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2109,9 +2202,9 @@
    "caption": "وباء غامض قتل شباب قبيلة النافاجو سنة 1993 و3 من كل 4 مصابين ماتوا.. والحل جه من حكاية قديمة عند شيوخ القبيلة. #هانتا #فيروسهانتا #ديشو\n\nإزاي معلومة من التراث حلت لغز عجز عنه العلماء؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/46x6Vv2GQ50",
    "times_cairo": {
-    "facebook": "2026-11-28T07:00",
-    "tiktok": "2026-11-28T07:00",
-    "x": "2026-11-22T12:00"
+    "facebook": "2026-11-29T17:00",
+    "tiktok": "2026-11-29T18:00",
+    "x": "2026-11-23T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2136,9 +2229,9 @@
    "caption": "كنا فاكرين مصر خالية من فيروس هانتا.. بس سنة 1982 لقوه في فيران قرى طنطا، والفيروس اتجول في الدلتا بصمت ومن غير وباء. #هانتا #مصر #ديشو\n\nكنت تعرف إن فيروس هانتا وصل مصر قبل كده؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/46x6Vv2GQ50",
    "times_cairo": {
-    "facebook": "2026-11-28T17:00",
-    "tiktok": "2026-11-28T18:00",
-    "x": "2026-11-22T21:00"
+    "facebook": "2026-11-30T07:00",
+    "tiktok": "2026-11-30T07:00",
+    "x": "2026-11-24T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2163,9 +2256,9 @@
    "caption": "ماسك وعد بالقيادة الذاتية الكاملة في 3 سنين سنة 2015.. وبعد 11 سنة لسه. وعمل نفق في فيجاس عشان الزحمة، والزحمة نزلت تحت الأرض. #إيلونماسك #تسلا #ديشو\n\nهل ماسك عبقري ولا بيبيع وعود؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/pgnplR0V0hI",
    "times_cairo": {
-    "facebook": "2026-11-29T07:00",
-    "tiktok": "2026-11-29T07:00",
-    "x": "2026-11-23T12:00"
+    "facebook": "2026-11-30T17:00",
+    "tiktok": "2026-11-30T18:00",
+    "x": "2026-11-24T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2190,9 +2283,9 @@
    "caption": "مليون تاكسي ذاتي القيادة سنة 2020.. وبشر على المريخ قبل 2026.. ولا حاجة حصلت. ومستثمر أزمة 2008 بيقول تقييم سبيس إكس خيال علمي. #إيلونماسك #سبيسإكس #ديشو\n\nهتستثمر في سبيس إكس ولا لأ؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/pgnplR0V0hI",
    "times_cairo": {
-    "facebook": "2026-11-29T17:00",
-    "tiktok": "2026-11-29T18:00",
-    "x": "2026-11-23T21:00"
+    "facebook": "2026-12-01T07:00",
+    "tiktok": "2026-12-01T07:00",
+    "x": "2026-11-25T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2217,9 +2310,9 @@
    "caption": "ناسداك عملت قاعدة «الدخول السريع» بـ15 يوم بس.. والنتيجة إن فلوس معاشات ملايين الأمريكيين دخلت تلقائي في شركة ماسك. #إيلونماسك #سبيسإكس #ديشو\n\nالقوانين بتتغير عشان الأغنيا بس؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/pgnplR0V0hI",
    "times_cairo": {
-    "facebook": "2026-11-30T07:00",
-    "tiktok": "2026-11-30T07:00",
-    "x": "2026-11-24T12:00"
+    "facebook": "2026-12-01T17:00",
+    "tiktok": "2026-12-01T18:00",
+    "x": "2026-11-25T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2244,9 +2337,9 @@
    "caption": "الصوت اللي بيوجه الغواصة تحت المية.. ليه تأثير سلبي على الحيتان والدلافين. وعشان كده بيجربوا الليدار، بس السونار لسه هو المسيطر. #الغواصات #الحيتان #ديشو\n\nحماية الحيتان أهم ولا أمان الغواصات؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/keGt2hbZA2U",
    "times_cairo": {
-    "facebook": "2026-11-30T17:00",
-    "tiktok": "2026-11-30T18:00",
-    "x": "2026-11-24T21:00"
+    "facebook": "2026-12-02T07:00",
+    "tiktok": "2026-12-02T07:00",
+    "x": "2026-11-26T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2271,9 +2364,9 @@
    "caption": "راجل ياباني حرارة جسمه نزلت لـ22 درجة.. والطبيعي إنه يموت. بس مش بس عاش، ده تعافى تماما ومخه سليم. #السفرعبرالزمن #اليابان #ديشو\n\nهتجرب التجميد عشان تسافر للمستقبل؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/TuXtWLSmR3E",
    "times_cairo": {
-    "facebook": "2026-12-01T07:00",
-    "tiktok": "2026-12-01T07:00",
-    "x": "2026-11-25T12:00"
+    "facebook": "2026-12-02T17:00",
+    "tiktok": "2026-12-02T18:00",
+    "x": "2026-11-26T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2298,9 +2391,9 @@
    "caption": "ابن رئيس الجمهورية.. وبيتقال إنه حارب على خطوط النار الأولى كجندي عادي في الحرب مع العراق. #مجتبىخامنئي #إيران #ديشو\n\nابن الرئيس في الجبهة.. صح ولا لأ؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/1aewIctyFF8",
    "times_cairo": {
-    "facebook": "2026-12-01T17:00",
-    "tiktok": "2026-12-01T18:00",
-    "x": "2026-11-25T21:00"
+    "facebook": "2026-12-03T07:00",
+    "tiktok": "2026-12-03T07:00",
+    "x": "2026-11-27T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2325,9 +2418,9 @@
    "caption": "خامنئي حرّم القنبلة الذرية.. وبيتقال إن ابنه مجتبى كان من العلماء اللي عايزينها. #مجتبىخامنئي #إيران #ديشو\n\nإيران محتاجة القنبلة ولا الفتوى صح؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/1aewIctyFF8",
    "times_cairo": {
-    "facebook": "2026-12-02T07:00",
-    "tiktok": "2026-12-02T07:00",
-    "x": "2026-11-26T12:00"
+    "facebook": "2026-12-03T17:00",
+    "tiktok": "2026-12-03T18:00",
+    "x": "2026-11-27T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2352,9 +2445,9 @@
    "caption": "ما كانش بيظهر غير في صور نادرة.. وويكيليكس كشفت إنه من أقوى رجال إيران وممكن يبقى المرشد. #مجتبىخامنئي #ويكيليكس #ديشو\n\nإزاي ابن المرشد يبقى المرشد؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/1aewIctyFF8",
    "times_cairo": {
-    "facebook": "2026-12-02T17:00",
-    "tiktok": "2026-12-02T18:00",
-    "x": "2026-11-26T21:00"
+    "facebook": "2026-12-04T07:00",
+    "tiktok": "2026-12-04T07:00",
+    "x": "2026-11-28T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2379,9 +2472,9 @@
    "caption": "«حضارة كاملة هتنتهي».. والعالم كله مستني الضربة. وقبل المهلة بتسعين دقيقة بس، اتعلن وقف إطلاق النار، والوسيط باكستان. #إيران #ترامب #ديشو\n\nالهدنة دي هتكمل ولا لأ؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/bf7dbvBy6h4",
    "times_cairo": {
-    "facebook": "2026-12-03T07:00",
-    "tiktok": "2026-12-03T07:00",
-    "x": "2026-11-27T12:00"
+    "facebook": "2026-12-04T17:00",
+    "tiktok": "2026-12-04T18:00",
+    "x": "2026-11-28T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2406,9 +2499,9 @@
    "caption": "المحطة النووية الوحيدة الشغالة في إيران.. ولو ضربة واحدة أصابتها، مية الخليج كانت هتتلوث. #بوشهر #إيران #ديشو\n\nالمحطات النووية في الخليج خطر علينا؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/bf7dbvBy6h4",
    "times_cairo": {
-    "facebook": "2026-12-03T17:00",
-    "tiktok": "2026-12-03T18:00",
-    "x": "2026-11-27T21:00"
+    "facebook": "2026-12-05T07:00",
+    "tiktok": "2026-12-05T07:00",
+    "x": "2026-11-29T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2433,9 +2526,9 @@
    "caption": "13 يونيو 2025، الساعة 3 الفجر: أكتر من 200 طيارة حربية إسرائيلية جوه إيران، ورئيس الأركان وقائد الحرس الثوري وعلماء ذرة اتقتلوا. #إيران #الأسدالصاعد #ديشو\n\nإيران كانت متوقعة الضربة دي؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
    "times_cairo": {
-    "facebook": "2026-12-04T07:00",
-    "tiktok": "2026-12-04T07:00",
-    "x": "2026-11-28T12:00"
+    "facebook": "2026-12-05T17:00",
+    "tiktok": "2026-12-05T18:00",
+    "x": "2026-11-29T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2460,9 +2553,9 @@
    "caption": "العملة وقعت والأكل غلي.. وأكبر موجة احتجاج في تاريخ إيران. وترامب: «المساعدة في الطريق». #إيران #ديشو\n\nالشعوب بتدفع تمن الحروب دايما؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
    "times_cairo": {
-    "facebook": "2026-12-04T17:00",
-    "tiktok": "2026-12-04T18:00",
-    "x": "2026-11-28T21:00"
+    "facebook": "2026-12-06T07:00",
+    "tiktok": "2026-12-06T07:00",
+    "x": "2026-11-30T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2487,9 +2580,9 @@
    "caption": "قبلها بيوم: «اتفاق السلام قريب جدا».. وتاني يوم القنابل نزلت زي المطر. #إيران #عمان #ديشو\n\nمين المستفيد من الحرب دي؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/dcX6llM8PjI",
    "times_cairo": {
-    "facebook": "2026-12-05T07:00",
-    "tiktok": "2026-12-05T07:00",
-    "x": "2026-11-29T12:00"
+    "facebook": "2026-12-06T17:00",
+    "tiktok": "2026-12-06T18:00",
+    "x": "2026-11-30T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2515,9 +2608,9 @@
    "caption": "كانت مقتنعة إن زميلتها هتاخد منها صاحبها.. والغيرة وصلت للقتل في حرم جامعة تينيسي سنة 1995. #كريستابايك #ديشو\n\nالغيرة ممكن توصل لكده؟ اكتب رأيك\nالموسيقى: Gathering Darkness - Kevin MacLeod (incompetech.com), CC BY 4.0",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/cmoKzWBg9JI ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-05T17:00",
-    "tiktok": "2026-12-05T18:00",
-    "x": "2026-11-29T21:00"
+    "facebook": "2026-12-07T07:00",
+    "tiktok": "2026-12-07T07:00",
+    "x": "2026-12-01T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2545,9 +2638,9 @@
    "caption": "حاولت تخنق سجينة برباط جزمة.. وبعدها اتكشفت خطة هروب بمفتاح متنسخ من مفاتيح السجن. #كريستابايك #ديشو\n\nالسجان اللي ساعدها يستاهل إيه؟ اكتب رأيك\nالموسيقى: Covert Affair - Kevin MacLeod (incompetech.com), CC BY 4.0",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/cmoKzWBg9JI ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-06T07:00",
-    "tiktok": "2026-12-06T07:00",
-    "x": "2026-11-30T12:00"
+    "facebook": "2026-12-07T17:00",
+    "tiktok": "2026-12-07T18:00",
+    "x": "2026-12-01T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2575,9 +2668,9 @@
    "caption": "70 طن دهب في السنة.. واللي اتصدر رسميا 20 طن بس. والباقي فين؟ #السودان #ديشو\n\nدهب السودان بيروح فين؟ اكتب رأيك\nالموسيقى: Heroic Age - Kevin MacLeod (incompetech.com), CC BY 4.0",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/T84u1ievIsw ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-06T17:00",
-    "tiktok": "2026-12-06T18:00",
-    "x": "2026-11-30T21:00"
+    "facebook": "2026-12-08T07:00",
+    "tiktok": "2026-12-08T07:00",
+    "x": "2026-12-02T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2605,9 +2698,9 @@
    "caption": "سواقين نقل مصريين اتضرب عليهم نار في سوق جنوب الخرطوم.. والدافع اللي اتقال لسه ما اتأكدش. #السودان #مصر #ديشو\n\nمين المسؤول عن الدم ده؟ اكتب رأيك\nالموسيقى: Aggressor - Kevin MacLeod (incompetech.com), CC BY 4.0",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/T84u1ievIsw ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-07T07:00",
-    "tiktok": "2026-12-07T07:00",
-    "x": "2026-12-01T12:00"
+    "facebook": "2026-12-08T17:00",
+    "tiktok": "2026-12-08T18:00",
+    "x": "2026-12-02T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2635,9 +2728,9 @@
    "caption": "«الطيران المصري بيضرب الدعم السريع».. الجزيرة اتحققت: مسيرات للجيش السوداني وصوت الطيارات اتحط في المونتاج. #السودان #مصر #ديشو\n\nمين المستفيد من الفيديوهات دي؟ اكتب رأيك\nالموسيقى: Killers - Kevin MacLeod (incompetech.com), CC BY 4.0",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/T84u1ievIsw ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-07T17:00",
-    "tiktok": "2026-12-07T18:00",
-    "x": "2026-12-01T21:00"
+    "facebook": "2026-12-09T07:00",
+    "tiktok": "2026-12-09T07:00",
+    "x": "2026-12-03T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2665,9 +2758,9 @@
    "caption": "الجينز ممنوع.. وفيه شرطة أزياء بتراقب الناس في الشارع. #كورياالشمالية #ديشو\n\nالحكومة من حقها تتحكم في لبسك؟ اكتب رأيك\nالموسيقى: Volatile Reaction - Kevin MacLeod (incompetech.com), CC BY 4.0",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/C_TI1bP61nQ ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-08T07:00",
-    "tiktok": "2026-12-08T07:00",
-    "x": "2026-12-02T12:00"
+    "facebook": "2026-12-09T17:00",
+    "tiktok": "2026-12-09T18:00",
+    "x": "2026-12-03T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2695,9 +2788,9 @@
    "caption": "صور الزعيم في كل بيت.. واللي ما يحميهاش يتعاقب. #كورياالشمالية #ديشو\n\nإيه اللي يخلي شعب يحمي صورة أكتر من حياته؟ اكتب رأيك\nالموسيقى: Industrial Cinematic - Kevin MacLeod (incompetech.com), CC BY 4.0",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/C_TI1bP61nQ ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-08T17:00",
-    "tiktok": "2026-12-08T18:00",
-    "x": "2026-12-02T21:00"
+    "facebook": "2026-12-10T07:00",
+    "tiktok": "2026-12-10T07:00",
+    "x": "2026-12-04T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2725,9 +2818,9 @@
    "caption": "الضفادع اختفت من كوريا الشمالية سنة 1995.. والسبب كان الجوع. #كورياالشمالية #ديشو\n\nإزاي حكومة تخبي عدد ضحايا الجوع؟ اكتب رأيك\nالموسيقى: Despair and Triumph - Kevin MacLeod (incompetech.com), CC BY 4.0",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/C_TI1bP61nQ ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-09T07:00",
-    "tiktok": "2026-12-09T07:00",
-    "x": "2026-12-03T12:00"
+    "facebook": "2026-12-10T17:00",
+    "tiktok": "2026-12-10T18:00",
+    "x": "2026-12-04T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2755,9 +2848,9 @@
    "caption": "أوامر بضرب النار فورا على الحدود.. والصين رجعت حوالي 500 شخص سنة 2023. #كورياالشمالية #ديشو\n\nالهروب يستاهل المخاطرة دي؟ اكتب رأيك\nالموسيقى: Stormfront - Kevin MacLeod (incompetech.com), CC BY 4.0",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/C_TI1bP61nQ ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-09T17:00",
-    "tiktok": "2026-12-09T18:00",
-    "x": "2026-12-03T21:00"
+    "facebook": "2026-12-11T07:00",
+    "tiktok": "2026-12-11T07:00",
+    "x": "2026-12-05T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2785,9 +2878,9 @@
    "caption": "موبايل بياخد سكرين شوت لوحده ويبعتها للحكومة. #كورياالشمالية #ديشو\n\nتقدر تعيش بموبايل زي ده؟ اكتب رأيك\nالموسيقى: Crypto - Kevin MacLeod (incompetech.com), CC BY 4.0",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/C_TI1bP61nQ ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-10T07:00",
-    "tiktok": "2026-12-10T07:00",
-    "x": "2026-12-04T12:00"
+    "facebook": "2026-12-11T17:00",
+    "tiktok": "2026-12-11T18:00",
+    "x": "2026-12-05T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2815,9 +2908,9 @@
    "caption": "اتقبض عليه قدام الكاميرات في اجتماع رسمي.. واتعدم بعدها بأيام. #كورياالشمالية #ديشو\n\nالخوف ممكن يحكم شعب لحد إمتى؟ اكتب رأيك\nالموسيقى: Black Vortex - Kevin MacLeod (incompetech.com), CC BY 4.0",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/C_TI1bP61nQ ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-10T17:00",
-    "tiktok": "2026-12-10T18:00",
-    "x": "2026-12-04T21:00"
+    "facebook": "2026-12-12T07:00",
+    "tiktok": "2026-12-12T07:00",
+    "x": "2026-12-06T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2845,9 +2938,9 @@
    "caption": "جزيرة شكلها جنة في الكاريبي.. وسكان الجزر اللي جنبها سموها اسم مرعب. #إبستين #ديشو\n\nإزاي حاجة زي دي تفضل مخفية سنين؟ اكتب رأيك\nالموسيقى: Five Armies - Kevin MacLeod (incompetech.com), CC BY 4.0",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/IneS_M41TsY ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-11T07:00",
-    "tiktok": "2026-12-11T07:00",
-    "x": "2026-12-05T12:00"
+    "facebook": "2026-12-12T17:00",
+    "tiktok": "2026-12-12T18:00",
+    "x": "2026-12-06T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2875,9 +2968,9 @@
    "caption": "شكوى واحدة سنة 2005.. وكل بنت كانت بتكشف بنات تانيين. #إبستين #ديشو\n\nليه القضية اتأخرت كل ده؟ اكتب رأيك\nالموسيقى: Investigations - Kevin MacLeod (incompetech.com), CC BY 4.0",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/IneS_M41TsY ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-11T17:00",
-    "tiktok": "2026-12-11T18:00",
-    "x": "2026-12-05T21:00"
+    "facebook": "2026-12-13T07:00",
+    "tiktok": "2026-12-13T07:00",
+    "x": "2026-12-07T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2905,9 +2998,9 @@
    "caption": "صفقة سرية.. 18 شهر بس، و12 ساعة في اليوم بره السجن في مكتبه. #إبستين #ديشو\n\nالصفقة دي كانت عدالة ولا هروب؟ اكتب رأيك\nالموسيقى: Hitman - Kevin MacLeod (incompetech.com), CC BY 4.0",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/IneS_M41TsY ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-12T07:00",
-    "tiktok": "2026-12-12T07:00",
-    "x": "2026-12-06T12:00"
+    "facebook": "2026-12-13T17:00",
+    "tiktok": "2026-12-13T18:00",
+    "x": "2026-12-07T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2935,9 +3028,9 @@
    "caption": "صحفية واحدة رجعت فتحت القضية.. وأكتر من 80 ضحية محتملة. #إبستين #ديشو\n\nالصحافة تقدر تغير مصير قضية؟ اكتب رأيك\nالموسيقى: Exciting Trailer - Kevin MacLeod (incompetech.com), CC BY 4.0",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/IneS_M41TsY ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-12T17:00",
-    "tiktok": "2026-12-12T18:00",
-    "x": "2026-12-06T21:00"
+    "facebook": "2026-12-14T07:00",
+    "tiktok": "2026-12-14T07:00",
+    "x": "2026-12-08T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2965,9 +3058,9 @@
    "caption": "لقوه ميت في زنزانته قبل المحاكمة.. والرواية الرسمية انتحار. #إبستين #ديشو\n\nانتحر ولا لأ؟ اكتب رأيك\nالموسيقى: Interloper - Kevin MacLeod (incompetech.com), CC BY 4.0",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/IneS_M41TsY ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-13T07:00",
-    "tiktok": "2026-12-13T07:00",
-    "x": "2026-12-07T12:00"
+    "facebook": "2026-12-14T17:00",
+    "tiktok": "2026-12-14T18:00",
+    "x": "2026-12-08T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -2995,9 +3088,9 @@
    "caption": "الكونجرس أجبر وزارة العدل تنشر ملفات إبستين.. واسم ترامب ظهر فيها. #إبستين #ديشو\n\nالملفات دي لسه مخبية إيه؟ اكتب رأيك\nالموسيقى: Echoes of Time - Kevin MacLeod (incompetech.com), CC BY 4.0",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/IneS_M41TsY ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-13T17:00",
-    "tiktok": "2026-12-13T18:00",
-    "x": "2026-12-07T21:00"
+    "facebook": "2026-12-15T07:00",
+    "tiktok": "2026-12-15T07:00",
+    "x": "2026-12-09T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -3025,9 +3118,9 @@
    "caption": "جملة اتقالت بصوت واطي في كابينة مقفولة.. وبعد سنين بقت دليل في تحقيق دولي. #رحلة990 #ديشو\n\nكلام زملاء ولا دليل؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/Kp2tmlmDR9U ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-14T07:00",
-    "tiktok": "2026-12-14T07:00",
-    "x": "2026-12-08T12:00"
+    "facebook": "2026-12-15T17:00",
+    "tiktok": "2026-12-15T18:00",
+    "x": "2026-12-09T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -3055,9 +3148,9 @@
    "caption": "الكابتن خرج من الكابينة.. وبعدها بثواني الطيار الآلي اتفصل من غير إنذار. #رحلة990 #ديشو\n\nإيه اللي حصل في الثواني دي؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/Kp2tmlmDR9U ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-14T17:00",
-    "tiktok": "2026-12-14T18:00",
-    "x": "2026-12-08T21:00"
+    "facebook": "2026-12-16T07:00",
+    "tiktok": "2026-12-16T07:00",
+    "x": "2026-12-10T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -3085,9 +3178,9 @@
    "caption": "3 أحكام لحادثة واحدة.. ونفس الخلاف اتكرر مع رحلة 990. #رحلة990 #ديشو\n\nليه التحقيقات بتختلف كده؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/Kp2tmlmDR9U ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-15T07:00",
-    "tiktok": "2026-12-15T07:00",
-    "x": "2026-12-09T12:00"
+    "facebook": "2026-12-16T17:00",
+    "tiktok": "2026-12-16T18:00",
+    "x": "2026-12-10T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -3115,9 +3208,9 @@
    "caption": "مصر أصلا هي اللي فوضت الأمريكان.. وبعدين اختلفت معاهم في النتيجة. #رحلة990 #ديشو\n\nكان المفروض مصر تمسك التحقيق؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/Kp2tmlmDR9U ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-15T17:00",
-    "tiktok": "2026-12-15T18:00",
-    "x": "2026-12-09T21:00"
+    "facebook": "2026-12-17T07:00",
+    "tiktok": "2026-12-17T07:00",
+    "x": "2026-12-11T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -3145,9 +3238,9 @@
    "caption": "آخر دقيقتين في حياة 217 إنسان.. والرادار كان شايف كل حاجة. #رحلة990 #ديشو\n\nإيه اللي حصل في الدقيقتين دول؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/Kp2tmlmDR9U ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-16T07:00",
-    "tiktok": "2026-12-16T07:00",
-    "x": "2026-12-10T12:00"
+    "facebook": "2026-12-17T17:00",
+    "tiktok": "2026-12-17T18:00",
+    "x": "2026-12-11T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -3175,9 +3268,9 @@
    "caption": "الحادثة دي غيرت حاجات كتير في الطيران.. وفيه توصية لسه ما اتنفذتش لحد النهارده. #رحلة990 #ديشو\n\nلازم كاميرا في كل كابينة؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/Kp2tmlmDR9U ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-16T17:00",
-    "tiktok": "2026-12-16T18:00",
-    "x": "2026-12-10T21:00"
+    "facebook": "2026-12-18T07:00",
+    "tiktok": "2026-12-18T07:00",
+    "x": "2026-12-12T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -3205,9 +3298,9 @@
    "caption": "عربية ماسك في الفضاء من 2018.. ودلوقتي عايز ينط بيها فوق وادي وقع فيه إيفل نيفل. #تسلا #ديشو\n\nهتوصل للناحية التانية؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/5fp0KlfJRBY ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-17T07:00",
-    "tiktok": "2026-12-17T07:00",
-    "x": "2026-12-11T12:00"
+    "facebook": "2026-12-18T17:00",
+    "tiktok": "2026-12-18T18:00",
+    "x": "2026-12-12T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -3235,9 +3328,9 @@
    "caption": "مبيعات تسلا نزلت.. وبي واي دي سبقتها. يبقى الرودستر جت ليه دلوقتي؟ #تسلا #ديشو\n\nمنتج ولا رسالة؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/5fp0KlfJRBY ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-17T17:00",
-    "tiktok": "2026-12-17T18:00",
-    "x": "2026-12-11T21:00"
+    "facebook": "2026-12-19T07:00",
+    "tiktok": "2026-12-19T07:00",
+    "x": "2026-12-13T12:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -3265,9 +3358,9 @@
    "caption": "تسلا في الإمارات والسعودية وقطر.. ومصر؟ #تسلا #ديشو\n\nتسلا هتيجي مصر إمتى؟ اكتب رأيك",
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/5fp0KlfJRBY ; TikTok cover from phone",
    "times_cairo": {
-    "facebook": "2026-12-18T07:00",
-    "tiktok": "2026-12-18T07:00",
-    "x": "2026-12-12T12:00"
+    "facebook": "2026-12-19T17:00",
+    "tiktok": "2026-12-19T18:00",
+    "x": "2026-12-13T21:00"
    },
    "utc_offset": "+02:00",
    "captions": {
@@ -3296,6 +3389,11 @@
    "his_ok": "18:02 UTC Oct 27 in this thread he chose «اعمله» on Claude's card «أعمل سكريبت صغير على جهازك يجدول بوستات الكيو لوحده كل يوم من غير كريديت؟» (card context: a plain script, not Claude, run daily 21:00 Cairo by Windows Task Scheduler, reads the queue file, schedules on Buffer whatever has a free slot with the same caption and time, never deletes anything, writes the log; no credits; PC must be on). His follow-up question 18:01 UTC: «هو انا لازم اقولك افحص الكيو كل 3 ايام ما ينفعش انت تعملها اتوماتيك في الميعاد المطلوب اللي ما يستهلكش كريديت ؟»",
    "what": "ONE TIME: write a standalone Python script (no Claude/LLM calls) at D:\\Mostafa REELS Editor\\tools\\buffer_auto_queue.py that does exactly STEP 2 of how_to plus x_how_to: fetch queue/buffer-queue.json from the public repo raw URL, for each item in list order and each platform, skip done (per id+platform in social/buffer-scheduled-log.json), skip 'hold', skip-late if under 10 min away (log it), skip 'only_if_url_exists' until 200, schedule only while the channel has a free slot under the 10-post cap, caption/captions exactly, video url, times_cairo with utc_offset / utc_offset_x, X posts alone (never threads), read back each new post and log its Buffer id. Also record live permalinks of posts published since the last run in the log. Never delete or edit any Buffer post, never touch Metricool, never print or log the key (read it from _secrets at run time). Hard stop: do nothing after 2026-11-21 23:59 Cairo (his queue OK end). Then register a Windows Task Scheduler task 'Deishoo Buffer Queue' running it daily at 21:00 Cairo, with 'run as soon as possible after a missed start' enabled, only for this user, no admin rights needed. Test it once now in a dry-run mode (no writes to Buffer) and once for real, and report: task created yes/no, next run time, what the real run booked. Do not create any other scheduled task.",
    "status": "new"
+  },
+  {
+   "id": "req-pyramids-retime",
+   "status": "waits for his own words in this thread",
+   "what": "Pyramids filmed Shorts pyr-filmed-1/2/3 take the evening slots Fri Oct 30, Sun Nov 1, Tue Nov 3 (FB 17:00, TikTok 18:00, X 21:00 Cairo) and every later grid item moved forward (his words 19:55 UTC Oct 29 «ورحل اللي كان مكانه من الشورتس لقدام يعني عدل ترتيبه»). ONE TIME, once he OKs in this thread: (1) for every post already scheduled on Buffer (FB, TikTok, X) whose times_cairo in this file now differs from its Buffer time, change ONLY its time to the file's time (same post id, never delete/recreate, keep caption/media), read back, log old->new. (2) Then book pyr-filmed-1 on FB/TikTok/X as soon as a slot is free (it must be booked before Oct 30 17:00 Cairo). If no slot frees in time, report it."
   }
  ],
  "retime_x": {

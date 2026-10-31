@@ -1,6 +1,6 @@
 {
  "version": 2,
- "updated_utc": "2026-10-29T20:05:30Z",
+ "updated_utc": "2026-10-31T18:00Z",
  "how_to": "His words (21:28 UTC Oct 18, this thread): FB/TikTok 2 posts a day (Facebook Page 07:00 and 17:00, TikTok 07:00 and 18:00 Cairo); the device session may change ONLY the time (never delete) of any FB/TikTok post already scheduled on Buffer from Oct 19 on, to fit the grid; queue OK has NO end date (his words 20:00 UTC Oct 27: «بقولك علي طول طالما في جدوله جدول بدون افحص الكيو»; was until 2026-11-21). STEP 1 (once): RETIME. For each entry in 'retime' (the 5 posts already in Buffer from Oct 19 on), change ONLY its time on both channels to new_times_cairo with its utc_offset; never delete or recreate it, keep caption and media. Read each one back and log old time, new time and post id. Any other Buffer post from Oct 19 on that is not in 'retime': do not touch it, log it as 'not-in-plan'. STEP 2 (every 30 min while the session runs, and on every «افحص الكيو»): for each item in 'items', in list order, schedule on Buffer for each platform in 'platforms' (facebook = Page, as a reel for video; tiktok) at times_cairo[platform] with the item's utc_offset and the caption exactly as written, only while a slot is free under the 10-post cap per channel. Skip anything already done (by id in your log). If a time is less than 10 minutes away, skip it and log 'skipped-late'; never pick a new time yourself (Claude re-plans). If an item has 'only_if_url_exists', skip it until its url returns HTTP 200 and log 'waiting-file'. Items with a 'hold' field: never schedule them, log 'held'. Never delete any Buffer post; never edit any post other than the STEP 1 time changes; never touch Metricool. Write results (Buffer post ids, times, errors; no keys) to social/buffer-scheduled-log.json. type 'images' = Facebook multi-image post and TikTok photo post, images in the given order, no upload needed. If an item has 'captions' (per platform) use those instead of 'caption'. Use 'cover' as the video cover where Buffer allows it.",
  "retime": [
   {
@@ -371,12 +371,13 @@
    },
    "approval": "His words 19:55 UTC Oct 29 (Pyramids thread): «بص جدول ال3 شورتس بكرة وعدي يوم وجدول بعده وعدي يوم وجدول بعده ... ورحل اللي كان مكانه من الشورتس لقدام»",
    "times_cairo": {
-    "facebook": "2026-10-30T17:00",
-    "tiktok": "2026-10-30T18:00",
+    "facebook": "2026-11-02T20:00",
+    "tiktok": "2026-11-02T20:00",
     "x": "2026-10-30T21:00"
    },
    "utc_offset": "+02:00",
-   "utc_offset_x": "+02:00"
+   "utc_offset_x": "+02:00",
+   "note_retime": "Oct 31: FB/TikTok could not book for Oct 30 (both channels 10/10, script runs 21:00 only); moved to Nov 2 20:00. X stays Oct 30 21:00 (booked id 6ae3ceab4b8768bfb2c9129c)."
   },
   {
    "id": "balbalady-deadsea",
@@ -685,6 +686,31 @@
    "utc_offset_x": "+02:00"
   },
   {
+   "id": "shark-filmed-1",
+   "priority": 1,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/shark-filmed/sf1-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/shark-filmed/sf1-cover.jpg",
+   "caption": "شابين رفضوا عرض القروش على الهوا.. وبعد 4 شهور الشركة بقت بـ 225 مليون. #شارك_تانك_مصر #مصروفي #ديشو\n\nلو مكانهم: تقبل 40% ولا ترفض؟ اكتب رأيك",
+   "captions": {
+    "facebook": "شابين رفضوا عرض القروش على الهوا.. وبعد 4 شهور الشركة بقت بـ 225 مليون. #شارك_تانك_مصر #مصروفي #ديشو\n\nلو مكانهم: تقبل 40% ولا ترفض؟ اكتب رأيك",
+    "tiktok": "رفضوا 40% من القروش.. وبعد 4 شهور؟ #شارك_تانك_مصر #مصروفي #ديشو"
+   },
+   "manual_after": "FB first comment: لو مكانهم: كنت هتقبل الـ40% ولا ترفض؟ اكتب رأيك / الحلقة كاملة على يوتيوب، اللينك في البايو ; TikTok pinned: لو مكانهم: كنت هتقبل الـ40% ولا ترفض؟ اكتب رأيك ; covers from phone",
+   "approval": "His words 17:25 UTC Oct 31 (Shark Tank thread): «تمام حلو اعتمد وجدولهن». Times from the package page (TikTok 18:00, FB reel 20:00).",
+   "times_cairo": {
+    "facebook": "2026-11-03T20:00",
+    "tiktok": "2026-11-03T20:00"
+   },
+   "utc_offset": "+02:00",
+   "source": "remix/shark-filmed (package https://claude.ai/artifact/7ZSxTdmy1xiD9qGjgYzrHV)",
+   "note": "TikTok 20:00 not 18:00: Nov 3 18:00 TikTok is pyr-filmed-3, likely already booked on Buffer."
+  },
+  {
    "id": "balbalady-radar",
    "priority": 1,
    "platforms": [
@@ -901,7 +927,7 @@
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/w8unPKe0Ot4",
    "times_cairo": {
     "facebook": "2026-11-06T17:00",
-    "tiktok": "2026-11-06T18:00",
+    "tiktok": "2026-11-06T20:00",
     "x": "2026-11-02T21:00"
    },
    "utc_offset": "+02:00",
@@ -913,6 +939,30 @@
     "mode": "manual"
    },
    "utc_offset_x": "+02:00"
+  },
+  {
+   "id": "shark-filmed-2",
+   "priority": 1,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/shark-filmed/sf2-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/shark-filmed/sf2-cover.jpg",
+   "caption": "القرش قال موافق.. بس الفلوس مش هتنزل في حسابك دلوقتي. #شارك_تانك_مصر #القروش #ديشو\n\nلازم البرنامج ينشر عدد الصفقات اللي كملت؟ اكتب رأيك",
+   "captions": {
+    "facebook": "القرش قال موافق.. بس الفلوس مش هتنزل في حسابك دلوقتي. #شارك_تانك_مصر #القروش #ديشو\n\nلازم البرنامج ينشر عدد الصفقات اللي كملت؟ اكتب رأيك",
+    "tiktok": "وافق القرش.. فين الفلوس؟ #شارك_تانك_مصر #القروش #ديشو"
+   },
+   "manual_after": "FB first comment: لازم البرنامج ينشر عدد الصفقات اللي كملت فعلا؟ اكتب رأيك / الحلقة كاملة على يوتيوب، اللينك في البايو ; TikTok pinned: لازم البرنامج ينشر عدد الصفقات اللي كملت فعلا؟ اكتب رأيك ; covers from phone",
+   "approval": "His words 17:25 UTC Oct 31 (Shark Tank thread): «تمام حلو اعتمد وجدولهن». Times from the package page (TikTok 18:00, FB reel 20:00).",
+   "times_cairo": {
+    "facebook": "2026-11-06T20:00",
+    "tiktok": "2026-11-06T18:00"
+   },
+   "utc_offset": "+02:00",
+   "source": "remix/shark-filmed (package https://claude.ai/artifact/7ZSxTdmy1xiD9qGjgYzrHV)"
   },
   {
    "id": "remix-genghis-g6",
@@ -1041,7 +1091,7 @@
    "manual_after": "FB first comment: الحلقة كاملة على يوتيوب: https://youtu.be/DLcxS7XQRLg",
    "times_cairo": {
     "facebook": "2026-11-08T17:00",
-    "tiktok": "2026-11-08T18:00",
+    "tiktok": "2026-11-08T20:00",
     "x": "2026-11-05T12:00"
    },
    "utc_offset": "+02:00",
@@ -1053,6 +1103,30 @@
     "mode": "manual"
    },
    "utc_offset_x": "+02:00"
+  },
+  {
+   "id": "shark-filmed-3",
+   "priority": 1,
+   "platforms": [
+    "facebook",
+    "tiktok"
+   ],
+   "type": "video",
+   "url": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/shark-filmed/sf3-A.mp4",
+   "cover": "https://raw.githubusercontent.com/afaqaiteam-wq/deishoo-media/main/remix/shark-filmed/sf3-cover.jpg",
+   "caption": "أكبر صفقة في شارك تانك مصر طلع نصها قرض بفايدة. #شارك_تانك_مصر #الأهرام #ديشو\n\nتقبل قرض من القرش ولا تديله نسبة من شركتك؟ اكتب رأيك",
+   "captions": {
+    "facebook": "أكبر صفقة في شارك تانك مصر طلع نصها قرض بفايدة. #شارك_تانك_مصر #الأهرام #ديشو\n\nتقبل قرض من القرش ولا تديله نسبة من شركتك؟ اكتب رأيك",
+    "tiktok": "أكبر صفقة في شارك تانك.. نصها قرض؟ #شارك_تانك_مصر #الأهرام #ديشو"
+   },
+   "manual_after": "FB first comment: تقبل قرض من القرش ولا تديله نسبة من شركتك؟ اكتب رأيك / الحلقة كاملة على يوتيوب، اللينك في البايو ; TikTok pinned: تقبل قرض من القرش ولا تديله نسبة من شركتك؟ اكتب رأيك ; covers from phone",
+   "approval": "His words 17:25 UTC Oct 31 (Shark Tank thread): «تمام حلو اعتمد وجدولهن». Times from the package page (TikTok 18:00, FB reel 20:00).",
+   "times_cairo": {
+    "facebook": "2026-11-08T20:00",
+    "tiktok": "2026-11-08T18:00"
+   },
+   "utc_offset": "+02:00",
+   "source": "remix/shark-filmed (package https://claude.ai/artifact/7ZSxTdmy1xiD9qGjgYzrHV)"
   },
   {
    "id": "remix-sub6",

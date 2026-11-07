@@ -12,7 +12,7 @@ raw = lambda n: os.path.join(work, f"خام ChatGPT - ثامبنيل {n}.png")
 jobs = {
  "1": (raw(1), [Line([("مصر ضد", WHITE)]), Line([("السودان؟", WHITE)], scale=1.2, box=BOX_RED)], (1010, 48, 1872, 420)),
  "2": (raw(2), [Line([("حرب على", WHITE)]), Line([("الذهب؟", WHITE)], scale=1.25, box=BOX_RED)], (48, 48, 880, 420)),
- "3": (raw(3), [Line([("غارة على", WHITE)]), Line([("الحدود؟", WHITE)], scale=1.25, box=BOX_RED)], (48, 48, 880, 420)),
+ "3": (raw(3), [Line([("غارة على", WHITE)]), Line([("الحدود؟", WHITE)], scale=1.25, box=BOX_RED)], (48, 48, 840, 420)),
 }
 for k, (bg, lines, box) in jobs.items():
     t = Thumb(bg, Block(lines, balance=False, gap=0.34), box=box, shade=0.0)
